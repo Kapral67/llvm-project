@@ -263,6 +263,7 @@ types::ID types::lookupTypeForExtension(llvm::StringRef Ext) {
            .Case("cpp", TY_CXX)
            .Case("CPP", TY_CXX)
            .Case("c++", TY_CXX)
+           .Case("ipynb", TY_CXX)
            .Case("C++", TY_CXX)
            .Case("cui", TY_PP_CUDA)
            .Case("cxx", TY_CXX)
