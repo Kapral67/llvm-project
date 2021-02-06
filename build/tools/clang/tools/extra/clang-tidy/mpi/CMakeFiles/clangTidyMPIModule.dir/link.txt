@@ -1,0 +1,1 @@
+"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool" -static -no_warning_for_no_symbols -o ../../../../../../lib/libclangTidyMPIModule.a CMakeFiles/obj.clangTidyMPIModule.dir/BufferDerefCheck.cpp.o CMakeFiles/obj.clangTidyMPIModule.dir/MPITidyModule.cpp.o CMakeFiles/obj.clangTidyMPIModule.dir/TypeMismatchCheck.cpp.o

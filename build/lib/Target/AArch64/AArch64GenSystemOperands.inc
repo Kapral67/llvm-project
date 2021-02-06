@@ -1,0 +1,5870 @@
+#ifdef GET_AT_DECL
+enum ATValues {
+  S1E1R = 960,
+  S1E2R = 9152,
+  S1E3R = 13248,
+  S1E1W = 961,
+  S1E2W = 9153,
+  S1E3W = 13249,
+  S1E0R = 962,
+  S1E0W = 963,
+  S12E1R = 9156,
+  S12E1W = 9157,
+  S12E0R = 9158,
+  S12E0W = 9159,
+  S1E1RP = 968,
+  S1E1WP = 969,
+};
+#endif
+
+#ifdef GET_BTI_DECL
+enum BTIValues {
+  c = 1,
+  j = 2,
+  jc = 3,
+};
+#endif
+
+#ifdef GET_DB_DECL
+enum DBValues {
+  oshld = 1,
+  oshst = 2,
+  osh = 3,
+  nshld = 5,
+  nshst = 6,
+  nsh = 7,
+  ishld = 9,
+  ishst = 10,
+  ish = 11,
+  ld = 13,
+  st = 14,
+  sy = 15,
+};
+#endif
+
+#ifdef GET_DBNXS_DECL
+enum DBnXSValues {
+  oshnxs = 3,
+  nshnxs = 7,
+  ishnxs = 11,
+  synxs = 15,
+};
+#endif
+
+#ifdef GET_DC_DECL
+enum DCValues {
+  ZVA = 7073,
+  IVAC = 945,
+  ISW = 946,
+  CVAC = 7121,
+  CSW = 978,
+  CVAU = 7129,
+  CIVAC = 7153,
+  CISW = 1010,
+  CVAP = 7137,
+  CVADP = 7145,
+  IGVAC = 947,
+  IGSW = 948,
+  CGSW = 980,
+  CIGSW = 1012,
+  CGVAC = 7123,
+  CGVAP = 7139,
+  CGVADP = 7147,
+  CIGVAC = 7155,
+  GVA = 7075,
+  IGDVAC = 949,
+  IGDSW = 950,
+  CGDSW = 982,
+  CIGDSW = 1014,
+  CGDVAC = 7125,
+  CGDVAP = 7141,
+  CGDVADP = 7149,
+  CIGDVAC = 7157,
+  GZVA = 7076,
+};
+#endif
+
+#ifdef GET_EXACTFPIMM_DECL
+enum ExactFPImmValues {
+  zero = 0,
+  half = 1,
+  one = 2,
+  two = 3,
+};
+#endif
+
+#ifdef GET_IC_DECL
+enum ICValues {
+  IALLUIS = 904,
+  IALLU = 936,
+  IVAU = 7081,
+};
+#endif
+
+#ifdef GET_ISB_DECL
+enum ISBValues {
+  sy = 15,
+};
+#endif
+
+#ifdef GET_PRCTX_DECL
+enum PRCTXValues {
+  RCTX = 883,
+};
+#endif
+
+#ifdef GET_PRFM_DECL
+enum PRFMValues {
+  pldl1keep = 0,
+  pldl1strm = 1,
+  pldl2keep = 2,
+  pldl2strm = 3,
+  pldl3keep = 4,
+  pldl3strm = 5,
+  plil1keep = 8,
+  plil1strm = 9,
+  plil2keep = 10,
+  plil2strm = 11,
+  plil3keep = 12,
+  plil3strm = 13,
+  pstl1keep = 16,
+  pstl1strm = 17,
+  pstl2keep = 18,
+  pstl2strm = 19,
+  pstl3keep = 20,
+  pstl3strm = 21,
+};
+#endif
+
+#ifdef GET_PSB_DECL
+enum PSBValues {
+  csync = 17,
+};
+#endif
+
+#ifdef GET_PSTATE_DECL
+enum PStateValues {
+  SPSel = 5,
+  DAIFSet = 30,
+  DAIFClr = 31,
+  PAN = 4,
+  UAO = 3,
+  DIT = 26,
+  SSBS = 25,
+  TCO = 28,
+};
+#endif
+
+#ifdef GET_SVEPREDPAT_DECL
+enum SVEPREDPATValues {
+  pow2 = 0,
+  vl1 = 1,
+  vl2 = 2,
+  vl3 = 3,
+  vl4 = 4,
+  vl5 = 5,
+  vl6 = 6,
+  vl7 = 7,
+  vl8 = 8,
+  vl16 = 9,
+  vl32 = 10,
+  vl64 = 11,
+  vl128 = 12,
+  vl256 = 13,
+  mul4 = 29,
+  mul3 = 30,
+  all = 31,
+};
+#endif
+
+#ifdef GET_SVEPRFM_DECL
+enum SVEPRFMValues {
+  pldl1keep = 0,
+  pldl1strm = 1,
+  pldl2keep = 2,
+  pldl2strm = 3,
+  pldl3keep = 4,
+  pldl3strm = 5,
+  pstl1keep = 8,
+  pstl1strm = 9,
+  pstl2keep = 10,
+  pstl2strm = 11,
+  pstl3keep = 12,
+  pstl3strm = 13,
+};
+#endif
+
+#ifdef GET_SYSREG_DECL
+enum SysRegValues {
+  MDCCSR_EL0 = 38920,
+  DBGDTRRX_EL0 = 38952,
+  MDRAR_EL1 = 32896,
+  OSLSR_EL1 = 32908,
+  DBGAUTHSTATUS_EL1 = 33782,
+  PMCEID0_EL0 = 56550,
+  PMCEID1_EL0 = 56551,
+  MIDR_EL1 = 49152,
+  CCSIDR_EL1 = 51200,
+  CCSIDR2_EL1 = 51202,
+  CLIDR_EL1 = 51201,
+  CTR_EL0 = 55297,
+  MPIDR_EL1 = 49157,
+  REVIDR_EL1 = 49158,
+  AIDR_EL1 = 51207,
+  DCZID_EL0 = 55303,
+  ID_PFR0_EL1 = 49160,
+  ID_PFR1_EL1 = 49161,
+  ID_PFR2_EL1 = 49180,
+  ID_DFR0_EL1 = 49162,
+  ID_AFR0_EL1 = 49163,
+  ID_MMFR0_EL1 = 49164,
+  ID_MMFR1_EL1 = 49165,
+  ID_MMFR2_EL1 = 49166,
+  ID_MMFR3_EL1 = 49167,
+  ID_ISAR0_EL1 = 49168,
+  ID_ISAR1_EL1 = 49169,
+  ID_ISAR2_EL1 = 49170,
+  ID_ISAR3_EL1 = 49171,
+  ID_ISAR4_EL1 = 49172,
+  ID_ISAR5_EL1 = 49173,
+  ID_ISAR6_EL1 = 49175,
+  ID_AA64PFR0_EL1 = 49184,
+  ID_AA64PFR1_EL1 = 49185,
+  ID_AA64DFR0_EL1 = 49192,
+  ID_AA64DFR1_EL1 = 49193,
+  ID_AA64AFR0_EL1 = 49196,
+  ID_AA64AFR1_EL1 = 49197,
+  ID_AA64ISAR0_EL1 = 49200,
+  ID_AA64ISAR1_EL1 = 49201,
+  ID_AA64ISAR2_EL1 = 49202,
+  ID_AA64MMFR0_EL1 = 49208,
+  ID_AA64MMFR1_EL1 = 49209,
+  ID_AA64MMFR2_EL1 = 49210,
+  MVFR0_EL1 = 49176,
+  MVFR1_EL1 = 49177,
+  MVFR2_EL1 = 49178,
+  RVBAR_EL1 = 50689,
+  RVBAR_EL2 = 58881,
+  RVBAR_EL3 = 62977,
+  ISR_EL1 = 50696,
+  CNTPCT_EL0 = 57089,
+  CNTVCT_EL0 = 57090,
+  ID_MMFR4_EL1 = 49174,
+  ID_MMFR5_EL1 = 49182,
+  TRCSTATR = 34840,
+  TRCIDR8 = 34822,
+  TRCIDR9 = 34830,
+  TRCIDR10 = 34838,
+  TRCIDR11 = 34846,
+  TRCIDR12 = 34854,
+  TRCIDR13 = 34862,
+  TRCIDR0 = 34887,
+  TRCIDR1 = 34895,
+  TRCIDR2 = 34903,
+  TRCIDR3 = 34911,
+  TRCIDR4 = 34919,
+  TRCIDR5 = 34927,
+  TRCIDR6 = 34935,
+  TRCIDR7 = 34943,
+  TRCOSLSR = 34956,
+  TRCPDSR = 34988,
+  TRCDEVAFF0 = 35798,
+  TRCDEVAFF1 = 35806,
+  TRCLSR = 35822,
+  TRCAUTHSTATUS = 35830,
+  TRCDEVARCH = 35838,
+  TRCDEVID = 35735,
+  TRCDEVTYPE = 35743,
+  TRCPIDR4 = 35751,
+  TRCPIDR5 = 35759,
+  TRCPIDR6 = 35767,
+  TRCPIDR7 = 35775,
+  TRCPIDR0 = 35783,
+  TRCPIDR1 = 35791,
+  TRCPIDR2 = 35799,
+  TRCPIDR3 = 35807,
+  TRCCIDR0 = 35815,
+  TRCCIDR1 = 35823,
+  TRCCIDR2 = 35831,
+  TRCCIDR3 = 35839,
+  ICC_IAR1_EL1 = 50784,
+  ICC_IAR0_EL1 = 50752,
+  ICC_HPPIR1_EL1 = 50786,
+  ICC_HPPIR0_EL1 = 50754,
+  ICC_RPR_EL1 = 50779,
+  ICH_VTR_EL2 = 58969,
+  ICH_EISR_EL2 = 58971,
+  ICH_ELRSR_EL2 = 58973,
+  ID_AA64ZFR0_EL1 = 49188,
+  LORID_EL1 = 50471,
+  ERRIDR_EL1 = 49816,
+  ERXFR_EL1 = 49824,
+  RNDR = 55584,
+  RNDRRS = 55585,
+  SCXTNUM_EL0 = 56967,
+  SCXTNUM_EL1 = 50823,
+  SCXTNUM_EL2 = 59015,
+  SCXTNUM_EL3 = 63111,
+  SCXTNUM_EL12 = 61063,
+  DBGDTRTX_EL0 = 38952,
+  OSLAR_EL1 = 32900,
+  PMSWINC_EL0 = 56548,
+  TRCOSLAR = 34948,
+  TRCLAR = 35814,
+  ICC_EOIR1_EL1 = 50785,
+  ICC_EOIR0_EL1 = 50753,
+  ICC_DIR_EL1 = 50777,
+  ICC_SGI1R_EL1 = 50781,
+  ICC_ASGI1R_EL1 = 50782,
+  ICC_SGI0R_EL1 = 50783,
+  OSDTRRX_EL1 = 32770,
+  OSDTRTX_EL1 = 32794,
+  TEECR32_EL1 = 36864,
+  MDCCINT_EL1 = 32784,
+  MDSCR_EL1 = 32786,
+  DBGDTR_EL0 = 38944,
+  OSECCR_EL1 = 32818,
+  DBGVCR32_EL2 = 41016,
+  DBGBVR0_EL1 = 32772,
+  DBGBVR1_EL1 = 32780,
+  DBGBVR2_EL1 = 32788,
+  DBGBVR3_EL1 = 32796,
+  DBGBVR4_EL1 = 32804,
+  DBGBVR5_EL1 = 32812,
+  DBGBVR6_EL1 = 32820,
+  DBGBVR7_EL1 = 32828,
+  DBGBVR8_EL1 = 32836,
+  DBGBVR9_EL1 = 32844,
+  DBGBVR10_EL1 = 32852,
+  DBGBVR11_EL1 = 32860,
+  DBGBVR12_EL1 = 32868,
+  DBGBVR13_EL1 = 32876,
+  DBGBVR14_EL1 = 32884,
+  DBGBVR15_EL1 = 32892,
+  DBGBCR0_EL1 = 32773,
+  DBGBCR1_EL1 = 32781,
+  DBGBCR2_EL1 = 32789,
+  DBGBCR3_EL1 = 32797,
+  DBGBCR4_EL1 = 32805,
+  DBGBCR5_EL1 = 32813,
+  DBGBCR6_EL1 = 32821,
+  DBGBCR7_EL1 = 32829,
+  DBGBCR8_EL1 = 32837,
+  DBGBCR9_EL1 = 32845,
+  DBGBCR10_EL1 = 32853,
+  DBGBCR11_EL1 = 32861,
+  DBGBCR12_EL1 = 32869,
+  DBGBCR13_EL1 = 32877,
+  DBGBCR14_EL1 = 32885,
+  DBGBCR15_EL1 = 32893,
+  DBGWVR0_EL1 = 32774,
+  DBGWVR1_EL1 = 32782,
+  DBGWVR2_EL1 = 32790,
+  DBGWVR3_EL1 = 32798,
+  DBGWVR4_EL1 = 32806,
+  DBGWVR5_EL1 = 32814,
+  DBGWVR6_EL1 = 32822,
+  DBGWVR7_EL1 = 32830,
+  DBGWVR8_EL1 = 32838,
+  DBGWVR9_EL1 = 32846,
+  DBGWVR10_EL1 = 32854,
+  DBGWVR11_EL1 = 32862,
+  DBGWVR12_EL1 = 32870,
+  DBGWVR13_EL1 = 32878,
+  DBGWVR14_EL1 = 32886,
+  DBGWVR15_EL1 = 32894,
+  DBGWCR0_EL1 = 32775,
+  DBGWCR1_EL1 = 32783,
+  DBGWCR2_EL1 = 32791,
+  DBGWCR3_EL1 = 32799,
+  DBGWCR4_EL1 = 32807,
+  DBGWCR5_EL1 = 32815,
+  DBGWCR6_EL1 = 32823,
+  DBGWCR7_EL1 = 32831,
+  DBGWCR8_EL1 = 32839,
+  DBGWCR9_EL1 = 32847,
+  DBGWCR10_EL1 = 32855,
+  DBGWCR11_EL1 = 32863,
+  DBGWCR12_EL1 = 32871,
+  DBGWCR13_EL1 = 32879,
+  DBGWCR14_EL1 = 32887,
+  DBGWCR15_EL1 = 32895,
+  TEEHBR32_EL1 = 36992,
+  OSDLR_EL1 = 32924,
+  DBGPRCR_EL1 = 32932,
+  DBGCLAIMSET_EL1 = 33734,
+  DBGCLAIMCLR_EL1 = 33742,
+  CSSELR_EL1 = 53248,
+  VPIDR_EL2 = 57344,
+  VMPIDR_EL2 = 57349,
+  CPACR_EL1 = 49282,
+  SCTLR_EL1 = 49280,
+  SCTLR_EL2 = 57472,
+  SCTLR_EL3 = 61568,
+  ACTLR_EL1 = 49281,
+  ACTLR_EL2 = 57473,
+  ACTLR_EL3 = 61569,
+  HCR_EL2 = 57480,
+  HCRX_EL2 = 57490,
+  SCR_EL3 = 61576,
+  MDCR_EL2 = 57481,
+  SDER32_EL3 = 61577,
+  CPTR_EL2 = 57482,
+  CPTR_EL3 = 61578,
+  HSTR_EL2 = 57483,
+  HACR_EL2 = 57487,
+  MDCR_EL3 = 61593,
+  TTBR0_EL1 = 49408,
+  TTBR0_EL2 = 57600,
+  TTBR0_EL3 = 61696,
+  TTBR1_EL1 = 49409,
+  TCR_EL1 = 49410,
+  TCR_EL2 = 57602,
+  TCR_EL3 = 61698,
+  VTTBR_EL2 = 57608,
+  VTCR_EL2 = 57610,
+  DACR32_EL2 = 57728,
+  SPSR_EL1 = 49664,
+  SPSR_EL2 = 57856,
+  SPSR_EL3 = 61952,
+  ELR_EL1 = 49665,
+  ELR_EL2 = 57857,
+  ELR_EL3 = 61953,
+  SP_EL0 = 49672,
+  SP_EL1 = 57864,
+  SP_EL2 = 61960,
+  SPSel = 49680,
+  NZCV = 55824,
+  DAIF = 55825,
+  CurrentEL = 49682,
+  SPSR_irq = 57880,
+  SPSR_abt = 57881,
+  SPSR_und = 57882,
+  SPSR_fiq = 57883,
+  FPCR = 55840,
+  FPSR = 55841,
+  DSPSR_EL0 = 55848,
+  DLR_EL0 = 55849,
+  IFSR32_EL2 = 57985,
+  AFSR0_EL1 = 49800,
+  AFSR0_EL2 = 57992,
+  AFSR0_EL3 = 62088,
+  AFSR1_EL1 = 49801,
+  AFSR1_EL2 = 57993,
+  AFSR1_EL3 = 62089,
+  ESR_EL1 = 49808,
+  ESR_EL2 = 58000,
+  ESR_EL3 = 62096,
+  FPEXC32_EL2 = 58008,
+  FAR_EL1 = 49920,
+  FAR_EL2 = 58112,
+  FAR_EL3 = 62208,
+  HPFAR_EL2 = 58116,
+  PAR_EL1 = 50080,
+  PMCR_EL0 = 56544,
+  PMCNTENSET_EL0 = 56545,
+  PMCNTENCLR_EL0 = 56546,
+  PMOVSCLR_EL0 = 56547,
+  PMSELR_EL0 = 56549,
+  PMCCNTR_EL0 = 56552,
+  PMXEVTYPER_EL0 = 56553,
+  PMXEVCNTR_EL0 = 56554,
+  PMUSERENR_EL0 = 56560,
+  PMINTENSET_EL1 = 50417,
+  PMINTENCLR_EL1 = 50418,
+  PMOVSSET_EL0 = 56563,
+  MAIR_EL1 = 50448,
+  MAIR_EL2 = 58640,
+  MAIR_EL3 = 62736,
+  AMAIR_EL1 = 50456,
+  AMAIR_EL2 = 58648,
+  AMAIR_EL3 = 62744,
+  VBAR_EL1 = 50688,
+  VBAR_EL2 = 58880,
+  VBAR_EL3 = 62976,
+  RMR_EL1 = 50690,
+  RMR_EL2 = 58882,
+  RMR_EL3 = 62978,
+  CONTEXTIDR_EL1 = 50817,
+  TPIDR_EL0 = 56962,
+  TPIDR_EL2 = 59010,
+  TPIDR_EL3 = 63106,
+  TPIDRRO_EL0 = 56963,
+  TPIDR_EL1 = 50820,
+  CNTFRQ_EL0 = 57088,
+  CNTVOFF_EL2 = 59139,
+  CNTKCTL_EL1 = 50952,
+  CNTHCTL_EL2 = 59144,
+  CNTP_TVAL_EL0 = 57104,
+  CNTHP_TVAL_EL2 = 59152,
+  CNTPS_TVAL_EL1 = 65296,
+  CNTP_CTL_EL0 = 57105,
+  CNTHP_CTL_EL2 = 59153,
+  CNTPS_CTL_EL1 = 65297,
+  CNTP_CVAL_EL0 = 57106,
+  CNTHP_CVAL_EL2 = 59154,
+  CNTPS_CVAL_EL1 = 65298,
+  CNTV_TVAL_EL0 = 57112,
+  CNTV_CTL_EL0 = 57113,
+  CNTV_CVAL_EL0 = 57114,
+  PMEVCNTR0_EL0 = 57152,
+  PMEVCNTR1_EL0 = 57153,
+  PMEVCNTR2_EL0 = 57154,
+  PMEVCNTR3_EL0 = 57155,
+  PMEVCNTR4_EL0 = 57156,
+  PMEVCNTR5_EL0 = 57157,
+  PMEVCNTR6_EL0 = 57158,
+  PMEVCNTR7_EL0 = 57159,
+  PMEVCNTR8_EL0 = 57160,
+  PMEVCNTR9_EL0 = 57161,
+  PMEVCNTR10_EL0 = 57162,
+  PMEVCNTR11_EL0 = 57163,
+  PMEVCNTR12_EL0 = 57164,
+  PMEVCNTR13_EL0 = 57165,
+  PMEVCNTR14_EL0 = 57166,
+  PMEVCNTR15_EL0 = 57167,
+  PMEVCNTR16_EL0 = 57168,
+  PMEVCNTR17_EL0 = 57169,
+  PMEVCNTR18_EL0 = 57170,
+  PMEVCNTR19_EL0 = 57171,
+  PMEVCNTR20_EL0 = 57172,
+  PMEVCNTR21_EL0 = 57173,
+  PMEVCNTR22_EL0 = 57174,
+  PMEVCNTR23_EL0 = 57175,
+  PMEVCNTR24_EL0 = 57176,
+  PMEVCNTR25_EL0 = 57177,
+  PMEVCNTR26_EL0 = 57178,
+  PMEVCNTR27_EL0 = 57179,
+  PMEVCNTR28_EL0 = 57180,
+  PMEVCNTR29_EL0 = 57181,
+  PMEVCNTR30_EL0 = 57182,
+  PMCCFILTR_EL0 = 57215,
+  PMEVTYPER0_EL0 = 57184,
+  PMEVTYPER1_EL0 = 57185,
+  PMEVTYPER2_EL0 = 57186,
+  PMEVTYPER3_EL0 = 57187,
+  PMEVTYPER4_EL0 = 57188,
+  PMEVTYPER5_EL0 = 57189,
+  PMEVTYPER6_EL0 = 57190,
+  PMEVTYPER7_EL0 = 57191,
+  PMEVTYPER8_EL0 = 57192,
+  PMEVTYPER9_EL0 = 57193,
+  PMEVTYPER10_EL0 = 57194,
+  PMEVTYPER11_EL0 = 57195,
+  PMEVTYPER12_EL0 = 57196,
+  PMEVTYPER13_EL0 = 57197,
+  PMEVTYPER14_EL0 = 57198,
+  PMEVTYPER15_EL0 = 57199,
+  PMEVTYPER16_EL0 = 57200,
+  PMEVTYPER17_EL0 = 57201,
+  PMEVTYPER18_EL0 = 57202,
+  PMEVTYPER19_EL0 = 57203,
+  PMEVTYPER20_EL0 = 57204,
+  PMEVTYPER21_EL0 = 57205,
+  PMEVTYPER22_EL0 = 57206,
+  PMEVTYPER23_EL0 = 57207,
+  PMEVTYPER24_EL0 = 57208,
+  PMEVTYPER25_EL0 = 57209,
+  PMEVTYPER26_EL0 = 57210,
+  PMEVTYPER27_EL0 = 57211,
+  PMEVTYPER28_EL0 = 57212,
+  PMEVTYPER29_EL0 = 57213,
+  PMEVTYPER30_EL0 = 57214,
+  TRCPRGCTLR = 34824,
+  TRCPROCSELR = 34832,
+  TRCCONFIGR = 34848,
+  TRCAUXCTLR = 34864,
+  TRCEVENTCTL0R = 34880,
+  TRCEVENTCTL1R = 34888,
+  TRCSTALLCTLR = 34904,
+  TRCTSCTLR = 34912,
+  TRCSYNCPR = 34920,
+  TRCCCCTLR = 34928,
+  TRCBBCTLR = 34936,
+  TRCTRACEIDR = 34817,
+  TRCQCTLR = 34825,
+  TRCVICTLR = 34818,
+  TRCVIIECTLR = 34826,
+  TRCVISSCTLR = 34834,
+  TRCVIPCSSCTLR = 34842,
+  TRCVDCTLR = 34882,
+  TRCVDSACCTLR = 34890,
+  TRCVDARCCTLR = 34898,
+  TRCSEQEVR0 = 34820,
+  TRCSEQEVR1 = 34828,
+  TRCSEQEVR2 = 34836,
+  TRCSEQRSTEVR = 34868,
+  TRCSEQSTR = 34876,
+  TRCEXTINSELR = 34884,
+  TRCCNTRLDVR0 = 34821,
+  TRCCNTRLDVR1 = 34829,
+  TRCCNTRLDVR2 = 34837,
+  TRCCNTRLDVR3 = 34845,
+  TRCCNTCTLR0 = 34853,
+  TRCCNTCTLR1 = 34861,
+  TRCCNTCTLR2 = 34869,
+  TRCCNTCTLR3 = 34877,
+  TRCCNTVR0 = 34885,
+  TRCCNTVR1 = 34893,
+  TRCCNTVR2 = 34901,
+  TRCCNTVR3 = 34909,
+  TRCIMSPEC0 = 34823,
+  TRCIMSPEC1 = 34831,
+  TRCIMSPEC2 = 34839,
+  TRCIMSPEC3 = 34847,
+  TRCIMSPEC4 = 34855,
+  TRCIMSPEC5 = 34863,
+  TRCIMSPEC6 = 34871,
+  TRCIMSPEC7 = 34879,
+  TRCRSCTLR2 = 34960,
+  TRCRSCTLR3 = 34968,
+  TRCRSCTLR4 = 34976,
+  TRCRSCTLR5 = 34984,
+  TRCRSCTLR6 = 34992,
+  TRCRSCTLR7 = 35000,
+  TRCRSCTLR8 = 35008,
+  TRCRSCTLR9 = 35016,
+  TRCRSCTLR10 = 35024,
+  TRCRSCTLR11 = 35032,
+  TRCRSCTLR12 = 35040,
+  TRCRSCTLR13 = 35048,
+  TRCRSCTLR14 = 35056,
+  TRCRSCTLR15 = 35064,
+  TRCRSCTLR16 = 34945,
+  TRCRSCTLR17 = 34953,
+  TRCRSCTLR18 = 34961,
+  TRCRSCTLR19 = 34969,
+  TRCRSCTLR20 = 34977,
+  TRCRSCTLR21 = 34985,
+  TRCRSCTLR22 = 34993,
+  TRCRSCTLR23 = 35001,
+  TRCRSCTLR24 = 35009,
+  TRCRSCTLR25 = 35017,
+  TRCRSCTLR26 = 35025,
+  TRCRSCTLR27 = 35033,
+  TRCRSCTLR28 = 35041,
+  TRCRSCTLR29 = 35049,
+  TRCRSCTLR30 = 35057,
+  TRCRSCTLR31 = 35065,
+  TRCSSCCR0 = 34946,
+  TRCSSCCR1 = 34954,
+  TRCSSCCR2 = 34962,
+  TRCSSCCR3 = 34970,
+  TRCSSCCR4 = 34978,
+  TRCSSCCR5 = 34986,
+  TRCSSCCR6 = 34994,
+  TRCSSCCR7 = 35002,
+  TRCSSCSR0 = 35010,
+  TRCSSCSR1 = 35018,
+  TRCSSCSR2 = 35026,
+  TRCSSCSR3 = 35034,
+  TRCSSCSR4 = 35042,
+  TRCSSCSR5 = 35050,
+  TRCSSCSR6 = 35058,
+  TRCSSCSR7 = 35066,
+  TRCSSPCICR0 = 34947,
+  TRCSSPCICR1 = 34955,
+  TRCSSPCICR2 = 34963,
+  TRCSSPCICR3 = 34971,
+  TRCSSPCICR4 = 34979,
+  TRCSSPCICR5 = 34987,
+  TRCSSPCICR6 = 34995,
+  TRCSSPCICR7 = 35003,
+  TRCPDCR = 34980,
+  TRCACVR0 = 35072,
+  TRCACVR1 = 35088,
+  TRCACVR2 = 35104,
+  TRCACVR3 = 35120,
+  TRCACVR4 = 35136,
+  TRCACVR5 = 35152,
+  TRCACVR6 = 35168,
+  TRCACVR7 = 35184,
+  TRCACVR8 = 35073,
+  TRCACVR9 = 35089,
+  TRCACVR10 = 35105,
+  TRCACVR11 = 35121,
+  TRCACVR12 = 35137,
+  TRCACVR13 = 35153,
+  TRCACVR14 = 35169,
+  TRCACVR15 = 35185,
+  TRCACATR0 = 35074,
+  TRCACATR1 = 35090,
+  TRCACATR2 = 35106,
+  TRCACATR3 = 35122,
+  TRCACATR4 = 35138,
+  TRCACATR5 = 35154,
+  TRCACATR6 = 35170,
+  TRCACATR7 = 35186,
+  TRCACATR8 = 35075,
+  TRCACATR9 = 35091,
+  TRCACATR10 = 35107,
+  TRCACATR11 = 35123,
+  TRCACATR12 = 35139,
+  TRCACATR13 = 35155,
+  TRCACATR14 = 35171,
+  TRCACATR15 = 35187,
+  TRCDVCVR0 = 35076,
+  TRCDVCVR1 = 35108,
+  TRCDVCVR2 = 35140,
+  TRCDVCVR3 = 35172,
+  TRCDVCVR4 = 35077,
+  TRCDVCVR5 = 35109,
+  TRCDVCVR6 = 35141,
+  TRCDVCVR7 = 35173,
+  TRCDVCMR0 = 35078,
+  TRCDVCMR1 = 35110,
+  TRCDVCMR2 = 35142,
+  TRCDVCMR3 = 35174,
+  TRCDVCMR4 = 35079,
+  TRCDVCMR5 = 35111,
+  TRCDVCMR6 = 35143,
+  TRCDVCMR7 = 35175,
+  TRCCIDCVR0 = 35200,
+  TRCCIDCVR1 = 35216,
+  TRCCIDCVR2 = 35232,
+  TRCCIDCVR3 = 35248,
+  TRCCIDCVR4 = 35264,
+  TRCCIDCVR5 = 35280,
+  TRCCIDCVR6 = 35296,
+  TRCCIDCVR7 = 35312,
+  TRCVMIDCVR0 = 35201,
+  TRCVMIDCVR1 = 35217,
+  TRCVMIDCVR2 = 35233,
+  TRCVMIDCVR3 = 35249,
+  TRCVMIDCVR4 = 35265,
+  TRCVMIDCVR5 = 35281,
+  TRCVMIDCVR6 = 35297,
+  TRCVMIDCVR7 = 35313,
+  TRCCIDCCTLR0 = 35202,
+  TRCCIDCCTLR1 = 35210,
+  TRCVMIDCCTLR0 = 35218,
+  TRCVMIDCCTLR1 = 35226,
+  TRCITCTRL = 35716,
+  TRCCLAIMSET = 35782,
+  TRCCLAIMCLR = 35790,
+  ICC_BPR1_EL1 = 50787,
+  ICC_BPR0_EL1 = 50755,
+  ICC_PMR_EL1 = 49712,
+  ICC_CTLR_EL1 = 50788,
+  ICC_CTLR_EL3 = 63076,
+  ICC_SRE_EL1 = 50789,
+  ICC_SRE_EL2 = 58957,
+  ICC_SRE_EL3 = 63077,
+  ICC_IGRPEN0_EL1 = 50790,
+  ICC_IGRPEN1_EL1 = 50791,
+  ICC_IGRPEN1_EL3 = 63079,
+  ICC_AP0R0_EL1 = 50756,
+  ICC_AP0R1_EL1 = 50757,
+  ICC_AP0R2_EL1 = 50758,
+  ICC_AP0R3_EL1 = 50759,
+  ICC_AP1R0_EL1 = 50760,
+  ICC_AP1R1_EL1 = 50761,
+  ICC_AP1R2_EL1 = 50762,
+  ICC_AP1R3_EL1 = 50763,
+  ICH_AP0R0_EL2 = 58944,
+  ICH_AP0R1_EL2 = 58945,
+  ICH_AP0R2_EL2 = 58946,
+  ICH_AP0R3_EL2 = 58947,
+  ICH_AP1R0_EL2 = 58952,
+  ICH_AP1R1_EL2 = 58953,
+  ICH_AP1R2_EL2 = 58954,
+  ICH_AP1R3_EL2 = 58955,
+  ICH_HCR_EL2 = 58968,
+  ICH_MISR_EL2 = 58970,
+  ICH_VMCR_EL2 = 58975,
+  ICH_LR0_EL2 = 58976,
+  ICH_LR1_EL2 = 58977,
+  ICH_LR2_EL2 = 58978,
+  ICH_LR3_EL2 = 58979,
+  ICH_LR4_EL2 = 58980,
+  ICH_LR5_EL2 = 58981,
+  ICH_LR6_EL2 = 58982,
+  ICH_LR7_EL2 = 58983,
+  ICH_LR8_EL2 = 58984,
+  ICH_LR9_EL2 = 58985,
+  ICH_LR10_EL2 = 58986,
+  ICH_LR11_EL2 = 58987,
+  ICH_LR12_EL2 = 58988,
+  ICH_LR13_EL2 = 58989,
+  ICH_LR14_EL2 = 58990,
+  ICH_LR15_EL2 = 58991,
+  PAN = 49683,
+  LORSA_EL1 = 50464,
+  LOREA_EL1 = 50465,
+  LORN_EL1 = 50466,
+  LORC_EL1 = 50467,
+  TTBR1_EL2 = 57601,
+  CNTHV_TVAL_EL2 = 59160,
+  CNTHV_CVAL_EL2 = 59162,
+  CNTHV_CTL_EL2 = 59161,
+  SCTLR_EL12 = 59520,
+  CPACR_EL12 = 59522,
+  TTBR0_EL12 = 59648,
+  TTBR1_EL12 = 59649,
+  TCR_EL12 = 59650,
+  AFSR0_EL12 = 60040,
+  AFSR1_EL12 = 60041,
+  ESR_EL12 = 60048,
+  FAR_EL12 = 60160,
+  MAIR_EL12 = 60688,
+  AMAIR_EL12 = 60696,
+  VBAR_EL12 = 60928,
+  CONTEXTIDR_EL12 = 61057,
+  CNTKCTL_EL12 = 61192,
+  CNTP_TVAL_EL02 = 61200,
+  CNTP_CTL_EL02 = 61201,
+  CNTP_CVAL_EL02 = 61202,
+  CNTV_TVAL_EL02 = 61208,
+  CNTV_CTL_EL02 = 61209,
+  CNTV_CVAL_EL02 = 61210,
+  SPSR_EL12 = 59904,
+  ELR_EL12 = 59905,
+  CONTEXTIDR_EL2 = 59009,
+  UAO = 49684,
+  PMBLIMITR_EL1 = 50384,
+  PMBPTR_EL1 = 50385,
+  PMBSR_EL1 = 50387,
+  PMBIDR_EL1 = 50391,
+  PMSCR_EL2 = 58568,
+  PMSCR_EL12 = 60616,
+  PMSCR_EL1 = 50376,
+  PMSICR_EL1 = 50378,
+  PMSIRR_EL1 = 50379,
+  PMSFCR_EL1 = 50380,
+  PMSEVFR_EL1 = 50381,
+  PMSLATFR_EL1 = 50382,
+  PMSIDR_EL1 = 50383,
+  ERRSELR_EL1 = 49817,
+  ERXCTLR_EL1 = 49825,
+  ERXSTATUS_EL1 = 49826,
+  ERXADDR_EL1 = 49827,
+  ERXMISC0_EL1 = 49832,
+  ERXMISC1_EL1 = 49833,
+  DISR_EL1 = 50697,
+  VDISR_EL2 = 58889,
+  VSESR_EL2 = 58003,
+  APIAKeyLo_EL1 = 49416,
+  APIAKeyHi_EL1 = 49417,
+  APIBKeyLo_EL1 = 49418,
+  APIBKeyHi_EL1 = 49419,
+  APDAKeyLo_EL1 = 49424,
+  APDAKeyHi_EL1 = 49425,
+  APDBKeyLo_EL1 = 49426,
+  APDBKeyHi_EL1 = 49427,
+  APGAKeyLo_EL1 = 49432,
+  APGAKeyHi_EL1 = 49433,
+  VSTCR_EL2 = 57650,
+  VSTTBR_EL2 = 57648,
+  CNTHVS_TVAL_EL2 = 59168,
+  CNTHVS_CVAL_EL2 = 59170,
+  CNTHVS_CTL_EL2 = 59169,
+  CNTHPS_TVAL_EL2 = 59176,
+  CNTHPS_CVAL_EL2 = 59178,
+  CNTHPS_CTL_EL2 = 59177,
+  SDER32_EL2 = 57497,
+  PMMIR_EL1 = 50422,
+  ERXPFGCTL_EL1 = 49829,
+  ERXPFGCDN_EL1 = 49830,
+  ERXMISC2_EL1 = 49834,
+  ERXMISC3_EL1 = 49835,
+  ERXPFGF_EL1 = 49828,
+  MPAM0_EL1 = 50473,
+  MPAM1_EL1 = 50472,
+  MPAM2_EL2 = 58664,
+  MPAM3_EL3 = 62760,
+  MPAM1_EL12 = 60712,
+  MPAMHCR_EL2 = 58656,
+  MPAMVPMV_EL2 = 58657,
+  MPAMVPM0_EL2 = 58672,
+  MPAMVPM1_EL2 = 58673,
+  MPAMVPM2_EL2 = 58674,
+  MPAMVPM3_EL2 = 58675,
+  MPAMVPM4_EL2 = 58676,
+  MPAMVPM5_EL2 = 58677,
+  MPAMVPM6_EL2 = 58678,
+  MPAMVPM7_EL2 = 58679,
+  MPAMIDR_EL1 = 50468,
+  AMCR_EL0 = 56976,
+  AMCFGR_EL0 = 56977,
+  AMCGCR_EL0 = 56978,
+  AMUSERENR_EL0 = 56979,
+  AMCNTENCLR0_EL0 = 56980,
+  AMCNTENSET0_EL0 = 56981,
+  AMEVCNTR00_EL0 = 56992,
+  AMEVCNTR01_EL0 = 56993,
+  AMEVCNTR02_EL0 = 56994,
+  AMEVCNTR03_EL0 = 56995,
+  AMEVTYPER00_EL0 = 57008,
+  AMEVTYPER01_EL0 = 57009,
+  AMEVTYPER02_EL0 = 57010,
+  AMEVTYPER03_EL0 = 57011,
+  AMCNTENCLR1_EL0 = 56984,
+  AMCNTENSET1_EL0 = 56985,
+  AMEVCNTR10_EL0 = 57056,
+  AMEVCNTR11_EL0 = 57057,
+  AMEVCNTR12_EL0 = 57058,
+  AMEVCNTR13_EL0 = 57059,
+  AMEVCNTR14_EL0 = 57060,
+  AMEVCNTR15_EL0 = 57061,
+  AMEVCNTR16_EL0 = 57062,
+  AMEVCNTR17_EL0 = 57063,
+  AMEVCNTR18_EL0 = 57064,
+  AMEVCNTR19_EL0 = 57065,
+  AMEVCNTR110_EL0 = 57066,
+  AMEVCNTR111_EL0 = 57067,
+  AMEVCNTR112_EL0 = 57068,
+  AMEVCNTR113_EL0 = 57069,
+  AMEVCNTR114_EL0 = 57070,
+  AMEVCNTR115_EL0 = 57071,
+  AMEVTYPER10_EL0 = 57072,
+  AMEVTYPER11_EL0 = 57073,
+  AMEVTYPER12_EL0 = 57074,
+  AMEVTYPER13_EL0 = 57075,
+  AMEVTYPER14_EL0 = 57076,
+  AMEVTYPER15_EL0 = 57077,
+  AMEVTYPER16_EL0 = 57078,
+  AMEVTYPER17_EL0 = 57079,
+  AMEVTYPER18_EL0 = 57080,
+  AMEVTYPER19_EL0 = 57081,
+  AMEVTYPER110_EL0 = 57082,
+  AMEVTYPER111_EL0 = 57083,
+  AMEVTYPER112_EL0 = 57084,
+  AMEVTYPER113_EL0 = 57085,
+  AMEVTYPER114_EL0 = 57086,
+  AMEVTYPER115_EL0 = 57087,
+  TRFCR_EL1 = 49297,
+  TRFCR_EL2 = 57489,
+  TRFCR_EL12 = 59537,
+  DIT = 55829,
+  VNCR_EL2 = 57616,
+  ZCR_EL1 = 49296,
+  ZCR_EL2 = 57488,
+  ZCR_EL3 = 61584,
+  ZCR_EL12 = 59536,
+  SSBS = 55830,
+  TCO = 55831,
+  GCR_EL1 = 49286,
+  RGSR_EL1 = 49285,
+  TFSR_EL1 = 49840,
+  TFSR_EL2 = 58032,
+  TFSR_EL3 = 62128,
+  TFSR_EL12 = 60080,
+  TFSRE0_EL1 = 49841,
+  GMID_EL1 = 51204,
+  TRCRSR = 34896,
+  TRCEXTINSELR0 = 34884,
+  TRCEXTINSELR1 = 34892,
+  TRCEXTINSELR2 = 34900,
+  TRCEXTINSELR3 = 34908,
+  TRBLIMITR_EL1 = 50392,
+  TRBPTR_EL1 = 50393,
+  TRBBASER_EL1 = 50394,
+  TRBSR_EL1 = 50395,
+  TRBMAR_EL1 = 50396,
+  TRBTRG_EL1 = 50398,
+  TRBIDR_EL1 = 50399,
+  AMEVCNTVOFF00_EL2 = 59072,
+  AMEVCNTVOFF10_EL2 = 59088,
+  AMEVCNTVOFF01_EL2 = 59073,
+  AMEVCNTVOFF11_EL2 = 59089,
+  AMEVCNTVOFF02_EL2 = 59074,
+  AMEVCNTVOFF12_EL2 = 59090,
+  AMEVCNTVOFF03_EL2 = 59075,
+  AMEVCNTVOFF13_EL2 = 59091,
+  AMEVCNTVOFF04_EL2 = 59076,
+  AMEVCNTVOFF14_EL2 = 59092,
+  AMEVCNTVOFF05_EL2 = 59077,
+  AMEVCNTVOFF15_EL2 = 59093,
+  AMEVCNTVOFF06_EL2 = 59078,
+  AMEVCNTVOFF16_EL2 = 59094,
+  AMEVCNTVOFF07_EL2 = 59079,
+  AMEVCNTVOFF17_EL2 = 59095,
+  AMEVCNTVOFF08_EL2 = 59080,
+  AMEVCNTVOFF18_EL2 = 59096,
+  AMEVCNTVOFF09_EL2 = 59081,
+  AMEVCNTVOFF19_EL2 = 59097,
+  AMEVCNTVOFF010_EL2 = 59082,
+  AMEVCNTVOFF110_EL2 = 59098,
+  AMEVCNTVOFF011_EL2 = 59083,
+  AMEVCNTVOFF111_EL2 = 59099,
+  AMEVCNTVOFF012_EL2 = 59084,
+  AMEVCNTVOFF112_EL2 = 59100,
+  AMEVCNTVOFF013_EL2 = 59085,
+  AMEVCNTVOFF113_EL2 = 59101,
+  AMEVCNTVOFF014_EL2 = 59086,
+  AMEVCNTVOFF114_EL2 = 59102,
+  AMEVCNTVOFF015_EL2 = 59087,
+  AMEVCNTVOFF115_EL2 = 59103,
+  HFGRTR_EL2 = 57484,
+  HFGWTR_EL2 = 57485,
+  HFGITR_EL2 = 57486,
+  HDFGRTR_EL2 = 57740,
+  HDFGWTR_EL2 = 57741,
+  CNTSCALE_EL2 = 59140,
+  CNTISCALE_EL2 = 59141,
+  CNTPOFF_EL2 = 59142,
+  CNTVFRQ_EL2 = 59143,
+  CNTPCTSS_EL0 = 57093,
+  CNTVCTSS_EL0 = 57094,
+  ACCDATA_EL1 = 50821,
+  BRBCR_EL1 = 35968,
+  BRBCR_EL12 = 44160,
+  BRBCR_EL2 = 42112,
+  BRBFCR_EL1 = 35969,
+  BRBIDR0_EL1 = 35984,
+  BRBINFINJ_EL1 = 35976,
+  BRBSRCINJ_EL1 = 35977,
+  BRBTGTINJ_EL1 = 35978,
+  BRBTS_EL1 = 35970,
+  BRBINF0_EL1 = 35840,
+  BRBSRC0_EL1 = 35841,
+  BRBTGT0_EL1 = 35842,
+  BRBINF1_EL1 = 35848,
+  BRBSRC1_EL1 = 35849,
+  BRBTGT1_EL1 = 35850,
+  BRBINF2_EL1 = 35856,
+  BRBSRC2_EL1 = 35857,
+  BRBTGT2_EL1 = 35858,
+  BRBINF3_EL1 = 35864,
+  BRBSRC3_EL1 = 35865,
+  BRBTGT3_EL1 = 35866,
+  BRBINF4_EL1 = 35872,
+  BRBSRC4_EL1 = 35873,
+  BRBTGT4_EL1 = 35874,
+  BRBINF5_EL1 = 35880,
+  BRBSRC5_EL1 = 35881,
+  BRBTGT5_EL1 = 35882,
+  BRBINF6_EL1 = 35888,
+  BRBSRC6_EL1 = 35889,
+  BRBTGT6_EL1 = 35890,
+  BRBINF7_EL1 = 35896,
+  BRBSRC7_EL1 = 35897,
+  BRBTGT7_EL1 = 35898,
+  BRBINF8_EL1 = 35904,
+  BRBSRC8_EL1 = 35905,
+  BRBTGT8_EL1 = 35906,
+  BRBINF9_EL1 = 35912,
+  BRBSRC9_EL1 = 35913,
+  BRBTGT9_EL1 = 35914,
+  BRBINF10_EL1 = 35920,
+  BRBSRC10_EL1 = 35921,
+  BRBTGT10_EL1 = 35922,
+  BRBINF11_EL1 = 35928,
+  BRBSRC11_EL1 = 35929,
+  BRBTGT11_EL1 = 35930,
+  BRBINF12_EL1 = 35936,
+  BRBSRC12_EL1 = 35937,
+  BRBTGT12_EL1 = 35938,
+  BRBINF13_EL1 = 35944,
+  BRBSRC13_EL1 = 35945,
+  BRBTGT13_EL1 = 35946,
+  BRBINF14_EL1 = 35952,
+  BRBSRC14_EL1 = 35953,
+  BRBTGT14_EL1 = 35954,
+  BRBINF15_EL1 = 35960,
+  BRBSRC15_EL1 = 35961,
+  BRBTGT15_EL1 = 35962,
+  BRBINF16_EL1 = 35844,
+  BRBSRC16_EL1 = 35845,
+  BRBTGT16_EL1 = 35846,
+  BRBINF17_EL1 = 35852,
+  BRBSRC17_EL1 = 35853,
+  BRBTGT17_EL1 = 35854,
+  BRBINF18_EL1 = 35860,
+  BRBSRC18_EL1 = 35861,
+  BRBTGT18_EL1 = 35862,
+  BRBINF19_EL1 = 35868,
+  BRBSRC19_EL1 = 35869,
+  BRBTGT19_EL1 = 35870,
+  BRBINF20_EL1 = 35876,
+  BRBSRC20_EL1 = 35877,
+  BRBTGT20_EL1 = 35878,
+  BRBINF21_EL1 = 35884,
+  BRBSRC21_EL1 = 35885,
+  BRBTGT21_EL1 = 35886,
+  BRBINF22_EL1 = 35892,
+  BRBSRC22_EL1 = 35893,
+  BRBTGT22_EL1 = 35894,
+  BRBINF23_EL1 = 35900,
+  BRBSRC23_EL1 = 35901,
+  BRBTGT23_EL1 = 35902,
+  BRBINF24_EL1 = 35908,
+  BRBSRC24_EL1 = 35909,
+  BRBTGT24_EL1 = 35910,
+  BRBINF25_EL1 = 35916,
+  BRBSRC25_EL1 = 35917,
+  BRBTGT25_EL1 = 35918,
+  BRBINF26_EL1 = 35924,
+  BRBSRC26_EL1 = 35925,
+  BRBTGT26_EL1 = 35926,
+  BRBINF27_EL1 = 35932,
+  BRBSRC27_EL1 = 35933,
+  BRBTGT27_EL1 = 35934,
+  BRBINF28_EL1 = 35940,
+  BRBSRC28_EL1 = 35941,
+  BRBTGT28_EL1 = 35942,
+  BRBINF29_EL1 = 35948,
+  BRBSRC29_EL1 = 35949,
+  BRBTGT29_EL1 = 35950,
+  BRBINF30_EL1 = 35956,
+  BRBSRC30_EL1 = 35957,
+  BRBTGT30_EL1 = 35958,
+  BRBINF31_EL1 = 35964,
+  BRBSRC31_EL1 = 35965,
+  BRBTGT31_EL1 = 35966,
+  PMSNEVFR_EL1 = 50377,
+  CPM_IOACC_CTL_EL3 = 65424,
+};
+#endif
+
+#ifdef GET_TSB_DECL
+enum TSBValues {
+  csync = 0,
+};
+#endif
+
+#ifdef GET_TLBITable_DECL
+const TLBI *lookupTLBIByEncoding(uint16_t Encoding);
+const TLBI *lookupTLBIByName(StringRef Name);
+#endif
+
+#ifdef GET_TLBITable_IMPL
+constexpr TLBI TLBITable[] = {
+  { "IPAS2E1IS", 0x2401, true,  {  }  }, // 0
+  { "IPAS2E1ISnXS", 0x2481, true,  { AArch64::FeatureXS }  }, // 1
+  { "IPAS2LE1IS", 0x2405, true,  {  }  }, // 2
+  { "IPAS2LE1ISnXS", 0x2485, true,  { AArch64::FeatureXS }  }, // 3
+  { "VMALLE1IS", 0x418, false,  {  }  }, // 4
+  { "VMALLE1ISnXS", 0x498, false,  { AArch64::FeatureXS }  }, // 5
+  { "ALLE2IS", 0x2418, false,  {  }  }, // 6
+  { "ALLE2ISnXS", 0x2498, false,  { AArch64::FeatureXS }  }, // 7
+  { "ALLE3IS", 0x3418, false,  {  }  }, // 8
+  { "ALLE3ISnXS", 0x3498, false,  { AArch64::FeatureXS }  }, // 9
+  { "VAE1IS", 0x419, true,  {  }  }, // 10
+  { "VAE1ISnXS", 0x499, true,  { AArch64::FeatureXS }  }, // 11
+  { "VAE2IS", 0x2419, true,  {  }  }, // 12
+  { "VAE2ISnXS", 0x2499, true,  { AArch64::FeatureXS }  }, // 13
+  { "VAE3IS", 0x3419, true,  {  }  }, // 14
+  { "VAE3ISnXS", 0x3499, true,  { AArch64::FeatureXS }  }, // 15
+  { "ASIDE1IS", 0x41A, true,  {  }  }, // 16
+  { "ASIDE1ISnXS", 0x49A, true,  { AArch64::FeatureXS }  }, // 17
+  { "VAAE1IS", 0x41B, true,  {  }  }, // 18
+  { "VAAE1ISnXS", 0x49B, true,  { AArch64::FeatureXS }  }, // 19
+  { "ALLE1IS", 0x241C, false,  {  }  }, // 20
+  { "ALLE1ISnXS", 0x249C, false,  { AArch64::FeatureXS }  }, // 21
+  { "VALE1IS", 0x41D, true,  {  }  }, // 22
+  { "VALE1ISnXS", 0x49D, true,  { AArch64::FeatureXS }  }, // 23
+  { "VALE2IS", 0x241D, true,  {  }  }, // 24
+  { "VALE2ISnXS", 0x249D, true,  { AArch64::FeatureXS }  }, // 25
+  { "VALE3IS", 0x341D, true,  {  }  }, // 26
+  { "VALE3ISnXS", 0x349D, true,  { AArch64::FeatureXS }  }, // 27
+  { "VMALLS12E1IS", 0x241E, false,  {  }  }, // 28
+  { "VMALLS12E1ISnXS", 0x249E, false,  { AArch64::FeatureXS }  }, // 29
+  { "VAALE1IS", 0x41F, true,  {  }  }, // 30
+  { "VAALE1ISnXS", 0x49F, true,  { AArch64::FeatureXS }  }, // 31
+  { "IPAS2E1", 0x2421, true,  {  }  }, // 32
+  { "IPAS2E1nXS", 0x24A1, true,  { AArch64::FeatureXS }  }, // 33
+  { "IPAS2LE1", 0x2425, true,  {  }  }, // 34
+  { "IPAS2LE1nXS", 0x24A5, true,  { AArch64::FeatureXS }  }, // 35
+  { "VMALLE1", 0x438, false,  {  }  }, // 36
+  { "VMALLE1nXS", 0x4B8, false,  { AArch64::FeatureXS }  }, // 37
+  { "ALLE2", 0x2438, false,  {  }  }, // 38
+  { "ALLE2nXS", 0x24B8, false,  { AArch64::FeatureXS }  }, // 39
+  { "ALLE3", 0x3438, false,  {  }  }, // 40
+  { "ALLE3nXS", 0x34B8, false,  { AArch64::FeatureXS }  }, // 41
+  { "VAE1", 0x439, true,  {  }  }, // 42
+  { "VAE1nXS", 0x4B9, true,  { AArch64::FeatureXS }  }, // 43
+  { "VAE2", 0x2439, true,  {  }  }, // 44
+  { "VAE2nXS", 0x24B9, true,  { AArch64::FeatureXS }  }, // 45
+  { "VAE3", 0x3439, true,  {  }  }, // 46
+  { "VAE3nXS", 0x34B9, true,  { AArch64::FeatureXS }  }, // 47
+  { "ASIDE1", 0x43A, true,  {  }  }, // 48
+  { "ASIDE1nXS", 0x4BA, true,  { AArch64::FeatureXS }  }, // 49
+  { "VAAE1", 0x43B, true,  {  }  }, // 50
+  { "VAAE1nXS", 0x4BB, true,  { AArch64::FeatureXS }  }, // 51
+  { "ALLE1", 0x243C, false,  {  }  }, // 52
+  { "ALLE1nXS", 0x24BC, false,  { AArch64::FeatureXS }  }, // 53
+  { "VALE1", 0x43D, true,  {  }  }, // 54
+  { "VALE1nXS", 0x4BD, true,  { AArch64::FeatureXS }  }, // 55
+  { "VALE2", 0x243D, true,  {  }  }, // 56
+  { "VALE2nXS", 0x24BD, true,  { AArch64::FeatureXS }  }, // 57
+  { "VALE3", 0x343D, true,  {  }  }, // 58
+  { "VALE3nXS", 0x34BD, true,  { AArch64::FeatureXS }  }, // 59
+  { "VMALLS12E1", 0x243E, false,  {  }  }, // 60
+  { "VMALLS12E1nXS", 0x24BE, false,  { AArch64::FeatureXS }  }, // 61
+  { "VAALE1", 0x43F, true,  {  }  }, // 62
+  { "VAALE1nXS", 0x4BF, true,  { AArch64::FeatureXS }  }, // 63
+  { "VMALLE1OS", 0x408, false,  { AArch64::FeatureTLB_RMI }  }, // 64
+  { "VMALLE1OSnXS", 0x488, false,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 65
+  { "VAE1OS", 0x409, true,  { AArch64::FeatureTLB_RMI }  }, // 66
+  { "VAE1OSnXS", 0x489, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 67
+  { "ASIDE1OS", 0x40A, true,  { AArch64::FeatureTLB_RMI }  }, // 68
+  { "ASIDE1OSnXS", 0x48A, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 69
+  { "VAAE1OS", 0x40B, true,  { AArch64::FeatureTLB_RMI }  }, // 70
+  { "VAAE1OSnXS", 0x48B, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 71
+  { "VALE1OS", 0x40D, true,  { AArch64::FeatureTLB_RMI }  }, // 72
+  { "VALE1OSnXS", 0x48D, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 73
+  { "VAALE1OS", 0x40F, true,  { AArch64::FeatureTLB_RMI }  }, // 74
+  { "VAALE1OSnXS", 0x48F, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 75
+  { "IPAS2E1OS", 0x2420, true,  { AArch64::FeatureTLB_RMI }  }, // 76
+  { "IPAS2E1OSnXS", 0x24A0, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 77
+  { "IPAS2LE1OS", 0x2424, true,  { AArch64::FeatureTLB_RMI }  }, // 78
+  { "IPAS2LE1OSnXS", 0x24A4, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 79
+  { "VAE2OS", 0x2409, true,  { AArch64::FeatureTLB_RMI }  }, // 80
+  { "VAE2OSnXS", 0x2489, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 81
+  { "VALE2OS", 0x240D, true,  { AArch64::FeatureTLB_RMI }  }, // 82
+  { "VALE2OSnXS", 0x248D, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 83
+  { "VMALLS12E1OS", 0x240E, false,  { AArch64::FeatureTLB_RMI }  }, // 84
+  { "VMALLS12E1OSnXS", 0x248E, false,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 85
+  { "VAE3OS", 0x3409, true,  { AArch64::FeatureTLB_RMI }  }, // 86
+  { "VAE3OSnXS", 0x3489, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 87
+  { "VALE3OS", 0x340D, true,  { AArch64::FeatureTLB_RMI }  }, // 88
+  { "VALE3OSnXS", 0x348D, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 89
+  { "ALLE2OS", 0x2408, false,  { AArch64::FeatureTLB_RMI }  }, // 90
+  { "ALLE2OSnXS", 0x2488, false,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 91
+  { "ALLE1OS", 0x240C, false,  { AArch64::FeatureTLB_RMI }  }, // 92
+  { "ALLE1OSnXS", 0x248C, false,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 93
+  { "ALLE3OS", 0x3408, false,  { AArch64::FeatureTLB_RMI }  }, // 94
+  { "ALLE3OSnXS", 0x3488, false,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 95
+  { "RVAE1", 0x431, true,  { AArch64::FeatureTLB_RMI }  }, // 96
+  { "RVAE1nXS", 0x4B1, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 97
+  { "RVAAE1", 0x433, true,  { AArch64::FeatureTLB_RMI }  }, // 98
+  { "RVAAE1nXS", 0x4B3, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 99
+  { "RVALE1", 0x435, true,  { AArch64::FeatureTLB_RMI }  }, // 100
+  { "RVALE1nXS", 0x4B5, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 101
+  { "RVAALE1", 0x437, true,  { AArch64::FeatureTLB_RMI }  }, // 102
+  { "RVAALE1nXS", 0x4B7, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 103
+  { "RVAE1IS", 0x411, true,  { AArch64::FeatureTLB_RMI }  }, // 104
+  { "RVAE1ISnXS", 0x491, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 105
+  { "RVAAE1IS", 0x413, true,  { AArch64::FeatureTLB_RMI }  }, // 106
+  { "RVAAE1ISnXS", 0x493, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 107
+  { "RVALE1IS", 0x415, true,  { AArch64::FeatureTLB_RMI }  }, // 108
+  { "RVALE1ISnXS", 0x495, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 109
+  { "RVAALE1IS", 0x417, true,  { AArch64::FeatureTLB_RMI }  }, // 110
+  { "RVAALE1ISnXS", 0x497, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 111
+  { "RVAE1OS", 0x429, true,  { AArch64::FeatureTLB_RMI }  }, // 112
+  { "RVAE1OSnXS", 0x4A9, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 113
+  { "RVAAE1OS", 0x42B, true,  { AArch64::FeatureTLB_RMI }  }, // 114
+  { "RVAAE1OSnXS", 0x4AB, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 115
+  { "RVALE1OS", 0x42D, true,  { AArch64::FeatureTLB_RMI }  }, // 116
+  { "RVALE1OSnXS", 0x4AD, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 117
+  { "RVAALE1OS", 0x42F, true,  { AArch64::FeatureTLB_RMI }  }, // 118
+  { "RVAALE1OSnXS", 0x4AF, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 119
+  { "RIPAS2E1IS", 0x2402, true,  { AArch64::FeatureTLB_RMI }  }, // 120
+  { "RIPAS2E1ISnXS", 0x2482, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 121
+  { "RIPAS2LE1IS", 0x2406, true,  { AArch64::FeatureTLB_RMI }  }, // 122
+  { "RIPAS2LE1ISnXS", 0x2486, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 123
+  { "RIPAS2E1", 0x2422, true,  { AArch64::FeatureTLB_RMI }  }, // 124
+  { "RIPAS2E1nXS", 0x24A2, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 125
+  { "RIPAS2LE1", 0x2426, true,  { AArch64::FeatureTLB_RMI }  }, // 126
+  { "RIPAS2LE1nXS", 0x24A6, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 127
+  { "RIPAS2E1OS", 0x2423, true,  { AArch64::FeatureTLB_RMI }  }, // 128
+  { "RIPAS2E1OSnXS", 0x24A3, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 129
+  { "RIPAS2LE1OS", 0x2427, true,  { AArch64::FeatureTLB_RMI }  }, // 130
+  { "RIPAS2LE1OSnXS", 0x24A7, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 131
+  { "RVAE2", 0x2431, true,  { AArch64::FeatureTLB_RMI }  }, // 132
+  { "RVAE2nXS", 0x24B1, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 133
+  { "RVALE2", 0x2435, true,  { AArch64::FeatureTLB_RMI }  }, // 134
+  { "RVALE2nXS", 0x24B5, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 135
+  { "RVAE2IS", 0x2411, true,  { AArch64::FeatureTLB_RMI }  }, // 136
+  { "RVAE2ISnXS", 0x2491, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 137
+  { "RVALE2IS", 0x2415, true,  { AArch64::FeatureTLB_RMI }  }, // 138
+  { "RVALE2ISnXS", 0x2495, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 139
+  { "RVAE2OS", 0x2429, true,  { AArch64::FeatureTLB_RMI }  }, // 140
+  { "RVAE2OSnXS", 0x24A9, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 141
+  { "RVALE2OS", 0x242D, true,  { AArch64::FeatureTLB_RMI }  }, // 142
+  { "RVALE2OSnXS", 0x24AD, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 143
+  { "RVAE3", 0x3431, true,  { AArch64::FeatureTLB_RMI }  }, // 144
+  { "RVAE3nXS", 0x34B1, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 145
+  { "RVALE3", 0x3435, true,  { AArch64::FeatureTLB_RMI }  }, // 146
+  { "RVALE3nXS", 0x34B5, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 147
+  { "RVAE3IS", 0x3411, true,  { AArch64::FeatureTLB_RMI }  }, // 148
+  { "RVAE3ISnXS", 0x3491, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 149
+  { "RVALE3IS", 0x3415, true,  { AArch64::FeatureTLB_RMI }  }, // 150
+  { "RVALE3ISnXS", 0x3495, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 151
+  { "RVAE3OS", 0x3429, true,  { AArch64::FeatureTLB_RMI }  }, // 152
+  { "RVAE3OSnXS", 0x34A9, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 153
+  { "RVALE3OS", 0x342D, true,  { AArch64::FeatureTLB_RMI }  }, // 154
+  { "RVALE3OSnXS", 0x34AD, true,  { AArch64::FeatureTLB_RMI, AArch64::FeatureXS }  }, // 155
+ };
+
+const TLBI *lookupTLBIByEncoding(uint16_t Encoding) {
+  struct IndexType {
+    uint16_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x408, 64 },
+    { 0x409, 66 },
+    { 0x40A, 68 },
+    { 0x40B, 70 },
+    { 0x40D, 72 },
+    { 0x40F, 74 },
+    { 0x411, 104 },
+    { 0x413, 106 },
+    { 0x415, 108 },
+    { 0x417, 110 },
+    { 0x418, 4 },
+    { 0x419, 10 },
+    { 0x41A, 16 },
+    { 0x41B, 18 },
+    { 0x41D, 22 },
+    { 0x41F, 30 },
+    { 0x429, 112 },
+    { 0x42B, 114 },
+    { 0x42D, 116 },
+    { 0x42F, 118 },
+    { 0x431, 96 },
+    { 0x433, 98 },
+    { 0x435, 100 },
+    { 0x437, 102 },
+    { 0x438, 36 },
+    { 0x439, 42 },
+    { 0x43A, 48 },
+    { 0x43B, 50 },
+    { 0x43D, 54 },
+    { 0x43F, 62 },
+    { 0x488, 65 },
+    { 0x489, 67 },
+    { 0x48A, 69 },
+    { 0x48B, 71 },
+    { 0x48D, 73 },
+    { 0x48F, 75 },
+    { 0x491, 105 },
+    { 0x493, 107 },
+    { 0x495, 109 },
+    { 0x497, 111 },
+    { 0x498, 5 },
+    { 0x499, 11 },
+    { 0x49A, 17 },
+    { 0x49B, 19 },
+    { 0x49D, 23 },
+    { 0x49F, 31 },
+    { 0x4A9, 113 },
+    { 0x4AB, 115 },
+    { 0x4AD, 117 },
+    { 0x4AF, 119 },
+    { 0x4B1, 97 },
+    { 0x4B3, 99 },
+    { 0x4B5, 101 },
+    { 0x4B7, 103 },
+    { 0x4B8, 37 },
+    { 0x4B9, 43 },
+    { 0x4BA, 49 },
+    { 0x4BB, 51 },
+    { 0x4BD, 55 },
+    { 0x4BF, 63 },
+    { 0x2401, 0 },
+    { 0x2402, 120 },
+    { 0x2405, 2 },
+    { 0x2406, 122 },
+    { 0x2408, 90 },
+    { 0x2409, 80 },
+    { 0x240C, 92 },
+    { 0x240D, 82 },
+    { 0x240E, 84 },
+    { 0x2411, 136 },
+    { 0x2415, 138 },
+    { 0x2418, 6 },
+    { 0x2419, 12 },
+    { 0x241C, 20 },
+    { 0x241D, 24 },
+    { 0x241E, 28 },
+    { 0x2420, 76 },
+    { 0x2421, 32 },
+    { 0x2422, 124 },
+    { 0x2423, 128 },
+    { 0x2424, 78 },
+    { 0x2425, 34 },
+    { 0x2426, 126 },
+    { 0x2427, 130 },
+    { 0x2429, 140 },
+    { 0x242D, 142 },
+    { 0x2431, 132 },
+    { 0x2435, 134 },
+    { 0x2438, 38 },
+    { 0x2439, 44 },
+    { 0x243C, 52 },
+    { 0x243D, 56 },
+    { 0x243E, 60 },
+    { 0x2481, 1 },
+    { 0x2482, 121 },
+    { 0x2485, 3 },
+    { 0x2486, 123 },
+    { 0x2488, 91 },
+    { 0x2489, 81 },
+    { 0x248C, 93 },
+    { 0x248D, 83 },
+    { 0x248E, 85 },
+    { 0x2491, 137 },
+    { 0x2495, 139 },
+    { 0x2498, 7 },
+    { 0x2499, 13 },
+    { 0x249C, 21 },
+    { 0x249D, 25 },
+    { 0x249E, 29 },
+    { 0x24A0, 77 },
+    { 0x24A1, 33 },
+    { 0x24A2, 125 },
+    { 0x24A3, 129 },
+    { 0x24A4, 79 },
+    { 0x24A5, 35 },
+    { 0x24A6, 127 },
+    { 0x24A7, 131 },
+    { 0x24A9, 141 },
+    { 0x24AD, 143 },
+    { 0x24B1, 133 },
+    { 0x24B5, 135 },
+    { 0x24B8, 39 },
+    { 0x24B9, 45 },
+    { 0x24BC, 53 },
+    { 0x24BD, 57 },
+    { 0x24BE, 61 },
+    { 0x3408, 94 },
+    { 0x3409, 86 },
+    { 0x340D, 88 },
+    { 0x3411, 148 },
+    { 0x3415, 150 },
+    { 0x3418, 8 },
+    { 0x3419, 14 },
+    { 0x341D, 26 },
+    { 0x3429, 152 },
+    { 0x342D, 154 },
+    { 0x3431, 144 },
+    { 0x3435, 146 },
+    { 0x3438, 40 },
+    { 0x3439, 46 },
+    { 0x343D, 58 },
+    { 0x3488, 95 },
+    { 0x3489, 87 },
+    { 0x348D, 89 },
+    { 0x3491, 149 },
+    { 0x3495, 151 },
+    { 0x3498, 9 },
+    { 0x3499, 15 },
+    { 0x349D, 27 },
+    { 0x34A9, 153 },
+    { 0x34AD, 155 },
+    { 0x34B1, 145 },
+    { 0x34B5, 147 },
+    { 0x34B8, 41 },
+    { 0x34B9, 47 },
+    { 0x34BD, 59 },
+  };
+
+  struct KeyType {
+    uint16_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &TLBITable[Idx->_index];
+}
+
+const TLBI *lookupTLBIByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "ALLE1", 52 },
+    { "ALLE1IS", 20 },
+    { "ALLE1ISNXS", 21 },
+    { "ALLE1NXS", 53 },
+    { "ALLE1OS", 92 },
+    { "ALLE1OSNXS", 93 },
+    { "ALLE2", 38 },
+    { "ALLE2IS", 6 },
+    { "ALLE2ISNXS", 7 },
+    { "ALLE2NXS", 39 },
+    { "ALLE2OS", 90 },
+    { "ALLE2OSNXS", 91 },
+    { "ALLE3", 40 },
+    { "ALLE3IS", 8 },
+    { "ALLE3ISNXS", 9 },
+    { "ALLE3NXS", 41 },
+    { "ALLE3OS", 94 },
+    { "ALLE3OSNXS", 95 },
+    { "ASIDE1", 48 },
+    { "ASIDE1IS", 16 },
+    { "ASIDE1ISNXS", 17 },
+    { "ASIDE1NXS", 49 },
+    { "ASIDE1OS", 68 },
+    { "ASIDE1OSNXS", 69 },
+    { "IPAS2E1", 32 },
+    { "IPAS2E1IS", 0 },
+    { "IPAS2E1ISNXS", 1 },
+    { "IPAS2E1NXS", 33 },
+    { "IPAS2E1OS", 76 },
+    { "IPAS2E1OSNXS", 77 },
+    { "IPAS2LE1", 34 },
+    { "IPAS2LE1IS", 2 },
+    { "IPAS2LE1ISNXS", 3 },
+    { "IPAS2LE1NXS", 35 },
+    { "IPAS2LE1OS", 78 },
+    { "IPAS2LE1OSNXS", 79 },
+    { "RIPAS2E1", 124 },
+    { "RIPAS2E1IS", 120 },
+    { "RIPAS2E1ISNXS", 121 },
+    { "RIPAS2E1NXS", 125 },
+    { "RIPAS2E1OS", 128 },
+    { "RIPAS2E1OSNXS", 129 },
+    { "RIPAS2LE1", 126 },
+    { "RIPAS2LE1IS", 122 },
+    { "RIPAS2LE1ISNXS", 123 },
+    { "RIPAS2LE1NXS", 127 },
+    { "RIPAS2LE1OS", 130 },
+    { "RIPAS2LE1OSNXS", 131 },
+    { "RVAAE1", 98 },
+    { "RVAAE1IS", 106 },
+    { "RVAAE1ISNXS", 107 },
+    { "RVAAE1NXS", 99 },
+    { "RVAAE1OS", 114 },
+    { "RVAAE1OSNXS", 115 },
+    { "RVAALE1", 102 },
+    { "RVAALE1IS", 110 },
+    { "RVAALE1ISNXS", 111 },
+    { "RVAALE1NXS", 103 },
+    { "RVAALE1OS", 118 },
+    { "RVAALE1OSNXS", 119 },
+    { "RVAE1", 96 },
+    { "RVAE1IS", 104 },
+    { "RVAE1ISNXS", 105 },
+    { "RVAE1NXS", 97 },
+    { "RVAE1OS", 112 },
+    { "RVAE1OSNXS", 113 },
+    { "RVAE2", 132 },
+    { "RVAE2IS", 136 },
+    { "RVAE2ISNXS", 137 },
+    { "RVAE2NXS", 133 },
+    { "RVAE2OS", 140 },
+    { "RVAE2OSNXS", 141 },
+    { "RVAE3", 144 },
+    { "RVAE3IS", 148 },
+    { "RVAE3ISNXS", 149 },
+    { "RVAE3NXS", 145 },
+    { "RVAE3OS", 152 },
+    { "RVAE3OSNXS", 153 },
+    { "RVALE1", 100 },
+    { "RVALE1IS", 108 },
+    { "RVALE1ISNXS", 109 },
+    { "RVALE1NXS", 101 },
+    { "RVALE1OS", 116 },
+    { "RVALE1OSNXS", 117 },
+    { "RVALE2", 134 },
+    { "RVALE2IS", 138 },
+    { "RVALE2ISNXS", 139 },
+    { "RVALE2NXS", 135 },
+    { "RVALE2OS", 142 },
+    { "RVALE2OSNXS", 143 },
+    { "RVALE3", 146 },
+    { "RVALE3IS", 150 },
+    { "RVALE3ISNXS", 151 },
+    { "RVALE3NXS", 147 },
+    { "RVALE3OS", 154 },
+    { "RVALE3OSNXS", 155 },
+    { "VAAE1", 50 },
+    { "VAAE1IS", 18 },
+    { "VAAE1ISNXS", 19 },
+    { "VAAE1NXS", 51 },
+    { "VAAE1OS", 70 },
+    { "VAAE1OSNXS", 71 },
+    { "VAALE1", 62 },
+    { "VAALE1IS", 30 },
+    { "VAALE1ISNXS", 31 },
+    { "VAALE1NXS", 63 },
+    { "VAALE1OS", 74 },
+    { "VAALE1OSNXS", 75 },
+    { "VAE1", 42 },
+    { "VAE1IS", 10 },
+    { "VAE1ISNXS", 11 },
+    { "VAE1NXS", 43 },
+    { "VAE1OS", 66 },
+    { "VAE1OSNXS", 67 },
+    { "VAE2", 44 },
+    { "VAE2IS", 12 },
+    { "VAE2ISNXS", 13 },
+    { "VAE2NXS", 45 },
+    { "VAE2OS", 80 },
+    { "VAE2OSNXS", 81 },
+    { "VAE3", 46 },
+    { "VAE3IS", 14 },
+    { "VAE3ISNXS", 15 },
+    { "VAE3NXS", 47 },
+    { "VAE3OS", 86 },
+    { "VAE3OSNXS", 87 },
+    { "VALE1", 54 },
+    { "VALE1IS", 22 },
+    { "VALE1ISNXS", 23 },
+    { "VALE1NXS", 55 },
+    { "VALE1OS", 72 },
+    { "VALE1OSNXS", 73 },
+    { "VALE2", 56 },
+    { "VALE2IS", 24 },
+    { "VALE2ISNXS", 25 },
+    { "VALE2NXS", 57 },
+    { "VALE2OS", 82 },
+    { "VALE2OSNXS", 83 },
+    { "VALE3", 58 },
+    { "VALE3IS", 26 },
+    { "VALE3ISNXS", 27 },
+    { "VALE3NXS", 59 },
+    { "VALE3OS", 88 },
+    { "VALE3OSNXS", 89 },
+    { "VMALLE1", 36 },
+    { "VMALLE1IS", 4 },
+    { "VMALLE1ISNXS", 5 },
+    { "VMALLE1NXS", 37 },
+    { "VMALLE1OS", 64 },
+    { "VMALLE1OSNXS", 65 },
+    { "VMALLS12E1", 60 },
+    { "VMALLS12E1IS", 28 },
+    { "VMALLS12E1ISNXS", 29 },
+    { "VMALLS12E1NXS", 61 },
+    { "VMALLS12E1OS", 84 },
+    { "VMALLS12E1OSNXS", 85 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &TLBITable[Idx->_index];
+}
+#endif
+
+#ifdef GET_AT_DECL
+const AT *lookupATByName(StringRef Name);
+const AT *lookupATByEncoding(uint16_t Encoding);
+#endif
+
+#ifdef GET_AT_IMPL
+constexpr AT ATsList[] = {
+  { "S1E1R", 0x3C0,  {}  }, // 0
+  { "S1E2R", 0x23C0,  {}  }, // 1
+  { "S1E3R", 0x33C0,  {}  }, // 2
+  { "S1E1W", 0x3C1,  {}  }, // 3
+  { "S1E2W", 0x23C1,  {}  }, // 4
+  { "S1E3W", 0x33C1,  {}  }, // 5
+  { "S1E0R", 0x3C2,  {}  }, // 6
+  { "S1E0W", 0x3C3,  {}  }, // 7
+  { "S12E1R", 0x23C4,  {}  }, // 8
+  { "S12E1W", 0x23C5,  {}  }, // 9
+  { "S12E0R", 0x23C6,  {}  }, // 10
+  { "S12E0W", 0x23C7,  {}  }, // 11
+  { "S1E1RP", 0x3C8,  {AArch64::FeaturePAN_RWV}  }, // 12
+  { "S1E1WP", 0x3C9,  {AArch64::FeaturePAN_RWV}  }, // 13
+ };
+
+const AT *lookupATByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "S12E0R", 10 },
+    { "S12E0W", 11 },
+    { "S12E1R", 8 },
+    { "S12E1W", 9 },
+    { "S1E0R", 6 },
+    { "S1E0W", 7 },
+    { "S1E1R", 0 },
+    { "S1E1RP", 12 },
+    { "S1E1W", 3 },
+    { "S1E1WP", 13 },
+    { "S1E2R", 1 },
+    { "S1E2W", 4 },
+    { "S1E3R", 2 },
+    { "S1E3W", 5 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &ATsList[Idx->_index];
+}
+
+const AT *lookupATByEncoding(uint16_t Encoding) {
+  struct IndexType {
+    uint16_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x3C0, 0 },
+    { 0x3C1, 3 },
+    { 0x3C2, 6 },
+    { 0x3C3, 7 },
+    { 0x3C8, 12 },
+    { 0x3C9, 13 },
+    { 0x23C0, 1 },
+    { 0x23C1, 4 },
+    { 0x23C4, 8 },
+    { 0x23C5, 9 },
+    { 0x23C6, 10 },
+    { 0x23C7, 11 },
+    { 0x33C0, 2 },
+    { 0x33C1, 5 },
+  };
+
+  struct KeyType {
+    uint16_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &ATsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_BTI_DECL
+const BTI *lookupBTIByName(StringRef Name);
+const BTI *lookupBTIByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_BTI_IMPL
+constexpr BTI BTIsList[] = {
+  { "c", 0x1 }, // 0
+  { "j", 0x2 }, // 1
+  { "jc", 0x3 }, // 2
+ };
+
+const BTI *lookupBTIByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "C", 0 },
+    { "J", 1 },
+    { "JC", 2 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &BTIsList[Idx->_index];
+}
+
+const BTI *lookupBTIByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x1, 0 },
+    { 0x2, 1 },
+    { 0x3, 2 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &BTIsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_DB_DECL
+const DB *lookupDBByName(StringRef Name);
+const DB *lookupDBByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_DB_IMPL
+constexpr DB DBsList[] = {
+  { "oshld", 0x1 }, // 0
+  { "oshst", 0x2 }, // 1
+  { "osh", 0x3 }, // 2
+  { "nshld", 0x5 }, // 3
+  { "nshst", 0x6 }, // 4
+  { "nsh", 0x7 }, // 5
+  { "ishld", 0x9 }, // 6
+  { "ishst", 0xA }, // 7
+  { "ish", 0xB }, // 8
+  { "ld", 0xD }, // 9
+  { "st", 0xE }, // 10
+  { "sy", 0xF }, // 11
+ };
+
+const DB *lookupDBByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "ISH", 8 },
+    { "ISHLD", 6 },
+    { "ISHST", 7 },
+    { "LD", 9 },
+    { "NSH", 5 },
+    { "NSHLD", 3 },
+    { "NSHST", 4 },
+    { "OSH", 2 },
+    { "OSHLD", 0 },
+    { "OSHST", 1 },
+    { "ST", 10 },
+    { "SY", 11 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &DBsList[Idx->_index];
+}
+
+const DB *lookupDBByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x1, 0 },
+    { 0x2, 1 },
+    { 0x3, 2 },
+    { 0x5, 3 },
+    { 0x6, 4 },
+    { 0x7, 5 },
+    { 0x9, 6 },
+    { 0xA, 7 },
+    { 0xB, 8 },
+    { 0xD, 9 },
+    { 0xE, 10 },
+    { 0xF, 11 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &DBsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_DBNXS_DECL
+const DBnXS *lookupDBnXSByName(StringRef Name);
+const DBnXS *lookupDBnXSByEncoding(uint8_t Encoding);
+const DBnXS *lookupDBnXSByImmValue(uint8_t ImmValue);
+#endif
+
+#ifdef GET_DBNXS_IMPL
+constexpr DBnXS DBnXSsList[] = {
+  { "oshnxs", 0x3, 0x10,  {AArch64::FeatureXS}  }, // 0
+  { "nshnxs", 0x7, 0x14,  {AArch64::FeatureXS}  }, // 1
+  { "ishnxs", 0xB, 0x18,  {AArch64::FeatureXS}  }, // 2
+  { "synxs", 0xF, 0x1C,  {AArch64::FeatureXS}  }, // 3
+ };
+
+const DBnXS *lookupDBnXSByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "ISHNXS", 2 },
+    { "NSHNXS", 1 },
+    { "OSHNXS", 0 },
+    { "SYNXS", 3 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &DBnXSsList[Idx->_index];
+}
+
+const DBnXS *lookupDBnXSByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x3, 0 },
+    { 0x7, 1 },
+    { 0xB, 2 },
+    { 0xF, 3 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &DBnXSsList[Idx->_index];
+}
+
+const DBnXS *lookupDBnXSByImmValue(uint8_t ImmValue) {
+  struct IndexType {
+    uint8_t ImmValue;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x10, 0 },
+    { 0x14, 1 },
+    { 0x18, 2 },
+    { 0x1C, 3 },
+  };
+
+  struct KeyType {
+    uint8_t ImmValue;
+  };
+  KeyType Key = {ImmValue};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.ImmValue < RHS.ImmValue)
+        return true;
+      if (LHS.ImmValue > RHS.ImmValue)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.ImmValue != Idx->ImmValue)
+    return nullptr;
+  return &DBnXSsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_DC_DECL
+const DC *lookupDCByName(StringRef Name);
+const DC *lookupDCByEncoding(uint16_t Encoding);
+#endif
+
+#ifdef GET_DC_IMPL
+constexpr DC DCsList[] = {
+  { "ZVA", 0x1BA1,  {}  }, // 0
+  { "IVAC", 0x3B1,  {}  }, // 1
+  { "ISW", 0x3B2,  {}  }, // 2
+  { "CVAC", 0x1BD1,  {}  }, // 3
+  { "CSW", 0x3D2,  {}  }, // 4
+  { "CVAU", 0x1BD9,  {}  }, // 5
+  { "CIVAC", 0x1BF1,  {}  }, // 6
+  { "CISW", 0x3F2,  {}  }, // 7
+  { "CVAP", 0x1BE1,  {AArch64::FeatureCCPP}  }, // 8
+  { "CVADP", 0x1BE9,  {AArch64::FeatureCacheDeepPersist}  }, // 9
+  { "IGVAC", 0x3B3,  {AArch64::FeatureMTE}  }, // 10
+  { "IGSW", 0x3B4,  {AArch64::FeatureMTE}  }, // 11
+  { "CGSW", 0x3D4,  {AArch64::FeatureMTE}  }, // 12
+  { "CIGSW", 0x3F4,  {AArch64::FeatureMTE}  }, // 13
+  { "CGVAC", 0x1BD3,  {AArch64::FeatureMTE}  }, // 14
+  { "CGVAP", 0x1BE3,  {AArch64::FeatureMTE}  }, // 15
+  { "CGVADP", 0x1BEB,  {AArch64::FeatureMTE}  }, // 16
+  { "CIGVAC", 0x1BF3,  {AArch64::FeatureMTE}  }, // 17
+  { "GVA", 0x1BA3,  {AArch64::FeatureMTE}  }, // 18
+  { "IGDVAC", 0x3B5,  {AArch64::FeatureMTE}  }, // 19
+  { "IGDSW", 0x3B6,  {AArch64::FeatureMTE}  }, // 20
+  { "CGDSW", 0x3D6,  {AArch64::FeatureMTE}  }, // 21
+  { "CIGDSW", 0x3F6,  {AArch64::FeatureMTE}  }, // 22
+  { "CGDVAC", 0x1BD5,  {AArch64::FeatureMTE}  }, // 23
+  { "CGDVAP", 0x1BE5,  {AArch64::FeatureMTE}  }, // 24
+  { "CGDVADP", 0x1BED,  {AArch64::FeatureMTE}  }, // 25
+  { "CIGDVAC", 0x1BF5,  {AArch64::FeatureMTE}  }, // 26
+  { "GZVA", 0x1BA4,  {AArch64::FeatureMTE}  }, // 27
+ };
+
+const DC *lookupDCByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "CGDSW", 21 },
+    { "CGDVAC", 23 },
+    { "CGDVADP", 25 },
+    { "CGDVAP", 24 },
+    { "CGSW", 12 },
+    { "CGVAC", 14 },
+    { "CGVADP", 16 },
+    { "CGVAP", 15 },
+    { "CIGDSW", 22 },
+    { "CIGDVAC", 26 },
+    { "CIGSW", 13 },
+    { "CIGVAC", 17 },
+    { "CISW", 7 },
+    { "CIVAC", 6 },
+    { "CSW", 4 },
+    { "CVAC", 3 },
+    { "CVADP", 9 },
+    { "CVAP", 8 },
+    { "CVAU", 5 },
+    { "GVA", 18 },
+    { "GZVA", 27 },
+    { "IGDSW", 20 },
+    { "IGDVAC", 19 },
+    { "IGSW", 11 },
+    { "IGVAC", 10 },
+    { "ISW", 2 },
+    { "IVAC", 1 },
+    { "ZVA", 0 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &DCsList[Idx->_index];
+}
+
+const DC *lookupDCByEncoding(uint16_t Encoding) {
+  struct IndexType {
+    uint16_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x3B1, 1 },
+    { 0x3B2, 2 },
+    { 0x3B3, 10 },
+    { 0x3B4, 11 },
+    { 0x3B5, 19 },
+    { 0x3B6, 20 },
+    { 0x3D2, 4 },
+    { 0x3D4, 12 },
+    { 0x3D6, 21 },
+    { 0x3F2, 7 },
+    { 0x3F4, 13 },
+    { 0x3F6, 22 },
+    { 0x1BA1, 0 },
+    { 0x1BA3, 18 },
+    { 0x1BA4, 27 },
+    { 0x1BD1, 3 },
+    { 0x1BD3, 14 },
+    { 0x1BD5, 23 },
+    { 0x1BD9, 5 },
+    { 0x1BE1, 8 },
+    { 0x1BE3, 15 },
+    { 0x1BE5, 24 },
+    { 0x1BE9, 9 },
+    { 0x1BEB, 16 },
+    { 0x1BED, 25 },
+    { 0x1BF1, 6 },
+    { 0x1BF3, 17 },
+    { 0x1BF5, 26 },
+  };
+
+  struct KeyType {
+    uint16_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &DCsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_EXACTFPIMM_DECL
+const ExactFPImm *lookupExactFPImmByEnum(uint8_t Enum);
+const ExactFPImm *lookupExactFPImmByRepr(StringRef Repr);
+#endif
+
+#ifdef GET_EXACTFPIMM_IMPL
+constexpr ExactFPImm ExactFPImmsList[] = {
+  { "zero", 0x0, "0.0" }, // 0
+  { "half", 0x1, "0.5" }, // 1
+  { "one", 0x2, "1.0" }, // 2
+  { "two", 0x3, "2.0" }, // 3
+ };
+
+const ExactFPImm *lookupExactFPImmByEnum(uint8_t Enum) {
+  struct IndexType {
+    uint8_t Enum;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x0, 0 },
+    { 0x1, 1 },
+    { 0x2, 2 },
+    { 0x3, 3 },
+  };
+
+  auto Table = makeArrayRef(Index);
+  size_t Idx = Enum;
+  return Idx >= Table.size() ? nullptr : &ExactFPImmsList[Table[Idx]._index];
+}
+
+const ExactFPImm *lookupExactFPImmByRepr(StringRef Repr) {
+  struct IndexType {
+    const char * Repr;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "0.0", 0 },
+    { "0.5", 1 },
+    { "1.0", 2 },
+    { "2.0", 3 },
+  };
+
+  struct KeyType {
+    std::string Repr;
+  };
+  KeyType Key = {Repr.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpRepr = StringRef(LHS.Repr).compare(RHS.Repr);
+      if (CmpRepr < 0) return true;
+      if (CmpRepr > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Repr != Idx->Repr)
+    return nullptr;
+  return &ExactFPImmsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_IC_DECL
+const IC *lookupICByName(StringRef Name);
+const IC *lookupICByEncoding(uint16_t Encoding);
+#endif
+
+#ifdef GET_IC_IMPL
+constexpr IC ICsList[] = {
+  { "IALLUIS", 0x388, false }, // 0
+  { "IALLU", 0x3A8, false }, // 1
+  { "IVAU", 0x1BA9, true }, // 2
+ };
+
+const IC *lookupICByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "IALLU", 1 },
+    { "IALLUIS", 0 },
+    { "IVAU", 2 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &ICsList[Idx->_index];
+}
+
+const IC *lookupICByEncoding(uint16_t Encoding) {
+  struct IndexType {
+    uint16_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x388, 0 },
+    { 0x3A8, 1 },
+    { 0x1BA9, 2 },
+  };
+
+  struct KeyType {
+    uint16_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &ICsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_ISB_DECL
+const ISB *lookupISBByName(StringRef Name);
+const ISB *lookupISBByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_ISB_IMPL
+constexpr ISB ISBsList[] = {
+  { "sy", 0xF }, // 0
+ };
+
+const ISB *lookupISBByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "SY", 0 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &ISBsList[Idx->_index];
+}
+
+const ISB *lookupISBByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0xF, 0 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &ISBsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_PRCTX_DECL
+const PRCTX *lookupPRCTXByName(StringRef Name);
+const PRCTX *lookupPRCTXByEncoding(uint16_t Encoding);
+#endif
+
+#ifdef GET_PRCTX_IMPL
+constexpr PRCTX PRCTXsList[] = {
+  { "RCTX", 0x373, true,  {AArch64::FeaturePredRes}  }, // 0
+ };
+
+const PRCTX *lookupPRCTXByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "RCTX", 0 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &PRCTXsList[Idx->_index];
+}
+
+const PRCTX *lookupPRCTXByEncoding(uint16_t Encoding) {
+  struct IndexType {
+    uint16_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x373, 0 },
+  };
+
+  struct KeyType {
+    uint16_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &PRCTXsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_PRFM_DECL
+const PRFM *lookupPRFMByName(StringRef Name);
+const PRFM *lookupPRFMByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_PRFM_IMPL
+constexpr PRFM PRFMsList[] = {
+  { "pldl1keep", 0x0 }, // 0
+  { "pldl1strm", 0x1 }, // 1
+  { "pldl2keep", 0x2 }, // 2
+  { "pldl2strm", 0x3 }, // 3
+  { "pldl3keep", 0x4 }, // 4
+  { "pldl3strm", 0x5 }, // 5
+  { "plil1keep", 0x8 }, // 6
+  { "plil1strm", 0x9 }, // 7
+  { "plil2keep", 0xA }, // 8
+  { "plil2strm", 0xB }, // 9
+  { "plil3keep", 0xC }, // 10
+  { "plil3strm", 0xD }, // 11
+  { "pstl1keep", 0x10 }, // 12
+  { "pstl1strm", 0x11 }, // 13
+  { "pstl2keep", 0x12 }, // 14
+  { "pstl2strm", 0x13 }, // 15
+  { "pstl3keep", 0x14 }, // 16
+  { "pstl3strm", 0x15 }, // 17
+ };
+
+const PRFM *lookupPRFMByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "PLDL1KEEP", 0 },
+    { "PLDL1STRM", 1 },
+    { "PLDL2KEEP", 2 },
+    { "PLDL2STRM", 3 },
+    { "PLDL3KEEP", 4 },
+    { "PLDL3STRM", 5 },
+    { "PLIL1KEEP", 6 },
+    { "PLIL1STRM", 7 },
+    { "PLIL2KEEP", 8 },
+    { "PLIL2STRM", 9 },
+    { "PLIL3KEEP", 10 },
+    { "PLIL3STRM", 11 },
+    { "PSTL1KEEP", 12 },
+    { "PSTL1STRM", 13 },
+    { "PSTL2KEEP", 14 },
+    { "PSTL2STRM", 15 },
+    { "PSTL3KEEP", 16 },
+    { "PSTL3STRM", 17 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &PRFMsList[Idx->_index];
+}
+
+const PRFM *lookupPRFMByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x0, 0 },
+    { 0x1, 1 },
+    { 0x2, 2 },
+    { 0x3, 3 },
+    { 0x4, 4 },
+    { 0x5, 5 },
+    { 0x8, 6 },
+    { 0x9, 7 },
+    { 0xA, 8 },
+    { 0xB, 9 },
+    { 0xC, 10 },
+    { 0xD, 11 },
+    { 0x10, 12 },
+    { 0x11, 13 },
+    { 0x12, 14 },
+    { 0x13, 15 },
+    { 0x14, 16 },
+    { 0x15, 17 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &PRFMsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_PSB_DECL
+const PSB *lookupPSBByName(StringRef Name);
+const PSB *lookupPSBByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_PSB_IMPL
+constexpr PSB PSBsList[] = {
+  { "csync", 0x11 }, // 0
+ };
+
+const PSB *lookupPSBByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "CSYNC", 0 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &PSBsList[Idx->_index];
+}
+
+const PSB *lookupPSBByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x11, 0 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &PSBsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_PSTATE_DECL
+const PState *lookupPStateByName(StringRef Name);
+const PState *lookupPStateByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_PSTATE_IMPL
+constexpr PState PStatesList[] = {
+  { "SPSel", 0x5,  {}  }, // 0
+  { "DAIFSet", 0x1E,  {}  }, // 1
+  { "DAIFClr", 0x1F,  {}  }, // 2
+  { "PAN", 0x4,  {AArch64::FeaturePAN}  }, // 3
+  { "UAO", 0x3,  {AArch64::FeaturePsUAO}  }, // 4
+  { "DIT", 0x1A,  {AArch64::FeatureDIT}  }, // 5
+  { "SSBS", 0x19,  {AArch64::FeatureSSBS}  }, // 6
+  { "TCO", 0x1C,  {AArch64::FeatureMTE}  }, // 7
+ };
+
+const PState *lookupPStateByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "DAIFCLR", 2 },
+    { "DAIFSET", 1 },
+    { "DIT", 5 },
+    { "PAN", 3 },
+    { "SPSEL", 0 },
+    { "SSBS", 6 },
+    { "TCO", 7 },
+    { "UAO", 4 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &PStatesList[Idx->_index];
+}
+
+const PState *lookupPStateByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x3, 4 },
+    { 0x4, 3 },
+    { 0x5, 0 },
+    { 0x19, 6 },
+    { 0x1A, 5 },
+    { 0x1C, 7 },
+    { 0x1E, 1 },
+    { 0x1F, 2 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &PStatesList[Idx->_index];
+}
+#endif
+
+#ifdef GET_SVEPREDPAT_DECL
+const SVEPREDPAT *lookupSVEPREDPATByName(StringRef Name);
+const SVEPREDPAT *lookupSVEPREDPATByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_SVEPREDPAT_IMPL
+constexpr SVEPREDPAT SVEPREDPATsList[] = {
+  { "pow2", 0x0 }, // 0
+  { "vl1", 0x1 }, // 1
+  { "vl2", 0x2 }, // 2
+  { "vl3", 0x3 }, // 3
+  { "vl4", 0x4 }, // 4
+  { "vl5", 0x5 }, // 5
+  { "vl6", 0x6 }, // 6
+  { "vl7", 0x7 }, // 7
+  { "vl8", 0x8 }, // 8
+  { "vl16", 0x9 }, // 9
+  { "vl32", 0xA }, // 10
+  { "vl64", 0xB }, // 11
+  { "vl128", 0xC }, // 12
+  { "vl256", 0xD }, // 13
+  { "mul4", 0x1D }, // 14
+  { "mul3", 0x1E }, // 15
+  { "all", 0x1F }, // 16
+ };
+
+const SVEPREDPAT *lookupSVEPREDPATByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "ALL", 16 },
+    { "MUL3", 15 },
+    { "MUL4", 14 },
+    { "POW2", 0 },
+    { "VL1", 1 },
+    { "VL128", 12 },
+    { "VL16", 9 },
+    { "VL2", 2 },
+    { "VL256", 13 },
+    { "VL3", 3 },
+    { "VL32", 10 },
+    { "VL4", 4 },
+    { "VL5", 5 },
+    { "VL6", 6 },
+    { "VL64", 11 },
+    { "VL7", 7 },
+    { "VL8", 8 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &SVEPREDPATsList[Idx->_index];
+}
+
+const SVEPREDPAT *lookupSVEPREDPATByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x0, 0 },
+    { 0x1, 1 },
+    { 0x2, 2 },
+    { 0x3, 3 },
+    { 0x4, 4 },
+    { 0x5, 5 },
+    { 0x6, 6 },
+    { 0x7, 7 },
+    { 0x8, 8 },
+    { 0x9, 9 },
+    { 0xA, 10 },
+    { 0xB, 11 },
+    { 0xC, 12 },
+    { 0xD, 13 },
+    { 0x1D, 14 },
+    { 0x1E, 15 },
+    { 0x1F, 16 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &SVEPREDPATsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_SVEPRFM_DECL
+const SVEPRFM *lookupSVEPRFMByName(StringRef Name);
+const SVEPRFM *lookupSVEPRFMByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_SVEPRFM_IMPL
+constexpr SVEPRFM SVEPRFMsList[] = {
+  { "pldl1keep", 0x0,  {AArch64::FeatureSVE}  }, // 0
+  { "pldl1strm", 0x1,  {AArch64::FeatureSVE}  }, // 1
+  { "pldl2keep", 0x2,  {AArch64::FeatureSVE}  }, // 2
+  { "pldl2strm", 0x3,  {AArch64::FeatureSVE}  }, // 3
+  { "pldl3keep", 0x4,  {AArch64::FeatureSVE}  }, // 4
+  { "pldl3strm", 0x5,  {AArch64::FeatureSVE}  }, // 5
+  { "pstl1keep", 0x8,  {AArch64::FeatureSVE}  }, // 6
+  { "pstl1strm", 0x9,  {AArch64::FeatureSVE}  }, // 7
+  { "pstl2keep", 0xA,  {AArch64::FeatureSVE}  }, // 8
+  { "pstl2strm", 0xB,  {AArch64::FeatureSVE}  }, // 9
+  { "pstl3keep", 0xC,  {AArch64::FeatureSVE}  }, // 10
+  { "pstl3strm", 0xD,  {AArch64::FeatureSVE}  }, // 11
+ };
+
+const SVEPRFM *lookupSVEPRFMByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "PLDL1KEEP", 0 },
+    { "PLDL1STRM", 1 },
+    { "PLDL2KEEP", 2 },
+    { "PLDL2STRM", 3 },
+    { "PLDL3KEEP", 4 },
+    { "PLDL3STRM", 5 },
+    { "PSTL1KEEP", 6 },
+    { "PSTL1STRM", 7 },
+    { "PSTL2KEEP", 8 },
+    { "PSTL2STRM", 9 },
+    { "PSTL3KEEP", 10 },
+    { "PSTL3STRM", 11 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &SVEPRFMsList[Idx->_index];
+}
+
+const SVEPRFM *lookupSVEPRFMByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x0, 0 },
+    { 0x1, 1 },
+    { 0x2, 2 },
+    { 0x3, 3 },
+    { 0x4, 4 },
+    { 0x5, 5 },
+    { 0x8, 6 },
+    { 0x9, 7 },
+    { 0xA, 8 },
+    { 0xB, 9 },
+    { 0xC, 10 },
+    { 0xD, 11 },
+  };
+
+  struct KeyType {
+    uint8_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &SVEPRFMsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_SYSREG_DECL
+const SysReg *lookupSysRegByName(StringRef Name);
+const SysReg *lookupSysRegByEncoding(uint16_t Encoding);
+#endif
+
+#ifdef GET_SYSREG_IMPL
+constexpr SysReg SysRegsList[] = {
+  { "MDCCSR_EL0", 0x9808, true, false,  {}  }, // 0
+  { "DBGDTRRX_EL0", 0x9828, true, false,  {}  }, // 1
+  { "MDRAR_EL1", 0x8080, true, false,  {}  }, // 2
+  { "OSLSR_EL1", 0x808C, true, false,  {}  }, // 3
+  { "DBGAUTHSTATUS_EL1", 0x83F6, true, false,  {}  }, // 4
+  { "PMCEID0_EL0", 0xDCE6, true, false,  {}  }, // 5
+  { "PMCEID1_EL0", 0xDCE7, true, false,  {}  }, // 6
+  { "MIDR_EL1", 0xC000, true, false,  {}  }, // 7
+  { "CCSIDR_EL1", 0xC800, true, false,  {}  }, // 8
+  { "CCSIDR2_EL1", 0xC802, true, false,  {AArch64::FeatureCCIDX}  }, // 9
+  { "CLIDR_EL1", 0xC801, true, false,  {}  }, // 10
+  { "CTR_EL0", 0xD801, true, false,  {}  }, // 11
+  { "MPIDR_EL1", 0xC005, true, false,  {}  }, // 12
+  { "REVIDR_EL1", 0xC006, true, false,  {}  }, // 13
+  { "AIDR_EL1", 0xC807, true, false,  {}  }, // 14
+  { "DCZID_EL0", 0xD807, true, false,  {}  }, // 15
+  { "ID_PFR0_EL1", 0xC008, true, false,  {}  }, // 16
+  { "ID_PFR1_EL1", 0xC009, true, false,  {}  }, // 17
+  { "ID_PFR2_EL1", 0xC01C, true, false,  {AArch64::FeatureSpecRestrict}  }, // 18
+  { "ID_DFR0_EL1", 0xC00A, true, false,  {}  }, // 19
+  { "ID_AFR0_EL1", 0xC00B, true, false,  {}  }, // 20
+  { "ID_MMFR0_EL1", 0xC00C, true, false,  {}  }, // 21
+  { "ID_MMFR1_EL1", 0xC00D, true, false,  {}  }, // 22
+  { "ID_MMFR2_EL1", 0xC00E, true, false,  {}  }, // 23
+  { "ID_MMFR3_EL1", 0xC00F, true, false,  {}  }, // 24
+  { "ID_ISAR0_EL1", 0xC010, true, false,  {}  }, // 25
+  { "ID_ISAR1_EL1", 0xC011, true, false,  {}  }, // 26
+  { "ID_ISAR2_EL1", 0xC012, true, false,  {}  }, // 27
+  { "ID_ISAR3_EL1", 0xC013, true, false,  {}  }, // 28
+  { "ID_ISAR4_EL1", 0xC014, true, false,  {}  }, // 29
+  { "ID_ISAR5_EL1", 0xC015, true, false,  {}  }, // 30
+  { "ID_ISAR6_EL1", 0xC017, true, false,  {AArch64::HasV8_2aOps}  }, // 31
+  { "ID_AA64PFR0_EL1", 0xC020, true, false,  {}  }, // 32
+  { "ID_AA64PFR1_EL1", 0xC021, true, false,  {}  }, // 33
+  { "ID_AA64DFR0_EL1", 0xC028, true, false,  {}  }, // 34
+  { "ID_AA64DFR1_EL1", 0xC029, true, false,  {}  }, // 35
+  { "ID_AA64AFR0_EL1", 0xC02C, true, false,  {}  }, // 36
+  { "ID_AA64AFR1_EL1", 0xC02D, true, false,  {}  }, // 37
+  { "ID_AA64ISAR0_EL1", 0xC030, true, false,  {}  }, // 38
+  { "ID_AA64ISAR1_EL1", 0xC031, true, false,  {}  }, // 39
+  { "ID_AA64ISAR2_EL1", 0xC032, true, false,  {}  }, // 40
+  { "ID_AA64MMFR0_EL1", 0xC038, true, false,  {}  }, // 41
+  { "ID_AA64MMFR1_EL1", 0xC039, true, false,  {}  }, // 42
+  { "ID_AA64MMFR2_EL1", 0xC03A, true, false,  {}  }, // 43
+  { "MVFR0_EL1", 0xC018, true, false,  {}  }, // 44
+  { "MVFR1_EL1", 0xC019, true, false,  {}  }, // 45
+  { "MVFR2_EL1", 0xC01A, true, false,  {}  }, // 46
+  { "RVBAR_EL1", 0xC601, true, false,  {}  }, // 47
+  { "RVBAR_EL2", 0xE601, true, false,  {}  }, // 48
+  { "RVBAR_EL3", 0xF601, true, false,  {}  }, // 49
+  { "ISR_EL1", 0xC608, true, false,  {}  }, // 50
+  { "CNTPCT_EL0", 0xDF01, true, false,  {}  }, // 51
+  { "CNTVCT_EL0", 0xDF02, true, false,  {}  }, // 52
+  { "ID_MMFR4_EL1", 0xC016, true, false,  {}  }, // 53
+  { "ID_MMFR5_EL1", 0xC01E, true, false,  {}  }, // 54
+  { "TRCSTATR", 0x8818, true, false,  {}  }, // 55
+  { "TRCIDR8", 0x8806, true, false,  {}  }, // 56
+  { "TRCIDR9", 0x880E, true, false,  {}  }, // 57
+  { "TRCIDR10", 0x8816, true, false,  {}  }, // 58
+  { "TRCIDR11", 0x881E, true, false,  {}  }, // 59
+  { "TRCIDR12", 0x8826, true, false,  {}  }, // 60
+  { "TRCIDR13", 0x882E, true, false,  {}  }, // 61
+  { "TRCIDR0", 0x8847, true, false,  {}  }, // 62
+  { "TRCIDR1", 0x884F, true, false,  {}  }, // 63
+  { "TRCIDR2", 0x8857, true, false,  {}  }, // 64
+  { "TRCIDR3", 0x885F, true, false,  {}  }, // 65
+  { "TRCIDR4", 0x8867, true, false,  {}  }, // 66
+  { "TRCIDR5", 0x886F, true, false,  {}  }, // 67
+  { "TRCIDR6", 0x8877, true, false,  {}  }, // 68
+  { "TRCIDR7", 0x887F, true, false,  {}  }, // 69
+  { "TRCOSLSR", 0x888C, true, false,  {}  }, // 70
+  { "TRCPDSR", 0x88AC, true, false,  {}  }, // 71
+  { "TRCDEVAFF0", 0x8BD6, true, false,  {}  }, // 72
+  { "TRCDEVAFF1", 0x8BDE, true, false,  {}  }, // 73
+  { "TRCLSR", 0x8BEE, true, false,  {}  }, // 74
+  { "TRCAUTHSTATUS", 0x8BF6, true, false,  {}  }, // 75
+  { "TRCDEVARCH", 0x8BFE, true, false,  {}  }, // 76
+  { "TRCDEVID", 0x8B97, true, false,  {}  }, // 77
+  { "TRCDEVTYPE", 0x8B9F, true, false,  {}  }, // 78
+  { "TRCPIDR4", 0x8BA7, true, false,  {}  }, // 79
+  { "TRCPIDR5", 0x8BAF, true, false,  {}  }, // 80
+  { "TRCPIDR6", 0x8BB7, true, false,  {}  }, // 81
+  { "TRCPIDR7", 0x8BBF, true, false,  {}  }, // 82
+  { "TRCPIDR0", 0x8BC7, true, false,  {}  }, // 83
+  { "TRCPIDR1", 0x8BCF, true, false,  {}  }, // 84
+  { "TRCPIDR2", 0x8BD7, true, false,  {}  }, // 85
+  { "TRCPIDR3", 0x8BDF, true, false,  {}  }, // 86
+  { "TRCCIDR0", 0x8BE7, true, false,  {}  }, // 87
+  { "TRCCIDR1", 0x8BEF, true, false,  {}  }, // 88
+  { "TRCCIDR2", 0x8BF7, true, false,  {}  }, // 89
+  { "TRCCIDR3", 0x8BFF, true, false,  {}  }, // 90
+  { "ICC_IAR1_EL1", 0xC660, true, false,  {}  }, // 91
+  { "ICC_IAR0_EL1", 0xC640, true, false,  {}  }, // 92
+  { "ICC_HPPIR1_EL1", 0xC662, true, false,  {}  }, // 93
+  { "ICC_HPPIR0_EL1", 0xC642, true, false,  {}  }, // 94
+  { "ICC_RPR_EL1", 0xC65B, true, false,  {}  }, // 95
+  { "ICH_VTR_EL2", 0xE659, true, false,  {}  }, // 96
+  { "ICH_EISR_EL2", 0xE65B, true, false,  {}  }, // 97
+  { "ICH_ELRSR_EL2", 0xE65D, true, false,  {}  }, // 98
+  { "ID_AA64ZFR0_EL1", 0xC024, true, false,  {AArch64::FeatureSVE}  }, // 99
+  { "LORID_EL1", 0xC527, true, false,  {AArch64::FeatureLOR}  }, // 100
+  { "ERRIDR_EL1", 0xC298, true, false,  {AArch64::FeatureRAS}  }, // 101
+  { "ERXFR_EL1", 0xC2A0, true, false,  {AArch64::FeatureRAS}  }, // 102
+  { "RNDR", 0xD920, true, false,  {AArch64::FeatureRandGen}  }, // 103
+  { "RNDRRS", 0xD921, true, false,  {AArch64::FeatureRandGen}  }, // 104
+  { "SCXTNUM_EL0", 0xDE87, true, true,  {AArch64::FeatureSpecRestrict}  }, // 105
+  { "SCXTNUM_EL1", 0xC687, true, true,  {AArch64::FeatureSpecRestrict}  }, // 106
+  { "SCXTNUM_EL2", 0xE687, true, true,  {AArch64::FeatureSpecRestrict}  }, // 107
+  { "SCXTNUM_EL3", 0xF687, true, true,  {AArch64::FeatureSpecRestrict}  }, // 108
+  { "SCXTNUM_EL12", 0xEE87, true, true,  {AArch64::FeatureSpecRestrict}  }, // 109
+  { "DBGDTRTX_EL0", 0x9828, false, true,  {}  }, // 110
+  { "OSLAR_EL1", 0x8084, false, true,  {}  }, // 111
+  { "PMSWINC_EL0", 0xDCE4, false, true,  {}  }, // 112
+  { "TRCOSLAR", 0x8884, false, true,  {}  }, // 113
+  { "TRCLAR", 0x8BE6, false, true,  {}  }, // 114
+  { "ICC_EOIR1_EL1", 0xC661, false, true,  {}  }, // 115
+  { "ICC_EOIR0_EL1", 0xC641, false, true,  {}  }, // 116
+  { "ICC_DIR_EL1", 0xC659, false, true,  {}  }, // 117
+  { "ICC_SGI1R_EL1", 0xC65D, false, true,  {}  }, // 118
+  { "ICC_ASGI1R_EL1", 0xC65E, false, true,  {}  }, // 119
+  { "ICC_SGI0R_EL1", 0xC65F, false, true,  {}  }, // 120
+  { "OSDTRRX_EL1", 0x8002, true, true,  {}  }, // 121
+  { "OSDTRTX_EL1", 0x801A, true, true,  {}  }, // 122
+  { "TEECR32_EL1", 0x9000, true, true,  {}  }, // 123
+  { "MDCCINT_EL1", 0x8010, true, true,  {}  }, // 124
+  { "MDSCR_EL1", 0x8012, true, true,  {}  }, // 125
+  { "DBGDTR_EL0", 0x9820, true, true,  {}  }, // 126
+  { "OSECCR_EL1", 0x8032, true, true,  {}  }, // 127
+  { "DBGVCR32_EL2", 0xA038, true, true,  {}  }, // 128
+  { "DBGBVR0_EL1", 0x8004, true, true,  {}  }, // 129
+  { "DBGBVR1_EL1", 0x800C, true, true,  {}  }, // 130
+  { "DBGBVR2_EL1", 0x8014, true, true,  {}  }, // 131
+  { "DBGBVR3_EL1", 0x801C, true, true,  {}  }, // 132
+  { "DBGBVR4_EL1", 0x8024, true, true,  {}  }, // 133
+  { "DBGBVR5_EL1", 0x802C, true, true,  {}  }, // 134
+  { "DBGBVR6_EL1", 0x8034, true, true,  {}  }, // 135
+  { "DBGBVR7_EL1", 0x803C, true, true,  {}  }, // 136
+  { "DBGBVR8_EL1", 0x8044, true, true,  {}  }, // 137
+  { "DBGBVR9_EL1", 0x804C, true, true,  {}  }, // 138
+  { "DBGBVR10_EL1", 0x8054, true, true,  {}  }, // 139
+  { "DBGBVR11_EL1", 0x805C, true, true,  {}  }, // 140
+  { "DBGBVR12_EL1", 0x8064, true, true,  {}  }, // 141
+  { "DBGBVR13_EL1", 0x806C, true, true,  {}  }, // 142
+  { "DBGBVR14_EL1", 0x8074, true, true,  {}  }, // 143
+  { "DBGBVR15_EL1", 0x807C, true, true,  {}  }, // 144
+  { "DBGBCR0_EL1", 0x8005, true, true,  {}  }, // 145
+  { "DBGBCR1_EL1", 0x800D, true, true,  {}  }, // 146
+  { "DBGBCR2_EL1", 0x8015, true, true,  {}  }, // 147
+  { "DBGBCR3_EL1", 0x801D, true, true,  {}  }, // 148
+  { "DBGBCR4_EL1", 0x8025, true, true,  {}  }, // 149
+  { "DBGBCR5_EL1", 0x802D, true, true,  {}  }, // 150
+  { "DBGBCR6_EL1", 0x8035, true, true,  {}  }, // 151
+  { "DBGBCR7_EL1", 0x803D, true, true,  {}  }, // 152
+  { "DBGBCR8_EL1", 0x8045, true, true,  {}  }, // 153
+  { "DBGBCR9_EL1", 0x804D, true, true,  {}  }, // 154
+  { "DBGBCR10_EL1", 0x8055, true, true,  {}  }, // 155
+  { "DBGBCR11_EL1", 0x805D, true, true,  {}  }, // 156
+  { "DBGBCR12_EL1", 0x8065, true, true,  {}  }, // 157
+  { "DBGBCR13_EL1", 0x806D, true, true,  {}  }, // 158
+  { "DBGBCR14_EL1", 0x8075, true, true,  {}  }, // 159
+  { "DBGBCR15_EL1", 0x807D, true, true,  {}  }, // 160
+  { "DBGWVR0_EL1", 0x8006, true, true,  {}  }, // 161
+  { "DBGWVR1_EL1", 0x800E, true, true,  {}  }, // 162
+  { "DBGWVR2_EL1", 0x8016, true, true,  {}  }, // 163
+  { "DBGWVR3_EL1", 0x801E, true, true,  {}  }, // 164
+  { "DBGWVR4_EL1", 0x8026, true, true,  {}  }, // 165
+  { "DBGWVR5_EL1", 0x802E, true, true,  {}  }, // 166
+  { "DBGWVR6_EL1", 0x8036, true, true,  {}  }, // 167
+  { "DBGWVR7_EL1", 0x803E, true, true,  {}  }, // 168
+  { "DBGWVR8_EL1", 0x8046, true, true,  {}  }, // 169
+  { "DBGWVR9_EL1", 0x804E, true, true,  {}  }, // 170
+  { "DBGWVR10_EL1", 0x8056, true, true,  {}  }, // 171
+  { "DBGWVR11_EL1", 0x805E, true, true,  {}  }, // 172
+  { "DBGWVR12_EL1", 0x8066, true, true,  {}  }, // 173
+  { "DBGWVR13_EL1", 0x806E, true, true,  {}  }, // 174
+  { "DBGWVR14_EL1", 0x8076, true, true,  {}  }, // 175
+  { "DBGWVR15_EL1", 0x807E, true, true,  {}  }, // 176
+  { "DBGWCR0_EL1", 0x8007, true, true,  {}  }, // 177
+  { "DBGWCR1_EL1", 0x800F, true, true,  {}  }, // 178
+  { "DBGWCR2_EL1", 0x8017, true, true,  {}  }, // 179
+  { "DBGWCR3_EL1", 0x801F, true, true,  {}  }, // 180
+  { "DBGWCR4_EL1", 0x8027, true, true,  {}  }, // 181
+  { "DBGWCR5_EL1", 0x802F, true, true,  {}  }, // 182
+  { "DBGWCR6_EL1", 0x8037, true, true,  {}  }, // 183
+  { "DBGWCR7_EL1", 0x803F, true, true,  {}  }, // 184
+  { "DBGWCR8_EL1", 0x8047, true, true,  {}  }, // 185
+  { "DBGWCR9_EL1", 0x804F, true, true,  {}  }, // 186
+  { "DBGWCR10_EL1", 0x8057, true, true,  {}  }, // 187
+  { "DBGWCR11_EL1", 0x805F, true, true,  {}  }, // 188
+  { "DBGWCR12_EL1", 0x8067, true, true,  {}  }, // 189
+  { "DBGWCR13_EL1", 0x806F, true, true,  {}  }, // 190
+  { "DBGWCR14_EL1", 0x8077, true, true,  {}  }, // 191
+  { "DBGWCR15_EL1", 0x807F, true, true,  {}  }, // 192
+  { "TEEHBR32_EL1", 0x9080, true, true,  {}  }, // 193
+  { "OSDLR_EL1", 0x809C, true, true,  {}  }, // 194
+  { "DBGPRCR_EL1", 0x80A4, true, true,  {}  }, // 195
+  { "DBGCLAIMSET_EL1", 0x83C6, true, true,  {}  }, // 196
+  { "DBGCLAIMCLR_EL1", 0x83CE, true, true,  {}  }, // 197
+  { "CSSELR_EL1", 0xD000, true, true,  {}  }, // 198
+  { "VPIDR_EL2", 0xE000, true, true,  {}  }, // 199
+  { "VMPIDR_EL2", 0xE005, true, true,  {}  }, // 200
+  { "CPACR_EL1", 0xC082, true, true,  {}  }, // 201
+  { "SCTLR_EL1", 0xC080, true, true,  {}  }, // 202
+  { "SCTLR_EL2", 0xE080, true, true,  {}  }, // 203
+  { "SCTLR_EL3", 0xF080, true, true,  {}  }, // 204
+  { "ACTLR_EL1", 0xC081, true, true,  {}  }, // 205
+  { "ACTLR_EL2", 0xE081, true, true,  {}  }, // 206
+  { "ACTLR_EL3", 0xF081, true, true,  {}  }, // 207
+  { "HCR_EL2", 0xE088, true, true,  {}  }, // 208
+  { "HCRX_EL2", 0xE092, true, true,  {AArch64::FeatureHCX}  }, // 209
+  { "SCR_EL3", 0xF088, true, true,  {}  }, // 210
+  { "MDCR_EL2", 0xE089, true, true,  {}  }, // 211
+  { "SDER32_EL3", 0xF089, true, true,  {}  }, // 212
+  { "CPTR_EL2", 0xE08A, true, true,  {}  }, // 213
+  { "CPTR_EL3", 0xF08A, true, true,  {}  }, // 214
+  { "HSTR_EL2", 0xE08B, true, true,  {}  }, // 215
+  { "HACR_EL2", 0xE08F, true, true,  {}  }, // 216
+  { "MDCR_EL3", 0xF099, true, true,  {}  }, // 217
+  { "TTBR0_EL1", 0xC100, true, true,  {}  }, // 218
+  { "TTBR0_EL2", 0xE100, true, true,  {}  }, // 219
+  { "TTBR0_EL3", 0xF100, true, true,  {}  }, // 220
+  { "TTBR1_EL1", 0xC101, true, true,  {}  }, // 221
+  { "TCR_EL1", 0xC102, true, true,  {}  }, // 222
+  { "TCR_EL2", 0xE102, true, true,  {}  }, // 223
+  { "TCR_EL3", 0xF102, true, true,  {}  }, // 224
+  { "VTTBR_EL2", 0xE108, true, true,  {}  }, // 225
+  { "VTCR_EL2", 0xE10A, true, true,  {}  }, // 226
+  { "DACR32_EL2", 0xE180, true, true,  {}  }, // 227
+  { "SPSR_EL1", 0xC200, true, true,  {}  }, // 228
+  { "SPSR_EL2", 0xE200, true, true,  {}  }, // 229
+  { "SPSR_EL3", 0xF200, true, true,  {}  }, // 230
+  { "ELR_EL1", 0xC201, true, true,  {}  }, // 231
+  { "ELR_EL2", 0xE201, true, true,  {}  }, // 232
+  { "ELR_EL3", 0xF201, true, true,  {}  }, // 233
+  { "SP_EL0", 0xC208, true, true,  {}  }, // 234
+  { "SP_EL1", 0xE208, true, true,  {}  }, // 235
+  { "SP_EL2", 0xF208, true, true,  {}  }, // 236
+  { "SPSel", 0xC210, true, true,  {}  }, // 237
+  { "NZCV", 0xDA10, true, true,  {}  }, // 238
+  { "DAIF", 0xDA11, true, true,  {}  }, // 239
+  { "CurrentEL", 0xC212, true, false,  {}  }, // 240
+  { "SPSR_irq", 0xE218, true, true,  {}  }, // 241
+  { "SPSR_abt", 0xE219, true, true,  {}  }, // 242
+  { "SPSR_und", 0xE21A, true, true,  {}  }, // 243
+  { "SPSR_fiq", 0xE21B, true, true,  {}  }, // 244
+  { "FPCR", 0xDA20, true, true,  {}  }, // 245
+  { "FPSR", 0xDA21, true, true,  {}  }, // 246
+  { "DSPSR_EL0", 0xDA28, true, true,  {}  }, // 247
+  { "DLR_EL0", 0xDA29, true, true,  {}  }, // 248
+  { "IFSR32_EL2", 0xE281, true, true,  {}  }, // 249
+  { "AFSR0_EL1", 0xC288, true, true,  {}  }, // 250
+  { "AFSR0_EL2", 0xE288, true, true,  {}  }, // 251
+  { "AFSR0_EL3", 0xF288, true, true,  {}  }, // 252
+  { "AFSR1_EL1", 0xC289, true, true,  {}  }, // 253
+  { "AFSR1_EL2", 0xE289, true, true,  {}  }, // 254
+  { "AFSR1_EL3", 0xF289, true, true,  {}  }, // 255
+  { "ESR_EL1", 0xC290, true, true,  {}  }, // 256
+  { "ESR_EL2", 0xE290, true, true,  {}  }, // 257
+  { "ESR_EL3", 0xF290, true, true,  {}  }, // 258
+  { "FPEXC32_EL2", 0xE298, true, true,  {}  }, // 259
+  { "FAR_EL1", 0xC300, true, true,  {}  }, // 260
+  { "FAR_EL2", 0xE300, true, true,  {}  }, // 261
+  { "FAR_EL3", 0xF300, true, true,  {}  }, // 262
+  { "HPFAR_EL2", 0xE304, true, true,  {}  }, // 263
+  { "PAR_EL1", 0xC3A0, true, true,  {}  }, // 264
+  { "PMCR_EL0", 0xDCE0, true, true,  {}  }, // 265
+  { "PMCNTENSET_EL0", 0xDCE1, true, true,  {}  }, // 266
+  { "PMCNTENCLR_EL0", 0xDCE2, true, true,  {}  }, // 267
+  { "PMOVSCLR_EL0", 0xDCE3, true, true,  {}  }, // 268
+  { "PMSELR_EL0", 0xDCE5, true, true,  {}  }, // 269
+  { "PMCCNTR_EL0", 0xDCE8, true, true,  {}  }, // 270
+  { "PMXEVTYPER_EL0", 0xDCE9, true, true,  {}  }, // 271
+  { "PMXEVCNTR_EL0", 0xDCEA, true, true,  {}  }, // 272
+  { "PMUSERENR_EL0", 0xDCF0, true, true,  {}  }, // 273
+  { "PMINTENSET_EL1", 0xC4F1, true, true,  {}  }, // 274
+  { "PMINTENCLR_EL1", 0xC4F2, true, true,  {}  }, // 275
+  { "PMOVSSET_EL0", 0xDCF3, true, true,  {}  }, // 276
+  { "MAIR_EL1", 0xC510, true, true,  {}  }, // 277
+  { "MAIR_EL2", 0xE510, true, true,  {}  }, // 278
+  { "MAIR_EL3", 0xF510, true, true,  {}  }, // 279
+  { "AMAIR_EL1", 0xC518, true, true,  {}  }, // 280
+  { "AMAIR_EL2", 0xE518, true, true,  {}  }, // 281
+  { "AMAIR_EL3", 0xF518, true, true,  {}  }, // 282
+  { "VBAR_EL1", 0xC600, true, true,  {}  }, // 283
+  { "VBAR_EL2", 0xE600, true, true,  {}  }, // 284
+  { "VBAR_EL3", 0xF600, true, true,  {}  }, // 285
+  { "RMR_EL1", 0xC602, true, true,  {}  }, // 286
+  { "RMR_EL2", 0xE602, true, true,  {}  }, // 287
+  { "RMR_EL3", 0xF602, true, true,  {}  }, // 288
+  { "CONTEXTIDR_EL1", 0xC681, true, true,  {}  }, // 289
+  { "TPIDR_EL0", 0xDE82, true, true,  {}  }, // 290
+  { "TPIDR_EL2", 0xE682, true, true,  {}  }, // 291
+  { "TPIDR_EL3", 0xF682, true, true,  {}  }, // 292
+  { "TPIDRRO_EL0", 0xDE83, true, true,  {}  }, // 293
+  { "TPIDR_EL1", 0xC684, true, true,  {}  }, // 294
+  { "CNTFRQ_EL0", 0xDF00, true, true,  {}  }, // 295
+  { "CNTVOFF_EL2", 0xE703, true, true,  {}  }, // 296
+  { "CNTKCTL_EL1", 0xC708, true, true,  {}  }, // 297
+  { "CNTHCTL_EL2", 0xE708, true, true,  {}  }, // 298
+  { "CNTP_TVAL_EL0", 0xDF10, true, true,  {}  }, // 299
+  { "CNTHP_TVAL_EL2", 0xE710, true, true,  {}  }, // 300
+  { "CNTPS_TVAL_EL1", 0xFF10, true, true,  {}  }, // 301
+  { "CNTP_CTL_EL0", 0xDF11, true, true,  {}  }, // 302
+  { "CNTHP_CTL_EL2", 0xE711, true, true,  {}  }, // 303
+  { "CNTPS_CTL_EL1", 0xFF11, true, true,  {}  }, // 304
+  { "CNTP_CVAL_EL0", 0xDF12, true, true,  {}  }, // 305
+  { "CNTHP_CVAL_EL2", 0xE712, true, true,  {}  }, // 306
+  { "CNTPS_CVAL_EL1", 0xFF12, true, true,  {}  }, // 307
+  { "CNTV_TVAL_EL0", 0xDF18, true, true,  {}  }, // 308
+  { "CNTV_CTL_EL0", 0xDF19, true, true,  {}  }, // 309
+  { "CNTV_CVAL_EL0", 0xDF1A, true, true,  {}  }, // 310
+  { "PMEVCNTR0_EL0", 0xDF40, true, true,  {}  }, // 311
+  { "PMEVCNTR1_EL0", 0xDF41, true, true,  {}  }, // 312
+  { "PMEVCNTR2_EL0", 0xDF42, true, true,  {}  }, // 313
+  { "PMEVCNTR3_EL0", 0xDF43, true, true,  {}  }, // 314
+  { "PMEVCNTR4_EL0", 0xDF44, true, true,  {}  }, // 315
+  { "PMEVCNTR5_EL0", 0xDF45, true, true,  {}  }, // 316
+  { "PMEVCNTR6_EL0", 0xDF46, true, true,  {}  }, // 317
+  { "PMEVCNTR7_EL0", 0xDF47, true, true,  {}  }, // 318
+  { "PMEVCNTR8_EL0", 0xDF48, true, true,  {}  }, // 319
+  { "PMEVCNTR9_EL0", 0xDF49, true, true,  {}  }, // 320
+  { "PMEVCNTR10_EL0", 0xDF4A, true, true,  {}  }, // 321
+  { "PMEVCNTR11_EL0", 0xDF4B, true, true,  {}  }, // 322
+  { "PMEVCNTR12_EL0", 0xDF4C, true, true,  {}  }, // 323
+  { "PMEVCNTR13_EL0", 0xDF4D, true, true,  {}  }, // 324
+  { "PMEVCNTR14_EL0", 0xDF4E, true, true,  {}  }, // 325
+  { "PMEVCNTR15_EL0", 0xDF4F, true, true,  {}  }, // 326
+  { "PMEVCNTR16_EL0", 0xDF50, true, true,  {}  }, // 327
+  { "PMEVCNTR17_EL0", 0xDF51, true, true,  {}  }, // 328
+  { "PMEVCNTR18_EL0", 0xDF52, true, true,  {}  }, // 329
+  { "PMEVCNTR19_EL0", 0xDF53, true, true,  {}  }, // 330
+  { "PMEVCNTR20_EL0", 0xDF54, true, true,  {}  }, // 331
+  { "PMEVCNTR21_EL0", 0xDF55, true, true,  {}  }, // 332
+  { "PMEVCNTR22_EL0", 0xDF56, true, true,  {}  }, // 333
+  { "PMEVCNTR23_EL0", 0xDF57, true, true,  {}  }, // 334
+  { "PMEVCNTR24_EL0", 0xDF58, true, true,  {}  }, // 335
+  { "PMEVCNTR25_EL0", 0xDF59, true, true,  {}  }, // 336
+  { "PMEVCNTR26_EL0", 0xDF5A, true, true,  {}  }, // 337
+  { "PMEVCNTR27_EL0", 0xDF5B, true, true,  {}  }, // 338
+  { "PMEVCNTR28_EL0", 0xDF5C, true, true,  {}  }, // 339
+  { "PMEVCNTR29_EL0", 0xDF5D, true, true,  {}  }, // 340
+  { "PMEVCNTR30_EL0", 0xDF5E, true, true,  {}  }, // 341
+  { "PMCCFILTR_EL0", 0xDF7F, true, true,  {}  }, // 342
+  { "PMEVTYPER0_EL0", 0xDF60, true, true,  {}  }, // 343
+  { "PMEVTYPER1_EL0", 0xDF61, true, true,  {}  }, // 344
+  { "PMEVTYPER2_EL0", 0xDF62, true, true,  {}  }, // 345
+  { "PMEVTYPER3_EL0", 0xDF63, true, true,  {}  }, // 346
+  { "PMEVTYPER4_EL0", 0xDF64, true, true,  {}  }, // 347
+  { "PMEVTYPER5_EL0", 0xDF65, true, true,  {}  }, // 348
+  { "PMEVTYPER6_EL0", 0xDF66, true, true,  {}  }, // 349
+  { "PMEVTYPER7_EL0", 0xDF67, true, true,  {}  }, // 350
+  { "PMEVTYPER8_EL0", 0xDF68, true, true,  {}  }, // 351
+  { "PMEVTYPER9_EL0", 0xDF69, true, true,  {}  }, // 352
+  { "PMEVTYPER10_EL0", 0xDF6A, true, true,  {}  }, // 353
+  { "PMEVTYPER11_EL0", 0xDF6B, true, true,  {}  }, // 354
+  { "PMEVTYPER12_EL0", 0xDF6C, true, true,  {}  }, // 355
+  { "PMEVTYPER13_EL0", 0xDF6D, true, true,  {}  }, // 356
+  { "PMEVTYPER14_EL0", 0xDF6E, true, true,  {}  }, // 357
+  { "PMEVTYPER15_EL0", 0xDF6F, true, true,  {}  }, // 358
+  { "PMEVTYPER16_EL0", 0xDF70, true, true,  {}  }, // 359
+  { "PMEVTYPER17_EL0", 0xDF71, true, true,  {}  }, // 360
+  { "PMEVTYPER18_EL0", 0xDF72, true, true,  {}  }, // 361
+  { "PMEVTYPER19_EL0", 0xDF73, true, true,  {}  }, // 362
+  { "PMEVTYPER20_EL0", 0xDF74, true, true,  {}  }, // 363
+  { "PMEVTYPER21_EL0", 0xDF75, true, true,  {}  }, // 364
+  { "PMEVTYPER22_EL0", 0xDF76, true, true,  {}  }, // 365
+  { "PMEVTYPER23_EL0", 0xDF77, true, true,  {}  }, // 366
+  { "PMEVTYPER24_EL0", 0xDF78, true, true,  {}  }, // 367
+  { "PMEVTYPER25_EL0", 0xDF79, true, true,  {}  }, // 368
+  { "PMEVTYPER26_EL0", 0xDF7A, true, true,  {}  }, // 369
+  { "PMEVTYPER27_EL0", 0xDF7B, true, true,  {}  }, // 370
+  { "PMEVTYPER28_EL0", 0xDF7C, true, true,  {}  }, // 371
+  { "PMEVTYPER29_EL0", 0xDF7D, true, true,  {}  }, // 372
+  { "PMEVTYPER30_EL0", 0xDF7E, true, true,  {}  }, // 373
+  { "TRCPRGCTLR", 0x8808, true, true,  {}  }, // 374
+  { "TRCPROCSELR", 0x8810, true, true,  {}  }, // 375
+  { "TRCCONFIGR", 0x8820, true, true,  {}  }, // 376
+  { "TRCAUXCTLR", 0x8830, true, true,  {}  }, // 377
+  { "TRCEVENTCTL0R", 0x8840, true, true,  {}  }, // 378
+  { "TRCEVENTCTL1R", 0x8848, true, true,  {}  }, // 379
+  { "TRCSTALLCTLR", 0x8858, true, true,  {}  }, // 380
+  { "TRCTSCTLR", 0x8860, true, true,  {}  }, // 381
+  { "TRCSYNCPR", 0x8868, true, true,  {}  }, // 382
+  { "TRCCCCTLR", 0x8870, true, true,  {}  }, // 383
+  { "TRCBBCTLR", 0x8878, true, true,  {}  }, // 384
+  { "TRCTRACEIDR", 0x8801, true, true,  {}  }, // 385
+  { "TRCQCTLR", 0x8809, true, true,  {}  }, // 386
+  { "TRCVICTLR", 0x8802, true, true,  {}  }, // 387
+  { "TRCVIIECTLR", 0x880A, true, true,  {}  }, // 388
+  { "TRCVISSCTLR", 0x8812, true, true,  {}  }, // 389
+  { "TRCVIPCSSCTLR", 0x881A, true, true,  {}  }, // 390
+  { "TRCVDCTLR", 0x8842, true, true,  {}  }, // 391
+  { "TRCVDSACCTLR", 0x884A, true, true,  {}  }, // 392
+  { "TRCVDARCCTLR", 0x8852, true, true,  {}  }, // 393
+  { "TRCSEQEVR0", 0x8804, true, true,  {}  }, // 394
+  { "TRCSEQEVR1", 0x880C, true, true,  {}  }, // 395
+  { "TRCSEQEVR2", 0x8814, true, true,  {}  }, // 396
+  { "TRCSEQRSTEVR", 0x8834, true, true,  {}  }, // 397
+  { "TRCSEQSTR", 0x883C, true, true,  {}  }, // 398
+  { "TRCEXTINSELR", 0x8844, true, true,  {}  }, // 399
+  { "TRCCNTRLDVR0", 0x8805, true, true,  {}  }, // 400
+  { "TRCCNTRLDVR1", 0x880D, true, true,  {}  }, // 401
+  { "TRCCNTRLDVR2", 0x8815, true, true,  {}  }, // 402
+  { "TRCCNTRLDVR3", 0x881D, true, true,  {}  }, // 403
+  { "TRCCNTCTLR0", 0x8825, true, true,  {}  }, // 404
+  { "TRCCNTCTLR1", 0x882D, true, true,  {}  }, // 405
+  { "TRCCNTCTLR2", 0x8835, true, true,  {}  }, // 406
+  { "TRCCNTCTLR3", 0x883D, true, true,  {}  }, // 407
+  { "TRCCNTVR0", 0x8845, true, true,  {}  }, // 408
+  { "TRCCNTVR1", 0x884D, true, true,  {}  }, // 409
+  { "TRCCNTVR2", 0x8855, true, true,  {}  }, // 410
+  { "TRCCNTVR3", 0x885D, true, true,  {}  }, // 411
+  { "TRCIMSPEC0", 0x8807, true, true,  {}  }, // 412
+  { "TRCIMSPEC1", 0x880F, true, true,  {}  }, // 413
+  { "TRCIMSPEC2", 0x8817, true, true,  {}  }, // 414
+  { "TRCIMSPEC3", 0x881F, true, true,  {}  }, // 415
+  { "TRCIMSPEC4", 0x8827, true, true,  {}  }, // 416
+  { "TRCIMSPEC5", 0x882F, true, true,  {}  }, // 417
+  { "TRCIMSPEC6", 0x8837, true, true,  {}  }, // 418
+  { "TRCIMSPEC7", 0x883F, true, true,  {}  }, // 419
+  { "TRCRSCTLR2", 0x8890, true, true,  {}  }, // 420
+  { "TRCRSCTLR3", 0x8898, true, true,  {}  }, // 421
+  { "TRCRSCTLR4", 0x88A0, true, true,  {}  }, // 422
+  { "TRCRSCTLR5", 0x88A8, true, true,  {}  }, // 423
+  { "TRCRSCTLR6", 0x88B0, true, true,  {}  }, // 424
+  { "TRCRSCTLR7", 0x88B8, true, true,  {}  }, // 425
+  { "TRCRSCTLR8", 0x88C0, true, true,  {}  }, // 426
+  { "TRCRSCTLR9", 0x88C8, true, true,  {}  }, // 427
+  { "TRCRSCTLR10", 0x88D0, true, true,  {}  }, // 428
+  { "TRCRSCTLR11", 0x88D8, true, true,  {}  }, // 429
+  { "TRCRSCTLR12", 0x88E0, true, true,  {}  }, // 430
+  { "TRCRSCTLR13", 0x88E8, true, true,  {}  }, // 431
+  { "TRCRSCTLR14", 0x88F0, true, true,  {}  }, // 432
+  { "TRCRSCTLR15", 0x88F8, true, true,  {}  }, // 433
+  { "TRCRSCTLR16", 0x8881, true, true,  {}  }, // 434
+  { "TRCRSCTLR17", 0x8889, true, true,  {}  }, // 435
+  { "TRCRSCTLR18", 0x8891, true, true,  {}  }, // 436
+  { "TRCRSCTLR19", 0x8899, true, true,  {}  }, // 437
+  { "TRCRSCTLR20", 0x88A1, true, true,  {}  }, // 438
+  { "TRCRSCTLR21", 0x88A9, true, true,  {}  }, // 439
+  { "TRCRSCTLR22", 0x88B1, true, true,  {}  }, // 440
+  { "TRCRSCTLR23", 0x88B9, true, true,  {}  }, // 441
+  { "TRCRSCTLR24", 0x88C1, true, true,  {}  }, // 442
+  { "TRCRSCTLR25", 0x88C9, true, true,  {}  }, // 443
+  { "TRCRSCTLR26", 0x88D1, true, true,  {}  }, // 444
+  { "TRCRSCTLR27", 0x88D9, true, true,  {}  }, // 445
+  { "TRCRSCTLR28", 0x88E1, true, true,  {}  }, // 446
+  { "TRCRSCTLR29", 0x88E9, true, true,  {}  }, // 447
+  { "TRCRSCTLR30", 0x88F1, true, true,  {}  }, // 448
+  { "TRCRSCTLR31", 0x88F9, true, true,  {}  }, // 449
+  { "TRCSSCCR0", 0x8882, true, true,  {}  }, // 450
+  { "TRCSSCCR1", 0x888A, true, true,  {}  }, // 451
+  { "TRCSSCCR2", 0x8892, true, true,  {}  }, // 452
+  { "TRCSSCCR3", 0x889A, true, true,  {}  }, // 453
+  { "TRCSSCCR4", 0x88A2, true, true,  {}  }, // 454
+  { "TRCSSCCR5", 0x88AA, true, true,  {}  }, // 455
+  { "TRCSSCCR6", 0x88B2, true, true,  {}  }, // 456
+  { "TRCSSCCR7", 0x88BA, true, true,  {}  }, // 457
+  { "TRCSSCSR0", 0x88C2, true, true,  {}  }, // 458
+  { "TRCSSCSR1", 0x88CA, true, true,  {}  }, // 459
+  { "TRCSSCSR2", 0x88D2, true, true,  {}  }, // 460
+  { "TRCSSCSR3", 0x88DA, true, true,  {}  }, // 461
+  { "TRCSSCSR4", 0x88E2, true, true,  {}  }, // 462
+  { "TRCSSCSR5", 0x88EA, true, true,  {}  }, // 463
+  { "TRCSSCSR6", 0x88F2, true, true,  {}  }, // 464
+  { "TRCSSCSR7", 0x88FA, true, true,  {}  }, // 465
+  { "TRCSSPCICR0", 0x8883, true, true,  {}  }, // 466
+  { "TRCSSPCICR1", 0x888B, true, true,  {}  }, // 467
+  { "TRCSSPCICR2", 0x8893, true, true,  {}  }, // 468
+  { "TRCSSPCICR3", 0x889B, true, true,  {}  }, // 469
+  { "TRCSSPCICR4", 0x88A3, true, true,  {}  }, // 470
+  { "TRCSSPCICR5", 0x88AB, true, true,  {}  }, // 471
+  { "TRCSSPCICR6", 0x88B3, true, true,  {}  }, // 472
+  { "TRCSSPCICR7", 0x88BB, true, true,  {}  }, // 473
+  { "TRCPDCR", 0x88A4, true, true,  {}  }, // 474
+  { "TRCACVR0", 0x8900, true, true,  {}  }, // 475
+  { "TRCACVR1", 0x8910, true, true,  {}  }, // 476
+  { "TRCACVR2", 0x8920, true, true,  {}  }, // 477
+  { "TRCACVR3", 0x8930, true, true,  {}  }, // 478
+  { "TRCACVR4", 0x8940, true, true,  {}  }, // 479
+  { "TRCACVR5", 0x8950, true, true,  {}  }, // 480
+  { "TRCACVR6", 0x8960, true, true,  {}  }, // 481
+  { "TRCACVR7", 0x8970, true, true,  {}  }, // 482
+  { "TRCACVR8", 0x8901, true, true,  {}  }, // 483
+  { "TRCACVR9", 0x8911, true, true,  {}  }, // 484
+  { "TRCACVR10", 0x8921, true, true,  {}  }, // 485
+  { "TRCACVR11", 0x8931, true, true,  {}  }, // 486
+  { "TRCACVR12", 0x8941, true, true,  {}  }, // 487
+  { "TRCACVR13", 0x8951, true, true,  {}  }, // 488
+  { "TRCACVR14", 0x8961, true, true,  {}  }, // 489
+  { "TRCACVR15", 0x8971, true, true,  {}  }, // 490
+  { "TRCACATR0", 0x8902, true, true,  {}  }, // 491
+  { "TRCACATR1", 0x8912, true, true,  {}  }, // 492
+  { "TRCACATR2", 0x8922, true, true,  {}  }, // 493
+  { "TRCACATR3", 0x8932, true, true,  {}  }, // 494
+  { "TRCACATR4", 0x8942, true, true,  {}  }, // 495
+  { "TRCACATR5", 0x8952, true, true,  {}  }, // 496
+  { "TRCACATR6", 0x8962, true, true,  {}  }, // 497
+  { "TRCACATR7", 0x8972, true, true,  {}  }, // 498
+  { "TRCACATR8", 0x8903, true, true,  {}  }, // 499
+  { "TRCACATR9", 0x8913, true, true,  {}  }, // 500
+  { "TRCACATR10", 0x8923, true, true,  {}  }, // 501
+  { "TRCACATR11", 0x8933, true, true,  {}  }, // 502
+  { "TRCACATR12", 0x8943, true, true,  {}  }, // 503
+  { "TRCACATR13", 0x8953, true, true,  {}  }, // 504
+  { "TRCACATR14", 0x8963, true, true,  {}  }, // 505
+  { "TRCACATR15", 0x8973, true, true,  {}  }, // 506
+  { "TRCDVCVR0", 0x8904, true, true,  {}  }, // 507
+  { "TRCDVCVR1", 0x8924, true, true,  {}  }, // 508
+  { "TRCDVCVR2", 0x8944, true, true,  {}  }, // 509
+  { "TRCDVCVR3", 0x8964, true, true,  {}  }, // 510
+  { "TRCDVCVR4", 0x8905, true, true,  {}  }, // 511
+  { "TRCDVCVR5", 0x8925, true, true,  {}  }, // 512
+  { "TRCDVCVR6", 0x8945, true, true,  {}  }, // 513
+  { "TRCDVCVR7", 0x8965, true, true,  {}  }, // 514
+  { "TRCDVCMR0", 0x8906, true, true,  {}  }, // 515
+  { "TRCDVCMR1", 0x8926, true, true,  {}  }, // 516
+  { "TRCDVCMR2", 0x8946, true, true,  {}  }, // 517
+  { "TRCDVCMR3", 0x8966, true, true,  {}  }, // 518
+  { "TRCDVCMR4", 0x8907, true, true,  {}  }, // 519
+  { "TRCDVCMR5", 0x8927, true, true,  {}  }, // 520
+  { "TRCDVCMR6", 0x8947, true, true,  {}  }, // 521
+  { "TRCDVCMR7", 0x8967, true, true,  {}  }, // 522
+  { "TRCCIDCVR0", 0x8980, true, true,  {}  }, // 523
+  { "TRCCIDCVR1", 0x8990, true, true,  {}  }, // 524
+  { "TRCCIDCVR2", 0x89A0, true, true,  {}  }, // 525
+  { "TRCCIDCVR3", 0x89B0, true, true,  {}  }, // 526
+  { "TRCCIDCVR4", 0x89C0, true, true,  {}  }, // 527
+  { "TRCCIDCVR5", 0x89D0, true, true,  {}  }, // 528
+  { "TRCCIDCVR6", 0x89E0, true, true,  {}  }, // 529
+  { "TRCCIDCVR7", 0x89F0, true, true,  {}  }, // 530
+  { "TRCVMIDCVR0", 0x8981, true, true,  {}  }, // 531
+  { "TRCVMIDCVR1", 0x8991, true, true,  {}  }, // 532
+  { "TRCVMIDCVR2", 0x89A1, true, true,  {}  }, // 533
+  { "TRCVMIDCVR3", 0x89B1, true, true,  {}  }, // 534
+  { "TRCVMIDCVR4", 0x89C1, true, true,  {}  }, // 535
+  { "TRCVMIDCVR5", 0x89D1, true, true,  {}  }, // 536
+  { "TRCVMIDCVR6", 0x89E1, true, true,  {}  }, // 537
+  { "TRCVMIDCVR7", 0x89F1, true, true,  {}  }, // 538
+  { "TRCCIDCCTLR0", 0x8982, true, true,  {}  }, // 539
+  { "TRCCIDCCTLR1", 0x898A, true, true,  {}  }, // 540
+  { "TRCVMIDCCTLR0", 0x8992, true, true,  {}  }, // 541
+  { "TRCVMIDCCTLR1", 0x899A, true, true,  {}  }, // 542
+  { "TRCITCTRL", 0x8B84, true, true,  {}  }, // 543
+  { "TRCCLAIMSET", 0x8BC6, true, true,  {}  }, // 544
+  { "TRCCLAIMCLR", 0x8BCE, true, true,  {}  }, // 545
+  { "ICC_BPR1_EL1", 0xC663, true, true,  {}  }, // 546
+  { "ICC_BPR0_EL1", 0xC643, true, true,  {}  }, // 547
+  { "ICC_PMR_EL1", 0xC230, true, true,  {}  }, // 548
+  { "ICC_CTLR_EL1", 0xC664, true, true,  {}  }, // 549
+  { "ICC_CTLR_EL3", 0xF664, true, true,  {}  }, // 550
+  { "ICC_SRE_EL1", 0xC665, true, true,  {}  }, // 551
+  { "ICC_SRE_EL2", 0xE64D, true, true,  {}  }, // 552
+  { "ICC_SRE_EL3", 0xF665, true, true,  {}  }, // 553
+  { "ICC_IGRPEN0_EL1", 0xC666, true, true,  {}  }, // 554
+  { "ICC_IGRPEN1_EL1", 0xC667, true, true,  {}  }, // 555
+  { "ICC_IGRPEN1_EL3", 0xF667, true, true,  {}  }, // 556
+  { "ICC_AP0R0_EL1", 0xC644, true, true,  {}  }, // 557
+  { "ICC_AP0R1_EL1", 0xC645, true, true,  {}  }, // 558
+  { "ICC_AP0R2_EL1", 0xC646, true, true,  {}  }, // 559
+  { "ICC_AP0R3_EL1", 0xC647, true, true,  {}  }, // 560
+  { "ICC_AP1R0_EL1", 0xC648, true, true,  {}  }, // 561
+  { "ICC_AP1R1_EL1", 0xC649, true, true,  {}  }, // 562
+  { "ICC_AP1R2_EL1", 0xC64A, true, true,  {}  }, // 563
+  { "ICC_AP1R3_EL1", 0xC64B, true, true,  {}  }, // 564
+  { "ICH_AP0R0_EL2", 0xE640, true, true,  {}  }, // 565
+  { "ICH_AP0R1_EL2", 0xE641, true, true,  {}  }, // 566
+  { "ICH_AP0R2_EL2", 0xE642, true, true,  {}  }, // 567
+  { "ICH_AP0R3_EL2", 0xE643, true, true,  {}  }, // 568
+  { "ICH_AP1R0_EL2", 0xE648, true, true,  {}  }, // 569
+  { "ICH_AP1R1_EL2", 0xE649, true, true,  {}  }, // 570
+  { "ICH_AP1R2_EL2", 0xE64A, true, true,  {}  }, // 571
+  { "ICH_AP1R3_EL2", 0xE64B, true, true,  {}  }, // 572
+  { "ICH_HCR_EL2", 0xE658, true, true,  {}  }, // 573
+  { "ICH_MISR_EL2", 0xE65A, true, false,  {}  }, // 574
+  { "ICH_VMCR_EL2", 0xE65F, true, true,  {}  }, // 575
+  { "ICH_LR0_EL2", 0xE660, true, true,  {}  }, // 576
+  { "ICH_LR1_EL2", 0xE661, true, true,  {}  }, // 577
+  { "ICH_LR2_EL2", 0xE662, true, true,  {}  }, // 578
+  { "ICH_LR3_EL2", 0xE663, true, true,  {}  }, // 579
+  { "ICH_LR4_EL2", 0xE664, true, true,  {}  }, // 580
+  { "ICH_LR5_EL2", 0xE665, true, true,  {}  }, // 581
+  { "ICH_LR6_EL2", 0xE666, true, true,  {}  }, // 582
+  { "ICH_LR7_EL2", 0xE667, true, true,  {}  }, // 583
+  { "ICH_LR8_EL2", 0xE668, true, true,  {}  }, // 584
+  { "ICH_LR9_EL2", 0xE669, true, true,  {}  }, // 585
+  { "ICH_LR10_EL2", 0xE66A, true, true,  {}  }, // 586
+  { "ICH_LR11_EL2", 0xE66B, true, true,  {}  }, // 587
+  { "ICH_LR12_EL2", 0xE66C, true, true,  {}  }, // 588
+  { "ICH_LR13_EL2", 0xE66D, true, true,  {}  }, // 589
+  { "ICH_LR14_EL2", 0xE66E, true, true,  {}  }, // 590
+  { "ICH_LR15_EL2", 0xE66F, true, true,  {}  }, // 591
+  { "PAN", 0xC213, true, true,  {AArch64::FeaturePAN}  }, // 592
+  { "LORSA_EL1", 0xC520, true, true,  {AArch64::FeatureLOR}  }, // 593
+  { "LOREA_EL1", 0xC521, true, true,  {AArch64::FeatureLOR}  }, // 594
+  { "LORN_EL1", 0xC522, true, true,  {AArch64::FeatureLOR}  }, // 595
+  { "LORC_EL1", 0xC523, true, true,  {AArch64::FeatureLOR}  }, // 596
+  { "TTBR1_EL2", 0xE101, true, true,  {AArch64::FeatureVH}  }, // 597
+  { "CNTHV_TVAL_EL2", 0xE718, true, true,  {AArch64::FeatureVH}  }, // 598
+  { "CNTHV_CVAL_EL2", 0xE71A, true, true,  {AArch64::FeatureVH}  }, // 599
+  { "CNTHV_CTL_EL2", 0xE719, true, true,  {AArch64::FeatureVH}  }, // 600
+  { "SCTLR_EL12", 0xE880, true, true,  {AArch64::FeatureVH}  }, // 601
+  { "CPACR_EL12", 0xE882, true, true,  {AArch64::FeatureVH}  }, // 602
+  { "TTBR0_EL12", 0xE900, true, true,  {AArch64::FeatureVH}  }, // 603
+  { "TTBR1_EL12", 0xE901, true, true,  {AArch64::FeatureVH}  }, // 604
+  { "TCR_EL12", 0xE902, true, true,  {AArch64::FeatureVH}  }, // 605
+  { "AFSR0_EL12", 0xEA88, true, true,  {AArch64::FeatureVH}  }, // 606
+  { "AFSR1_EL12", 0xEA89, true, true,  {AArch64::FeatureVH}  }, // 607
+  { "ESR_EL12", 0xEA90, true, true,  {AArch64::FeatureVH}  }, // 608
+  { "FAR_EL12", 0xEB00, true, true,  {AArch64::FeatureVH}  }, // 609
+  { "MAIR_EL12", 0xED10, true, true,  {AArch64::FeatureVH}  }, // 610
+  { "AMAIR_EL12", 0xED18, true, true,  {AArch64::FeatureVH}  }, // 611
+  { "VBAR_EL12", 0xEE00, true, true,  {AArch64::FeatureVH}  }, // 612
+  { "CONTEXTIDR_EL12", 0xEE81, true, true,  {AArch64::FeatureVH}  }, // 613
+  { "CNTKCTL_EL12", 0xEF08, true, true,  {AArch64::FeatureVH}  }, // 614
+  { "CNTP_TVAL_EL02", 0xEF10, true, true,  {AArch64::FeatureVH}  }, // 615
+  { "CNTP_CTL_EL02", 0xEF11, true, true,  {AArch64::FeatureVH}  }, // 616
+  { "CNTP_CVAL_EL02", 0xEF12, true, true,  {AArch64::FeatureVH}  }, // 617
+  { "CNTV_TVAL_EL02", 0xEF18, true, true,  {AArch64::FeatureVH}  }, // 618
+  { "CNTV_CTL_EL02", 0xEF19, true, true,  {AArch64::FeatureVH}  }, // 619
+  { "CNTV_CVAL_EL02", 0xEF1A, true, true,  {AArch64::FeatureVH}  }, // 620
+  { "SPSR_EL12", 0xEA00, true, true,  {AArch64::FeatureVH}  }, // 621
+  { "ELR_EL12", 0xEA01, true, true,  {AArch64::FeatureVH}  }, // 622
+  { "CONTEXTIDR_EL2", 0xE681, true, true,  {AArch64::FeatureCONTEXTIDREL2}  }, // 623
+  { "UAO", 0xC214, true, true,  {AArch64::FeaturePsUAO}  }, // 624
+  { "PMBLIMITR_EL1", 0xC4D0, true, true,  {AArch64::FeatureSPE}  }, // 625
+  { "PMBPTR_EL1", 0xC4D1, true, true,  {AArch64::FeatureSPE}  }, // 626
+  { "PMBSR_EL1", 0xC4D3, true, true,  {AArch64::FeatureSPE}  }, // 627
+  { "PMBIDR_EL1", 0xC4D7, true, false,  {AArch64::FeatureSPE}  }, // 628
+  { "PMSCR_EL2", 0xE4C8, true, true,  {AArch64::FeatureSPE}  }, // 629
+  { "PMSCR_EL12", 0xECC8, true, true,  {AArch64::FeatureSPE}  }, // 630
+  { "PMSCR_EL1", 0xC4C8, true, true,  {AArch64::FeatureSPE}  }, // 631
+  { "PMSICR_EL1", 0xC4CA, true, true,  {AArch64::FeatureSPE}  }, // 632
+  { "PMSIRR_EL1", 0xC4CB, true, true,  {AArch64::FeatureSPE}  }, // 633
+  { "PMSFCR_EL1", 0xC4CC, true, true,  {AArch64::FeatureSPE}  }, // 634
+  { "PMSEVFR_EL1", 0xC4CD, true, true,  {AArch64::FeatureSPE}  }, // 635
+  { "PMSLATFR_EL1", 0xC4CE, true, true,  {AArch64::FeatureSPE}  }, // 636
+  { "PMSIDR_EL1", 0xC4CF, true, false,  {AArch64::FeatureSPE}  }, // 637
+  { "ERRSELR_EL1", 0xC299, true, true,  {AArch64::FeatureRAS}  }, // 638
+  { "ERXCTLR_EL1", 0xC2A1, true, true,  {AArch64::FeatureRAS}  }, // 639
+  { "ERXSTATUS_EL1", 0xC2A2, true, true,  {AArch64::FeatureRAS}  }, // 640
+  { "ERXADDR_EL1", 0xC2A3, true, true,  {AArch64::FeatureRAS}  }, // 641
+  { "ERXMISC0_EL1", 0xC2A8, true, true,  {AArch64::FeatureRAS}  }, // 642
+  { "ERXMISC1_EL1", 0xC2A9, true, true,  {AArch64::FeatureRAS}  }, // 643
+  { "DISR_EL1", 0xC609, true, true,  {AArch64::FeatureRAS}  }, // 644
+  { "VDISR_EL2", 0xE609, true, true,  {AArch64::FeatureRAS}  }, // 645
+  { "VSESR_EL2", 0xE293, true, true,  {AArch64::FeatureRAS}  }, // 646
+  { "APIAKeyLo_EL1", 0xC108, true, true,  {AArch64::FeaturePAuth}  }, // 647
+  { "APIAKeyHi_EL1", 0xC109, true, true,  {AArch64::FeaturePAuth}  }, // 648
+  { "APIBKeyLo_EL1", 0xC10A, true, true,  {AArch64::FeaturePAuth}  }, // 649
+  { "APIBKeyHi_EL1", 0xC10B, true, true,  {AArch64::FeaturePAuth}  }, // 650
+  { "APDAKeyLo_EL1", 0xC110, true, true,  {AArch64::FeaturePAuth}  }, // 651
+  { "APDAKeyHi_EL1", 0xC111, true, true,  {AArch64::FeaturePAuth}  }, // 652
+  { "APDBKeyLo_EL1", 0xC112, true, true,  {AArch64::FeaturePAuth}  }, // 653
+  { "APDBKeyHi_EL1", 0xC113, true, true,  {AArch64::FeaturePAuth}  }, // 654
+  { "APGAKeyLo_EL1", 0xC118, true, true,  {AArch64::FeaturePAuth}  }, // 655
+  { "APGAKeyHi_EL1", 0xC119, true, true,  {AArch64::FeaturePAuth}  }, // 656
+  { "VSTCR_EL2", 0xE132, true, true,  {AArch64::FeatureSEL2}  }, // 657
+  { "VSTTBR_EL2", 0xE130, true, true,  {AArch64::FeatureSEL2}  }, // 658
+  { "CNTHVS_TVAL_EL2", 0xE720, true, true,  {AArch64::FeatureSEL2}  }, // 659
+  { "CNTHVS_CVAL_EL2", 0xE722, true, true,  {AArch64::FeatureSEL2}  }, // 660
+  { "CNTHVS_CTL_EL2", 0xE721, true, true,  {AArch64::FeatureSEL2}  }, // 661
+  { "CNTHPS_TVAL_EL2", 0xE728, true, true,  {AArch64::FeatureSEL2}  }, // 662
+  { "CNTHPS_CVAL_EL2", 0xE72A, true, true,  {AArch64::FeatureSEL2}  }, // 663
+  { "CNTHPS_CTL_EL2", 0xE729, true, true,  {AArch64::FeatureSEL2}  }, // 664
+  { "SDER32_EL2", 0xE099, true, true,  {AArch64::FeatureSEL2}  }, // 665
+  { "PMMIR_EL1", 0xC4F6, true, true,  {AArch64::FeaturePMU}  }, // 666
+  { "ERXPFGCTL_EL1", 0xC2A5, true, true,  {}  }, // 667
+  { "ERXPFGCDN_EL1", 0xC2A6, true, true,  {}  }, // 668
+  { "ERXMISC2_EL1", 0xC2AA, true, true,  {}  }, // 669
+  { "ERXMISC3_EL1", 0xC2AB, true, true,  {}  }, // 670
+  { "ERXPFGF_EL1", 0xC2A4, true, false,  {}  }, // 671
+  { "MPAM0_EL1", 0xC529, true, true,  {AArch64::FeatureMPAM}  }, // 672
+  { "MPAM1_EL1", 0xC528, true, true,  {AArch64::FeatureMPAM}  }, // 673
+  { "MPAM2_EL2", 0xE528, true, true,  {AArch64::FeatureMPAM}  }, // 674
+  { "MPAM3_EL3", 0xF528, true, true,  {AArch64::FeatureMPAM}  }, // 675
+  { "MPAM1_EL12", 0xED28, true, true,  {AArch64::FeatureMPAM}  }, // 676
+  { "MPAMHCR_EL2", 0xE520, true, true,  {AArch64::FeatureMPAM}  }, // 677
+  { "MPAMVPMV_EL2", 0xE521, true, true,  {AArch64::FeatureMPAM}  }, // 678
+  { "MPAMVPM0_EL2", 0xE530, true, true,  {AArch64::FeatureMPAM}  }, // 679
+  { "MPAMVPM1_EL2", 0xE531, true, true,  {AArch64::FeatureMPAM}  }, // 680
+  { "MPAMVPM2_EL2", 0xE532, true, true,  {AArch64::FeatureMPAM}  }, // 681
+  { "MPAMVPM3_EL2", 0xE533, true, true,  {AArch64::FeatureMPAM}  }, // 682
+  { "MPAMVPM4_EL2", 0xE534, true, true,  {AArch64::FeatureMPAM}  }, // 683
+  { "MPAMVPM5_EL2", 0xE535, true, true,  {AArch64::FeatureMPAM}  }, // 684
+  { "MPAMVPM6_EL2", 0xE536, true, true,  {AArch64::FeatureMPAM}  }, // 685
+  { "MPAMVPM7_EL2", 0xE537, true, true,  {AArch64::FeatureMPAM}  }, // 686
+  { "MPAMIDR_EL1", 0xC524, true, false,  {AArch64::FeatureMPAM}  }, // 687
+  { "AMCR_EL0", 0xDE90, true, true,  {AArch64::FeatureAM}  }, // 688
+  { "AMCFGR_EL0", 0xDE91, true, false,  {AArch64::FeatureAM}  }, // 689
+  { "AMCGCR_EL0", 0xDE92, true, false,  {AArch64::FeatureAM}  }, // 690
+  { "AMUSERENR_EL0", 0xDE93, true, true,  {AArch64::FeatureAM}  }, // 691
+  { "AMCNTENCLR0_EL0", 0xDE94, true, true,  {AArch64::FeatureAM}  }, // 692
+  { "AMCNTENSET0_EL0", 0xDE95, true, true,  {AArch64::FeatureAM}  }, // 693
+  { "AMEVCNTR00_EL0", 0xDEA0, true, true,  {AArch64::FeatureAM}  }, // 694
+  { "AMEVCNTR01_EL0", 0xDEA1, true, true,  {AArch64::FeatureAM}  }, // 695
+  { "AMEVCNTR02_EL0", 0xDEA2, true, true,  {AArch64::FeatureAM}  }, // 696
+  { "AMEVCNTR03_EL0", 0xDEA3, true, true,  {AArch64::FeatureAM}  }, // 697
+  { "AMEVTYPER00_EL0", 0xDEB0, true, false,  {AArch64::FeatureAM}  }, // 698
+  { "AMEVTYPER01_EL0", 0xDEB1, true, false,  {AArch64::FeatureAM}  }, // 699
+  { "AMEVTYPER02_EL0", 0xDEB2, true, false,  {AArch64::FeatureAM}  }, // 700
+  { "AMEVTYPER03_EL0", 0xDEB3, true, false,  {AArch64::FeatureAM}  }, // 701
+  { "AMCNTENCLR1_EL0", 0xDE98, true, true,  {AArch64::FeatureAM}  }, // 702
+  { "AMCNTENSET1_EL0", 0xDE99, true, true,  {AArch64::FeatureAM}  }, // 703
+  { "AMEVCNTR10_EL0", 0xDEE0, true, true,  {AArch64::FeatureAM}  }, // 704
+  { "AMEVCNTR11_EL0", 0xDEE1, true, true,  {AArch64::FeatureAM}  }, // 705
+  { "AMEVCNTR12_EL0", 0xDEE2, true, true,  {AArch64::FeatureAM}  }, // 706
+  { "AMEVCNTR13_EL0", 0xDEE3, true, true,  {AArch64::FeatureAM}  }, // 707
+  { "AMEVCNTR14_EL0", 0xDEE4, true, true,  {AArch64::FeatureAM}  }, // 708
+  { "AMEVCNTR15_EL0", 0xDEE5, true, true,  {AArch64::FeatureAM}  }, // 709
+  { "AMEVCNTR16_EL0", 0xDEE6, true, true,  {AArch64::FeatureAM}  }, // 710
+  { "AMEVCNTR17_EL0", 0xDEE7, true, true,  {AArch64::FeatureAM}  }, // 711
+  { "AMEVCNTR18_EL0", 0xDEE8, true, true,  {AArch64::FeatureAM}  }, // 712
+  { "AMEVCNTR19_EL0", 0xDEE9, true, true,  {AArch64::FeatureAM}  }, // 713
+  { "AMEVCNTR110_EL0", 0xDEEA, true, true,  {AArch64::FeatureAM}  }, // 714
+  { "AMEVCNTR111_EL0", 0xDEEB, true, true,  {AArch64::FeatureAM}  }, // 715
+  { "AMEVCNTR112_EL0", 0xDEEC, true, true,  {AArch64::FeatureAM}  }, // 716
+  { "AMEVCNTR113_EL0", 0xDEED, true, true,  {AArch64::FeatureAM}  }, // 717
+  { "AMEVCNTR114_EL0", 0xDEEE, true, true,  {AArch64::FeatureAM}  }, // 718
+  { "AMEVCNTR115_EL0", 0xDEEF, true, true,  {AArch64::FeatureAM}  }, // 719
+  { "AMEVTYPER10_EL0", 0xDEF0, true, true,  {AArch64::FeatureAM}  }, // 720
+  { "AMEVTYPER11_EL0", 0xDEF1, true, true,  {AArch64::FeatureAM}  }, // 721
+  { "AMEVTYPER12_EL0", 0xDEF2, true, true,  {AArch64::FeatureAM}  }, // 722
+  { "AMEVTYPER13_EL0", 0xDEF3, true, true,  {AArch64::FeatureAM}  }, // 723
+  { "AMEVTYPER14_EL0", 0xDEF4, true, true,  {AArch64::FeatureAM}  }, // 724
+  { "AMEVTYPER15_EL0", 0xDEF5, true, true,  {AArch64::FeatureAM}  }, // 725
+  { "AMEVTYPER16_EL0", 0xDEF6, true, true,  {AArch64::FeatureAM}  }, // 726
+  { "AMEVTYPER17_EL0", 0xDEF7, true, true,  {AArch64::FeatureAM}  }, // 727
+  { "AMEVTYPER18_EL0", 0xDEF8, true, true,  {AArch64::FeatureAM}  }, // 728
+  { "AMEVTYPER19_EL0", 0xDEF9, true, true,  {AArch64::FeatureAM}  }, // 729
+  { "AMEVTYPER110_EL0", 0xDEFA, true, true,  {AArch64::FeatureAM}  }, // 730
+  { "AMEVTYPER111_EL0", 0xDEFB, true, true,  {AArch64::FeatureAM}  }, // 731
+  { "AMEVTYPER112_EL0", 0xDEFC, true, true,  {AArch64::FeatureAM}  }, // 732
+  { "AMEVTYPER113_EL0", 0xDEFD, true, true,  {AArch64::FeatureAM}  }, // 733
+  { "AMEVTYPER114_EL0", 0xDEFE, true, true,  {AArch64::FeatureAM}  }, // 734
+  { "AMEVTYPER115_EL0", 0xDEFF, true, true,  {AArch64::FeatureAM}  }, // 735
+  { "TRFCR_EL1", 0xC091, true, true,  {AArch64::FeatureTRACEV8_4}  }, // 736
+  { "TRFCR_EL2", 0xE091, true, true,  {AArch64::FeatureTRACEV8_4}  }, // 737
+  { "TRFCR_EL12", 0xE891, true, true,  {AArch64::FeatureTRACEV8_4}  }, // 738
+  { "DIT", 0xDA15, true, true,  {AArch64::FeatureDIT}  }, // 739
+  { "VNCR_EL2", 0xE110, true, true,  {AArch64::FeatureNV}  }, // 740
+  { "ZCR_EL1", 0xC090, true, true,  {AArch64::FeatureSVE}  }, // 741
+  { "ZCR_EL2", 0xE090, true, true,  {AArch64::FeatureSVE}  }, // 742
+  { "ZCR_EL3", 0xF090, true, true,  {AArch64::FeatureSVE}  }, // 743
+  { "ZCR_EL12", 0xE890, true, true,  {AArch64::FeatureSVE}  }, // 744
+  { "SSBS", 0xDA16, true, true,  {AArch64::FeatureSSBS}  }, // 745
+  { "TCO", 0xDA17, true, true,  {AArch64::FeatureMTE}  }, // 746
+  { "GCR_EL1", 0xC086, true, true,  {AArch64::FeatureMTE}  }, // 747
+  { "RGSR_EL1", 0xC085, true, true,  {AArch64::FeatureMTE}  }, // 748
+  { "TFSR_EL1", 0xC2B0, true, true,  {AArch64::FeatureMTE}  }, // 749
+  { "TFSR_EL2", 0xE2B0, true, true,  {AArch64::FeatureMTE}  }, // 750
+  { "TFSR_EL3", 0xF2B0, true, true,  {AArch64::FeatureMTE}  }, // 751
+  { "TFSR_EL12", 0xEAB0, true, true,  {AArch64::FeatureMTE}  }, // 752
+  { "TFSRE0_EL1", 0xC2B1, true, true,  {AArch64::FeatureMTE}  }, // 753
+  { "GMID_EL1", 0xC804, true, false,  {AArch64::FeatureMTE}  }, // 754
+  { "TRCRSR", 0x8850, true, true,  {AArch64::FeatureETE}  }, // 755
+  { "TRCEXTINSELR0", 0x8844, true, true,  {AArch64::FeatureETE}  }, // 756
+  { "TRCEXTINSELR1", 0x884C, true, true,  {AArch64::FeatureETE}  }, // 757
+  { "TRCEXTINSELR2", 0x8854, true, true,  {AArch64::FeatureETE}  }, // 758
+  { "TRCEXTINSELR3", 0x885C, true, true,  {AArch64::FeatureETE}  }, // 759
+  { "TRBLIMITR_EL1", 0xC4D8, true, true,  {AArch64::FeatureTRBE}  }, // 760
+  { "TRBPTR_EL1", 0xC4D9, true, true,  {AArch64::FeatureTRBE}  }, // 761
+  { "TRBBASER_EL1", 0xC4DA, true, true,  {AArch64::FeatureTRBE}  }, // 762
+  { "TRBSR_EL1", 0xC4DB, true, true,  {AArch64::FeatureTRBE}  }, // 763
+  { "TRBMAR_EL1", 0xC4DC, true, true,  {AArch64::FeatureTRBE}  }, // 764
+  { "TRBTRG_EL1", 0xC4DE, true, true,  {AArch64::FeatureTRBE}  }, // 765
+  { "TRBIDR_EL1", 0xC4DF, true, false,  {AArch64::FeatureTRBE}  }, // 766
+  { "AMEVCNTVOFF00_EL2", 0xE6C0, true, true,  {AArch64::FeatureAMVS}  }, // 767
+  { "AMEVCNTVOFF10_EL2", 0xE6D0, true, true,  {AArch64::FeatureAMVS}  }, // 768
+  { "AMEVCNTVOFF01_EL2", 0xE6C1, true, true,  {AArch64::FeatureAMVS}  }, // 769
+  { "AMEVCNTVOFF11_EL2", 0xE6D1, true, true,  {AArch64::FeatureAMVS}  }, // 770
+  { "AMEVCNTVOFF02_EL2", 0xE6C2, true, true,  {AArch64::FeatureAMVS}  }, // 771
+  { "AMEVCNTVOFF12_EL2", 0xE6D2, true, true,  {AArch64::FeatureAMVS}  }, // 772
+  { "AMEVCNTVOFF03_EL2", 0xE6C3, true, true,  {AArch64::FeatureAMVS}  }, // 773
+  { "AMEVCNTVOFF13_EL2", 0xE6D3, true, true,  {AArch64::FeatureAMVS}  }, // 774
+  { "AMEVCNTVOFF04_EL2", 0xE6C4, true, true,  {AArch64::FeatureAMVS}  }, // 775
+  { "AMEVCNTVOFF14_EL2", 0xE6D4, true, true,  {AArch64::FeatureAMVS}  }, // 776
+  { "AMEVCNTVOFF05_EL2", 0xE6C5, true, true,  {AArch64::FeatureAMVS}  }, // 777
+  { "AMEVCNTVOFF15_EL2", 0xE6D5, true, true,  {AArch64::FeatureAMVS}  }, // 778
+  { "AMEVCNTVOFF06_EL2", 0xE6C6, true, true,  {AArch64::FeatureAMVS}  }, // 779
+  { "AMEVCNTVOFF16_EL2", 0xE6D6, true, true,  {AArch64::FeatureAMVS}  }, // 780
+  { "AMEVCNTVOFF07_EL2", 0xE6C7, true, true,  {AArch64::FeatureAMVS}  }, // 781
+  { "AMEVCNTVOFF17_EL2", 0xE6D7, true, true,  {AArch64::FeatureAMVS}  }, // 782
+  { "AMEVCNTVOFF08_EL2", 0xE6C8, true, true,  {AArch64::FeatureAMVS}  }, // 783
+  { "AMEVCNTVOFF18_EL2", 0xE6D8, true, true,  {AArch64::FeatureAMVS}  }, // 784
+  { "AMEVCNTVOFF09_EL2", 0xE6C9, true, true,  {AArch64::FeatureAMVS}  }, // 785
+  { "AMEVCNTVOFF19_EL2", 0xE6D9, true, true,  {AArch64::FeatureAMVS}  }, // 786
+  { "AMEVCNTVOFF010_EL2", 0xE6CA, true, true,  {AArch64::FeatureAMVS}  }, // 787
+  { "AMEVCNTVOFF110_EL2", 0xE6DA, true, true,  {AArch64::FeatureAMVS}  }, // 788
+  { "AMEVCNTVOFF011_EL2", 0xE6CB, true, true,  {AArch64::FeatureAMVS}  }, // 789
+  { "AMEVCNTVOFF111_EL2", 0xE6DB, true, true,  {AArch64::FeatureAMVS}  }, // 790
+  { "AMEVCNTVOFF012_EL2", 0xE6CC, true, true,  {AArch64::FeatureAMVS}  }, // 791
+  { "AMEVCNTVOFF112_EL2", 0xE6DC, true, true,  {AArch64::FeatureAMVS}  }, // 792
+  { "AMEVCNTVOFF013_EL2", 0xE6CD, true, true,  {AArch64::FeatureAMVS}  }, // 793
+  { "AMEVCNTVOFF113_EL2", 0xE6DD, true, true,  {AArch64::FeatureAMVS}  }, // 794
+  { "AMEVCNTVOFF014_EL2", 0xE6CE, true, true,  {AArch64::FeatureAMVS}  }, // 795
+  { "AMEVCNTVOFF114_EL2", 0xE6DE, true, true,  {AArch64::FeatureAMVS}  }, // 796
+  { "AMEVCNTVOFF015_EL2", 0xE6CF, true, true,  {AArch64::FeatureAMVS}  }, // 797
+  { "AMEVCNTVOFF115_EL2", 0xE6DF, true, true,  {AArch64::FeatureAMVS}  }, // 798
+  { "HFGRTR_EL2", 0xE08C, true, true,  {AArch64::FeatureFineGrainedTraps}  }, // 799
+  { "HFGWTR_EL2", 0xE08D, true, true,  {AArch64::FeatureFineGrainedTraps}  }, // 800
+  { "HFGITR_EL2", 0xE08E, true, true,  {AArch64::FeatureFineGrainedTraps}  }, // 801
+  { "HDFGRTR_EL2", 0xE18C, true, true,  {AArch64::FeatureFineGrainedTraps}  }, // 802
+  { "HDFGWTR_EL2", 0xE18D, true, true,  {AArch64::FeatureFineGrainedTraps}  }, // 803
+  { "CNTSCALE_EL2", 0xE704, true, true,  {AArch64::FeatureEnhancedCounterVirtualization}  }, // 804
+  { "CNTISCALE_EL2", 0xE705, true, true,  {AArch64::FeatureEnhancedCounterVirtualization}  }, // 805
+  { "CNTPOFF_EL2", 0xE706, true, true,  {AArch64::FeatureEnhancedCounterVirtualization}  }, // 806
+  { "CNTVFRQ_EL2", 0xE707, true, true,  {AArch64::FeatureEnhancedCounterVirtualization}  }, // 807
+  { "CNTPCTSS_EL0", 0xDF05, true, true,  {AArch64::FeatureEnhancedCounterVirtualization}  }, // 808
+  { "CNTVCTSS_EL0", 0xDF06, true, true,  {AArch64::FeatureEnhancedCounterVirtualization}  }, // 809
+  { "ACCDATA_EL1", 0xC685, true, true,  {AArch64::FeatureLS64}  }, // 810
+  { "BRBCR_EL1", 0x8C80, true, true,  {AArch64::FeatureBRBE}  }, // 811
+  { "BRBCR_EL12", 0xAC80, true, true,  {AArch64::FeatureBRBE}  }, // 812
+  { "BRBCR_EL2", 0xA480, true, true,  {AArch64::FeatureBRBE}  }, // 813
+  { "BRBFCR_EL1", 0x8C81, true, true,  {AArch64::FeatureBRBE}  }, // 814
+  { "BRBIDR0_EL1", 0x8C90, true, false,  {AArch64::FeatureBRBE}  }, // 815
+  { "BRBINFINJ_EL1", 0x8C88, true, true,  {AArch64::FeatureBRBE}  }, // 816
+  { "BRBSRCINJ_EL1", 0x8C89, true, true,  {AArch64::FeatureBRBE}  }, // 817
+  { "BRBTGTINJ_EL1", 0x8C8A, true, true,  {AArch64::FeatureBRBE}  }, // 818
+  { "BRBTS_EL1", 0x8C82, true, true,  {AArch64::FeatureBRBE}  }, // 819
+  { "BRBINF0_EL1", 0x8C00, true, false,  {AArch64::FeatureBRBE}  }, // 820
+  { "BRBSRC0_EL1", 0x8C01, true, false,  {AArch64::FeatureBRBE}  }, // 821
+  { "BRBTGT0_EL1", 0x8C02, true, false,  {AArch64::FeatureBRBE}  }, // 822
+  { "BRBINF1_EL1", 0x8C08, true, false,  {AArch64::FeatureBRBE}  }, // 823
+  { "BRBSRC1_EL1", 0x8C09, true, false,  {AArch64::FeatureBRBE}  }, // 824
+  { "BRBTGT1_EL1", 0x8C0A, true, false,  {AArch64::FeatureBRBE}  }, // 825
+  { "BRBINF2_EL1", 0x8C10, true, false,  {AArch64::FeatureBRBE}  }, // 826
+  { "BRBSRC2_EL1", 0x8C11, true, false,  {AArch64::FeatureBRBE}  }, // 827
+  { "BRBTGT2_EL1", 0x8C12, true, false,  {AArch64::FeatureBRBE}  }, // 828
+  { "BRBINF3_EL1", 0x8C18, true, false,  {AArch64::FeatureBRBE}  }, // 829
+  { "BRBSRC3_EL1", 0x8C19, true, false,  {AArch64::FeatureBRBE}  }, // 830
+  { "BRBTGT3_EL1", 0x8C1A, true, false,  {AArch64::FeatureBRBE}  }, // 831
+  { "BRBINF4_EL1", 0x8C20, true, false,  {AArch64::FeatureBRBE}  }, // 832
+  { "BRBSRC4_EL1", 0x8C21, true, false,  {AArch64::FeatureBRBE}  }, // 833
+  { "BRBTGT4_EL1", 0x8C22, true, false,  {AArch64::FeatureBRBE}  }, // 834
+  { "BRBINF5_EL1", 0x8C28, true, false,  {AArch64::FeatureBRBE}  }, // 835
+  { "BRBSRC5_EL1", 0x8C29, true, false,  {AArch64::FeatureBRBE}  }, // 836
+  { "BRBTGT5_EL1", 0x8C2A, true, false,  {AArch64::FeatureBRBE}  }, // 837
+  { "BRBINF6_EL1", 0x8C30, true, false,  {AArch64::FeatureBRBE}  }, // 838
+  { "BRBSRC6_EL1", 0x8C31, true, false,  {AArch64::FeatureBRBE}  }, // 839
+  { "BRBTGT6_EL1", 0x8C32, true, false,  {AArch64::FeatureBRBE}  }, // 840
+  { "BRBINF7_EL1", 0x8C38, true, false,  {AArch64::FeatureBRBE}  }, // 841
+  { "BRBSRC7_EL1", 0x8C39, true, false,  {AArch64::FeatureBRBE}  }, // 842
+  { "BRBTGT7_EL1", 0x8C3A, true, false,  {AArch64::FeatureBRBE}  }, // 843
+  { "BRBINF8_EL1", 0x8C40, true, false,  {AArch64::FeatureBRBE}  }, // 844
+  { "BRBSRC8_EL1", 0x8C41, true, false,  {AArch64::FeatureBRBE}  }, // 845
+  { "BRBTGT8_EL1", 0x8C42, true, false,  {AArch64::FeatureBRBE}  }, // 846
+  { "BRBINF9_EL1", 0x8C48, true, false,  {AArch64::FeatureBRBE}  }, // 847
+  { "BRBSRC9_EL1", 0x8C49, true, false,  {AArch64::FeatureBRBE}  }, // 848
+  { "BRBTGT9_EL1", 0x8C4A, true, false,  {AArch64::FeatureBRBE}  }, // 849
+  { "BRBINF10_EL1", 0x8C50, true, false,  {AArch64::FeatureBRBE}  }, // 850
+  { "BRBSRC10_EL1", 0x8C51, true, false,  {AArch64::FeatureBRBE}  }, // 851
+  { "BRBTGT10_EL1", 0x8C52, true, false,  {AArch64::FeatureBRBE}  }, // 852
+  { "BRBINF11_EL1", 0x8C58, true, false,  {AArch64::FeatureBRBE}  }, // 853
+  { "BRBSRC11_EL1", 0x8C59, true, false,  {AArch64::FeatureBRBE}  }, // 854
+  { "BRBTGT11_EL1", 0x8C5A, true, false,  {AArch64::FeatureBRBE}  }, // 855
+  { "BRBINF12_EL1", 0x8C60, true, false,  {AArch64::FeatureBRBE}  }, // 856
+  { "BRBSRC12_EL1", 0x8C61, true, false,  {AArch64::FeatureBRBE}  }, // 857
+  { "BRBTGT12_EL1", 0x8C62, true, false,  {AArch64::FeatureBRBE}  }, // 858
+  { "BRBINF13_EL1", 0x8C68, true, false,  {AArch64::FeatureBRBE}  }, // 859
+  { "BRBSRC13_EL1", 0x8C69, true, false,  {AArch64::FeatureBRBE}  }, // 860
+  { "BRBTGT13_EL1", 0x8C6A, true, false,  {AArch64::FeatureBRBE}  }, // 861
+  { "BRBINF14_EL1", 0x8C70, true, false,  {AArch64::FeatureBRBE}  }, // 862
+  { "BRBSRC14_EL1", 0x8C71, true, false,  {AArch64::FeatureBRBE}  }, // 863
+  { "BRBTGT14_EL1", 0x8C72, true, false,  {AArch64::FeatureBRBE}  }, // 864
+  { "BRBINF15_EL1", 0x8C78, true, false,  {AArch64::FeatureBRBE}  }, // 865
+  { "BRBSRC15_EL1", 0x8C79, true, false,  {AArch64::FeatureBRBE}  }, // 866
+  { "BRBTGT15_EL1", 0x8C7A, true, false,  {AArch64::FeatureBRBE}  }, // 867
+  { "BRBINF16_EL1", 0x8C04, true, false,  {AArch64::FeatureBRBE}  }, // 868
+  { "BRBSRC16_EL1", 0x8C05, true, false,  {AArch64::FeatureBRBE}  }, // 869
+  { "BRBTGT16_EL1", 0x8C06, true, false,  {AArch64::FeatureBRBE}  }, // 870
+  { "BRBINF17_EL1", 0x8C0C, true, false,  {AArch64::FeatureBRBE}  }, // 871
+  { "BRBSRC17_EL1", 0x8C0D, true, false,  {AArch64::FeatureBRBE}  }, // 872
+  { "BRBTGT17_EL1", 0x8C0E, true, false,  {AArch64::FeatureBRBE}  }, // 873
+  { "BRBINF18_EL1", 0x8C14, true, false,  {AArch64::FeatureBRBE}  }, // 874
+  { "BRBSRC18_EL1", 0x8C15, true, false,  {AArch64::FeatureBRBE}  }, // 875
+  { "BRBTGT18_EL1", 0x8C16, true, false,  {AArch64::FeatureBRBE}  }, // 876
+  { "BRBINF19_EL1", 0x8C1C, true, false,  {AArch64::FeatureBRBE}  }, // 877
+  { "BRBSRC19_EL1", 0x8C1D, true, false,  {AArch64::FeatureBRBE}  }, // 878
+  { "BRBTGT19_EL1", 0x8C1E, true, false,  {AArch64::FeatureBRBE}  }, // 879
+  { "BRBINF20_EL1", 0x8C24, true, false,  {AArch64::FeatureBRBE}  }, // 880
+  { "BRBSRC20_EL1", 0x8C25, true, false,  {AArch64::FeatureBRBE}  }, // 881
+  { "BRBTGT20_EL1", 0x8C26, true, false,  {AArch64::FeatureBRBE}  }, // 882
+  { "BRBINF21_EL1", 0x8C2C, true, false,  {AArch64::FeatureBRBE}  }, // 883
+  { "BRBSRC21_EL1", 0x8C2D, true, false,  {AArch64::FeatureBRBE}  }, // 884
+  { "BRBTGT21_EL1", 0x8C2E, true, false,  {AArch64::FeatureBRBE}  }, // 885
+  { "BRBINF22_EL1", 0x8C34, true, false,  {AArch64::FeatureBRBE}  }, // 886
+  { "BRBSRC22_EL1", 0x8C35, true, false,  {AArch64::FeatureBRBE}  }, // 887
+  { "BRBTGT22_EL1", 0x8C36, true, false,  {AArch64::FeatureBRBE}  }, // 888
+  { "BRBINF23_EL1", 0x8C3C, true, false,  {AArch64::FeatureBRBE}  }, // 889
+  { "BRBSRC23_EL1", 0x8C3D, true, false,  {AArch64::FeatureBRBE}  }, // 890
+  { "BRBTGT23_EL1", 0x8C3E, true, false,  {AArch64::FeatureBRBE}  }, // 891
+  { "BRBINF24_EL1", 0x8C44, true, false,  {AArch64::FeatureBRBE}  }, // 892
+  { "BRBSRC24_EL1", 0x8C45, true, false,  {AArch64::FeatureBRBE}  }, // 893
+  { "BRBTGT24_EL1", 0x8C46, true, false,  {AArch64::FeatureBRBE}  }, // 894
+  { "BRBINF25_EL1", 0x8C4C, true, false,  {AArch64::FeatureBRBE}  }, // 895
+  { "BRBSRC25_EL1", 0x8C4D, true, false,  {AArch64::FeatureBRBE}  }, // 896
+  { "BRBTGT25_EL1", 0x8C4E, true, false,  {AArch64::FeatureBRBE}  }, // 897
+  { "BRBINF26_EL1", 0x8C54, true, false,  {AArch64::FeatureBRBE}  }, // 898
+  { "BRBSRC26_EL1", 0x8C55, true, false,  {AArch64::FeatureBRBE}  }, // 899
+  { "BRBTGT26_EL1", 0x8C56, true, false,  {AArch64::FeatureBRBE}  }, // 900
+  { "BRBINF27_EL1", 0x8C5C, true, false,  {AArch64::FeatureBRBE}  }, // 901
+  { "BRBSRC27_EL1", 0x8C5D, true, false,  {AArch64::FeatureBRBE}  }, // 902
+  { "BRBTGT27_EL1", 0x8C5E, true, false,  {AArch64::FeatureBRBE}  }, // 903
+  { "BRBINF28_EL1", 0x8C64, true, false,  {AArch64::FeatureBRBE}  }, // 904
+  { "BRBSRC28_EL1", 0x8C65, true, false,  {AArch64::FeatureBRBE}  }, // 905
+  { "BRBTGT28_EL1", 0x8C66, true, false,  {AArch64::FeatureBRBE}  }, // 906
+  { "BRBINF29_EL1", 0x8C6C, true, false,  {AArch64::FeatureBRBE}  }, // 907
+  { "BRBSRC29_EL1", 0x8C6D, true, false,  {AArch64::FeatureBRBE}  }, // 908
+  { "BRBTGT29_EL1", 0x8C6E, true, false,  {AArch64::FeatureBRBE}  }, // 909
+  { "BRBINF30_EL1", 0x8C74, true, false,  {AArch64::FeatureBRBE}  }, // 910
+  { "BRBSRC30_EL1", 0x8C75, true, false,  {AArch64::FeatureBRBE}  }, // 911
+  { "BRBTGT30_EL1", 0x8C76, true, false,  {AArch64::FeatureBRBE}  }, // 912
+  { "BRBINF31_EL1", 0x8C7C, true, false,  {AArch64::FeatureBRBE}  }, // 913
+  { "BRBSRC31_EL1", 0x8C7D, true, false,  {AArch64::FeatureBRBE}  }, // 914
+  { "BRBTGT31_EL1", 0x8C7E, true, false,  {AArch64::FeatureBRBE}  }, // 915
+  { "PMSNEVFR_EL1", 0xC4C9, true, true,  {AArch64::FeatureSPE_EEF}  }, // 916
+  { "CPM_IOACC_CTL_EL3", 0xFF90, true, true,  {AArch64::ProcAppleA7}  }, // 917
+ };
+
+const SysReg *lookupSysRegByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "ACCDATA_EL1", 810 },
+    { "ACTLR_EL1", 205 },
+    { "ACTLR_EL2", 206 },
+    { "ACTLR_EL3", 207 },
+    { "AFSR0_EL1", 250 },
+    { "AFSR0_EL12", 606 },
+    { "AFSR0_EL2", 251 },
+    { "AFSR0_EL3", 252 },
+    { "AFSR1_EL1", 253 },
+    { "AFSR1_EL12", 607 },
+    { "AFSR1_EL2", 254 },
+    { "AFSR1_EL3", 255 },
+    { "AIDR_EL1", 14 },
+    { "AMAIR_EL1", 280 },
+    { "AMAIR_EL12", 611 },
+    { "AMAIR_EL2", 281 },
+    { "AMAIR_EL3", 282 },
+    { "AMCFGR_EL0", 689 },
+    { "AMCGCR_EL0", 690 },
+    { "AMCNTENCLR0_EL0", 692 },
+    { "AMCNTENCLR1_EL0", 702 },
+    { "AMCNTENSET0_EL0", 693 },
+    { "AMCNTENSET1_EL0", 703 },
+    { "AMCR_EL0", 688 },
+    { "AMEVCNTR00_EL0", 694 },
+    { "AMEVCNTR01_EL0", 695 },
+    { "AMEVCNTR02_EL0", 696 },
+    { "AMEVCNTR03_EL0", 697 },
+    { "AMEVCNTR10_EL0", 704 },
+    { "AMEVCNTR110_EL0", 714 },
+    { "AMEVCNTR111_EL0", 715 },
+    { "AMEVCNTR112_EL0", 716 },
+    { "AMEVCNTR113_EL0", 717 },
+    { "AMEVCNTR114_EL0", 718 },
+    { "AMEVCNTR115_EL0", 719 },
+    { "AMEVCNTR11_EL0", 705 },
+    { "AMEVCNTR12_EL0", 706 },
+    { "AMEVCNTR13_EL0", 707 },
+    { "AMEVCNTR14_EL0", 708 },
+    { "AMEVCNTR15_EL0", 709 },
+    { "AMEVCNTR16_EL0", 710 },
+    { "AMEVCNTR17_EL0", 711 },
+    { "AMEVCNTR18_EL0", 712 },
+    { "AMEVCNTR19_EL0", 713 },
+    { "AMEVCNTVOFF00_EL2", 767 },
+    { "AMEVCNTVOFF010_EL2", 787 },
+    { "AMEVCNTVOFF011_EL2", 789 },
+    { "AMEVCNTVOFF012_EL2", 791 },
+    { "AMEVCNTVOFF013_EL2", 793 },
+    { "AMEVCNTVOFF014_EL2", 795 },
+    { "AMEVCNTVOFF015_EL2", 797 },
+    { "AMEVCNTVOFF01_EL2", 769 },
+    { "AMEVCNTVOFF02_EL2", 771 },
+    { "AMEVCNTVOFF03_EL2", 773 },
+    { "AMEVCNTVOFF04_EL2", 775 },
+    { "AMEVCNTVOFF05_EL2", 777 },
+    { "AMEVCNTVOFF06_EL2", 779 },
+    { "AMEVCNTVOFF07_EL2", 781 },
+    { "AMEVCNTVOFF08_EL2", 783 },
+    { "AMEVCNTVOFF09_EL2", 785 },
+    { "AMEVCNTVOFF10_EL2", 768 },
+    { "AMEVCNTVOFF110_EL2", 788 },
+    { "AMEVCNTVOFF111_EL2", 790 },
+    { "AMEVCNTVOFF112_EL2", 792 },
+    { "AMEVCNTVOFF113_EL2", 794 },
+    { "AMEVCNTVOFF114_EL2", 796 },
+    { "AMEVCNTVOFF115_EL2", 798 },
+    { "AMEVCNTVOFF11_EL2", 770 },
+    { "AMEVCNTVOFF12_EL2", 772 },
+    { "AMEVCNTVOFF13_EL2", 774 },
+    { "AMEVCNTVOFF14_EL2", 776 },
+    { "AMEVCNTVOFF15_EL2", 778 },
+    { "AMEVCNTVOFF16_EL2", 780 },
+    { "AMEVCNTVOFF17_EL2", 782 },
+    { "AMEVCNTVOFF18_EL2", 784 },
+    { "AMEVCNTVOFF19_EL2", 786 },
+    { "AMEVTYPER00_EL0", 698 },
+    { "AMEVTYPER01_EL0", 699 },
+    { "AMEVTYPER02_EL0", 700 },
+    { "AMEVTYPER03_EL0", 701 },
+    { "AMEVTYPER10_EL0", 720 },
+    { "AMEVTYPER110_EL0", 730 },
+    { "AMEVTYPER111_EL0", 731 },
+    { "AMEVTYPER112_EL0", 732 },
+    { "AMEVTYPER113_EL0", 733 },
+    { "AMEVTYPER114_EL0", 734 },
+    { "AMEVTYPER115_EL0", 735 },
+    { "AMEVTYPER11_EL0", 721 },
+    { "AMEVTYPER12_EL0", 722 },
+    { "AMEVTYPER13_EL0", 723 },
+    { "AMEVTYPER14_EL0", 724 },
+    { "AMEVTYPER15_EL0", 725 },
+    { "AMEVTYPER16_EL0", 726 },
+    { "AMEVTYPER17_EL0", 727 },
+    { "AMEVTYPER18_EL0", 728 },
+    { "AMEVTYPER19_EL0", 729 },
+    { "AMUSERENR_EL0", 691 },
+    { "APDAKEYHI_EL1", 652 },
+    { "APDAKEYLO_EL1", 651 },
+    { "APDBKEYHI_EL1", 654 },
+    { "APDBKEYLO_EL1", 653 },
+    { "APGAKEYHI_EL1", 656 },
+    { "APGAKEYLO_EL1", 655 },
+    { "APIAKEYHI_EL1", 648 },
+    { "APIAKEYLO_EL1", 647 },
+    { "APIBKEYHI_EL1", 650 },
+    { "APIBKEYLO_EL1", 649 },
+    { "BRBCR_EL1", 811 },
+    { "BRBCR_EL12", 812 },
+    { "BRBCR_EL2", 813 },
+    { "BRBFCR_EL1", 814 },
+    { "BRBIDR0_EL1", 815 },
+    { "BRBINF0_EL1", 820 },
+    { "BRBINF10_EL1", 850 },
+    { "BRBINF11_EL1", 853 },
+    { "BRBINF12_EL1", 856 },
+    { "BRBINF13_EL1", 859 },
+    { "BRBINF14_EL1", 862 },
+    { "BRBINF15_EL1", 865 },
+    { "BRBINF16_EL1", 868 },
+    { "BRBINF17_EL1", 871 },
+    { "BRBINF18_EL1", 874 },
+    { "BRBINF19_EL1", 877 },
+    { "BRBINF1_EL1", 823 },
+    { "BRBINF20_EL1", 880 },
+    { "BRBINF21_EL1", 883 },
+    { "BRBINF22_EL1", 886 },
+    { "BRBINF23_EL1", 889 },
+    { "BRBINF24_EL1", 892 },
+    { "BRBINF25_EL1", 895 },
+    { "BRBINF26_EL1", 898 },
+    { "BRBINF27_EL1", 901 },
+    { "BRBINF28_EL1", 904 },
+    { "BRBINF29_EL1", 907 },
+    { "BRBINF2_EL1", 826 },
+    { "BRBINF30_EL1", 910 },
+    { "BRBINF31_EL1", 913 },
+    { "BRBINF3_EL1", 829 },
+    { "BRBINF4_EL1", 832 },
+    { "BRBINF5_EL1", 835 },
+    { "BRBINF6_EL1", 838 },
+    { "BRBINF7_EL1", 841 },
+    { "BRBINF8_EL1", 844 },
+    { "BRBINF9_EL1", 847 },
+    { "BRBINFINJ_EL1", 816 },
+    { "BRBSRC0_EL1", 821 },
+    { "BRBSRC10_EL1", 851 },
+    { "BRBSRC11_EL1", 854 },
+    { "BRBSRC12_EL1", 857 },
+    { "BRBSRC13_EL1", 860 },
+    { "BRBSRC14_EL1", 863 },
+    { "BRBSRC15_EL1", 866 },
+    { "BRBSRC16_EL1", 869 },
+    { "BRBSRC17_EL1", 872 },
+    { "BRBSRC18_EL1", 875 },
+    { "BRBSRC19_EL1", 878 },
+    { "BRBSRC1_EL1", 824 },
+    { "BRBSRC20_EL1", 881 },
+    { "BRBSRC21_EL1", 884 },
+    { "BRBSRC22_EL1", 887 },
+    { "BRBSRC23_EL1", 890 },
+    { "BRBSRC24_EL1", 893 },
+    { "BRBSRC25_EL1", 896 },
+    { "BRBSRC26_EL1", 899 },
+    { "BRBSRC27_EL1", 902 },
+    { "BRBSRC28_EL1", 905 },
+    { "BRBSRC29_EL1", 908 },
+    { "BRBSRC2_EL1", 827 },
+    { "BRBSRC30_EL1", 911 },
+    { "BRBSRC31_EL1", 914 },
+    { "BRBSRC3_EL1", 830 },
+    { "BRBSRC4_EL1", 833 },
+    { "BRBSRC5_EL1", 836 },
+    { "BRBSRC6_EL1", 839 },
+    { "BRBSRC7_EL1", 842 },
+    { "BRBSRC8_EL1", 845 },
+    { "BRBSRC9_EL1", 848 },
+    { "BRBSRCINJ_EL1", 817 },
+    { "BRBTGT0_EL1", 822 },
+    { "BRBTGT10_EL1", 852 },
+    { "BRBTGT11_EL1", 855 },
+    { "BRBTGT12_EL1", 858 },
+    { "BRBTGT13_EL1", 861 },
+    { "BRBTGT14_EL1", 864 },
+    { "BRBTGT15_EL1", 867 },
+    { "BRBTGT16_EL1", 870 },
+    { "BRBTGT17_EL1", 873 },
+    { "BRBTGT18_EL1", 876 },
+    { "BRBTGT19_EL1", 879 },
+    { "BRBTGT1_EL1", 825 },
+    { "BRBTGT20_EL1", 882 },
+    { "BRBTGT21_EL1", 885 },
+    { "BRBTGT22_EL1", 888 },
+    { "BRBTGT23_EL1", 891 },
+    { "BRBTGT24_EL1", 894 },
+    { "BRBTGT25_EL1", 897 },
+    { "BRBTGT26_EL1", 900 },
+    { "BRBTGT27_EL1", 903 },
+    { "BRBTGT28_EL1", 906 },
+    { "BRBTGT29_EL1", 909 },
+    { "BRBTGT2_EL1", 828 },
+    { "BRBTGT30_EL1", 912 },
+    { "BRBTGT31_EL1", 915 },
+    { "BRBTGT3_EL1", 831 },
+    { "BRBTGT4_EL1", 834 },
+    { "BRBTGT5_EL1", 837 },
+    { "BRBTGT6_EL1", 840 },
+    { "BRBTGT7_EL1", 843 },
+    { "BRBTGT8_EL1", 846 },
+    { "BRBTGT9_EL1", 849 },
+    { "BRBTGTINJ_EL1", 818 },
+    { "BRBTS_EL1", 819 },
+    { "CCSIDR2_EL1", 9 },
+    { "CCSIDR_EL1", 8 },
+    { "CLIDR_EL1", 10 },
+    { "CNTFRQ_EL0", 295 },
+    { "CNTHCTL_EL2", 298 },
+    { "CNTHPS_CTL_EL2", 664 },
+    { "CNTHPS_CVAL_EL2", 663 },
+    { "CNTHPS_TVAL_EL2", 662 },
+    { "CNTHP_CTL_EL2", 303 },
+    { "CNTHP_CVAL_EL2", 306 },
+    { "CNTHP_TVAL_EL2", 300 },
+    { "CNTHVS_CTL_EL2", 661 },
+    { "CNTHVS_CVAL_EL2", 660 },
+    { "CNTHVS_TVAL_EL2", 659 },
+    { "CNTHV_CTL_EL2", 600 },
+    { "CNTHV_CVAL_EL2", 599 },
+    { "CNTHV_TVAL_EL2", 598 },
+    { "CNTISCALE_EL2", 805 },
+    { "CNTKCTL_EL1", 297 },
+    { "CNTKCTL_EL12", 614 },
+    { "CNTPCTSS_EL0", 808 },
+    { "CNTPCT_EL0", 51 },
+    { "CNTPOFF_EL2", 806 },
+    { "CNTPS_CTL_EL1", 304 },
+    { "CNTPS_CVAL_EL1", 307 },
+    { "CNTPS_TVAL_EL1", 301 },
+    { "CNTP_CTL_EL0", 302 },
+    { "CNTP_CTL_EL02", 616 },
+    { "CNTP_CVAL_EL0", 305 },
+    { "CNTP_CVAL_EL02", 617 },
+    { "CNTP_TVAL_EL0", 299 },
+    { "CNTP_TVAL_EL02", 615 },
+    { "CNTSCALE_EL2", 804 },
+    { "CNTVCTSS_EL0", 809 },
+    { "CNTVCT_EL0", 52 },
+    { "CNTVFRQ_EL2", 807 },
+    { "CNTVOFF_EL2", 296 },
+    { "CNTV_CTL_EL0", 309 },
+    { "CNTV_CTL_EL02", 619 },
+    { "CNTV_CVAL_EL0", 310 },
+    { "CNTV_CVAL_EL02", 620 },
+    { "CNTV_TVAL_EL0", 308 },
+    { "CNTV_TVAL_EL02", 618 },
+    { "CONTEXTIDR_EL1", 289 },
+    { "CONTEXTIDR_EL12", 613 },
+    { "CONTEXTIDR_EL2", 623 },
+    { "CPACR_EL1", 201 },
+    { "CPACR_EL12", 602 },
+    { "CPM_IOACC_CTL_EL3", 917 },
+    { "CPTR_EL2", 213 },
+    { "CPTR_EL3", 214 },
+    { "CSSELR_EL1", 198 },
+    { "CTR_EL0", 11 },
+    { "CURRENTEL", 240 },
+    { "DACR32_EL2", 227 },
+    { "DAIF", 239 },
+    { "DBGAUTHSTATUS_EL1", 4 },
+    { "DBGBCR0_EL1", 145 },
+    { "DBGBCR10_EL1", 155 },
+    { "DBGBCR11_EL1", 156 },
+    { "DBGBCR12_EL1", 157 },
+    { "DBGBCR13_EL1", 158 },
+    { "DBGBCR14_EL1", 159 },
+    { "DBGBCR15_EL1", 160 },
+    { "DBGBCR1_EL1", 146 },
+    { "DBGBCR2_EL1", 147 },
+    { "DBGBCR3_EL1", 148 },
+    { "DBGBCR4_EL1", 149 },
+    { "DBGBCR5_EL1", 150 },
+    { "DBGBCR6_EL1", 151 },
+    { "DBGBCR7_EL1", 152 },
+    { "DBGBCR8_EL1", 153 },
+    { "DBGBCR9_EL1", 154 },
+    { "DBGBVR0_EL1", 129 },
+    { "DBGBVR10_EL1", 139 },
+    { "DBGBVR11_EL1", 140 },
+    { "DBGBVR12_EL1", 141 },
+    { "DBGBVR13_EL1", 142 },
+    { "DBGBVR14_EL1", 143 },
+    { "DBGBVR15_EL1", 144 },
+    { "DBGBVR1_EL1", 130 },
+    { "DBGBVR2_EL1", 131 },
+    { "DBGBVR3_EL1", 132 },
+    { "DBGBVR4_EL1", 133 },
+    { "DBGBVR5_EL1", 134 },
+    { "DBGBVR6_EL1", 135 },
+    { "DBGBVR7_EL1", 136 },
+    { "DBGBVR8_EL1", 137 },
+    { "DBGBVR9_EL1", 138 },
+    { "DBGCLAIMCLR_EL1", 197 },
+    { "DBGCLAIMSET_EL1", 196 },
+    { "DBGDTRRX_EL0", 1 },
+    { "DBGDTRTX_EL0", 110 },
+    { "DBGDTR_EL0", 126 },
+    { "DBGPRCR_EL1", 195 },
+    { "DBGVCR32_EL2", 128 },
+    { "DBGWCR0_EL1", 177 },
+    { "DBGWCR10_EL1", 187 },
+    { "DBGWCR11_EL1", 188 },
+    { "DBGWCR12_EL1", 189 },
+    { "DBGWCR13_EL1", 190 },
+    { "DBGWCR14_EL1", 191 },
+    { "DBGWCR15_EL1", 192 },
+    { "DBGWCR1_EL1", 178 },
+    { "DBGWCR2_EL1", 179 },
+    { "DBGWCR3_EL1", 180 },
+    { "DBGWCR4_EL1", 181 },
+    { "DBGWCR5_EL1", 182 },
+    { "DBGWCR6_EL1", 183 },
+    { "DBGWCR7_EL1", 184 },
+    { "DBGWCR8_EL1", 185 },
+    { "DBGWCR9_EL1", 186 },
+    { "DBGWVR0_EL1", 161 },
+    { "DBGWVR10_EL1", 171 },
+    { "DBGWVR11_EL1", 172 },
+    { "DBGWVR12_EL1", 173 },
+    { "DBGWVR13_EL1", 174 },
+    { "DBGWVR14_EL1", 175 },
+    { "DBGWVR15_EL1", 176 },
+    { "DBGWVR1_EL1", 162 },
+    { "DBGWVR2_EL1", 163 },
+    { "DBGWVR3_EL1", 164 },
+    { "DBGWVR4_EL1", 165 },
+    { "DBGWVR5_EL1", 166 },
+    { "DBGWVR6_EL1", 167 },
+    { "DBGWVR7_EL1", 168 },
+    { "DBGWVR8_EL1", 169 },
+    { "DBGWVR9_EL1", 170 },
+    { "DCZID_EL0", 15 },
+    { "DISR_EL1", 644 },
+    { "DIT", 739 },
+    { "DLR_EL0", 248 },
+    { "DSPSR_EL0", 247 },
+    { "ELR_EL1", 231 },
+    { "ELR_EL12", 622 },
+    { "ELR_EL2", 232 },
+    { "ELR_EL3", 233 },
+    { "ERRIDR_EL1", 101 },
+    { "ERRSELR_EL1", 638 },
+    { "ERXADDR_EL1", 641 },
+    { "ERXCTLR_EL1", 639 },
+    { "ERXFR_EL1", 102 },
+    { "ERXMISC0_EL1", 642 },
+    { "ERXMISC1_EL1", 643 },
+    { "ERXMISC2_EL1", 669 },
+    { "ERXMISC3_EL1", 670 },
+    { "ERXPFGCDN_EL1", 668 },
+    { "ERXPFGCTL_EL1", 667 },
+    { "ERXPFGF_EL1", 671 },
+    { "ERXSTATUS_EL1", 640 },
+    { "ESR_EL1", 256 },
+    { "ESR_EL12", 608 },
+    { "ESR_EL2", 257 },
+    { "ESR_EL3", 258 },
+    { "FAR_EL1", 260 },
+    { "FAR_EL12", 609 },
+    { "FAR_EL2", 261 },
+    { "FAR_EL3", 262 },
+    { "FPCR", 245 },
+    { "FPEXC32_EL2", 259 },
+    { "FPSR", 246 },
+    { "GCR_EL1", 747 },
+    { "GMID_EL1", 754 },
+    { "HACR_EL2", 216 },
+    { "HCRX_EL2", 209 },
+    { "HCR_EL2", 208 },
+    { "HDFGRTR_EL2", 802 },
+    { "HDFGWTR_EL2", 803 },
+    { "HFGITR_EL2", 801 },
+    { "HFGRTR_EL2", 799 },
+    { "HFGWTR_EL2", 800 },
+    { "HPFAR_EL2", 263 },
+    { "HSTR_EL2", 215 },
+    { "ICC_AP0R0_EL1", 557 },
+    { "ICC_AP0R1_EL1", 558 },
+    { "ICC_AP0R2_EL1", 559 },
+    { "ICC_AP0R3_EL1", 560 },
+    { "ICC_AP1R0_EL1", 561 },
+    { "ICC_AP1R1_EL1", 562 },
+    { "ICC_AP1R2_EL1", 563 },
+    { "ICC_AP1R3_EL1", 564 },
+    { "ICC_ASGI1R_EL1", 119 },
+    { "ICC_BPR0_EL1", 547 },
+    { "ICC_BPR1_EL1", 546 },
+    { "ICC_CTLR_EL1", 549 },
+    { "ICC_CTLR_EL3", 550 },
+    { "ICC_DIR_EL1", 117 },
+    { "ICC_EOIR0_EL1", 116 },
+    { "ICC_EOIR1_EL1", 115 },
+    { "ICC_HPPIR0_EL1", 94 },
+    { "ICC_HPPIR1_EL1", 93 },
+    { "ICC_IAR0_EL1", 92 },
+    { "ICC_IAR1_EL1", 91 },
+    { "ICC_IGRPEN0_EL1", 554 },
+    { "ICC_IGRPEN1_EL1", 555 },
+    { "ICC_IGRPEN1_EL3", 556 },
+    { "ICC_PMR_EL1", 548 },
+    { "ICC_RPR_EL1", 95 },
+    { "ICC_SGI0R_EL1", 120 },
+    { "ICC_SGI1R_EL1", 118 },
+    { "ICC_SRE_EL1", 551 },
+    { "ICC_SRE_EL2", 552 },
+    { "ICC_SRE_EL3", 553 },
+    { "ICH_AP0R0_EL2", 565 },
+    { "ICH_AP0R1_EL2", 566 },
+    { "ICH_AP0R2_EL2", 567 },
+    { "ICH_AP0R3_EL2", 568 },
+    { "ICH_AP1R0_EL2", 569 },
+    { "ICH_AP1R1_EL2", 570 },
+    { "ICH_AP1R2_EL2", 571 },
+    { "ICH_AP1R3_EL2", 572 },
+    { "ICH_EISR_EL2", 97 },
+    { "ICH_ELRSR_EL2", 98 },
+    { "ICH_HCR_EL2", 573 },
+    { "ICH_LR0_EL2", 576 },
+    { "ICH_LR10_EL2", 586 },
+    { "ICH_LR11_EL2", 587 },
+    { "ICH_LR12_EL2", 588 },
+    { "ICH_LR13_EL2", 589 },
+    { "ICH_LR14_EL2", 590 },
+    { "ICH_LR15_EL2", 591 },
+    { "ICH_LR1_EL2", 577 },
+    { "ICH_LR2_EL2", 578 },
+    { "ICH_LR3_EL2", 579 },
+    { "ICH_LR4_EL2", 580 },
+    { "ICH_LR5_EL2", 581 },
+    { "ICH_LR6_EL2", 582 },
+    { "ICH_LR7_EL2", 583 },
+    { "ICH_LR8_EL2", 584 },
+    { "ICH_LR9_EL2", 585 },
+    { "ICH_MISR_EL2", 574 },
+    { "ICH_VMCR_EL2", 575 },
+    { "ICH_VTR_EL2", 96 },
+    { "ID_AA64AFR0_EL1", 36 },
+    { "ID_AA64AFR1_EL1", 37 },
+    { "ID_AA64DFR0_EL1", 34 },
+    { "ID_AA64DFR1_EL1", 35 },
+    { "ID_AA64ISAR0_EL1", 38 },
+    { "ID_AA64ISAR1_EL1", 39 },
+    { "ID_AA64ISAR2_EL1", 40 },
+    { "ID_AA64MMFR0_EL1", 41 },
+    { "ID_AA64MMFR1_EL1", 42 },
+    { "ID_AA64MMFR2_EL1", 43 },
+    { "ID_AA64PFR0_EL1", 32 },
+    { "ID_AA64PFR1_EL1", 33 },
+    { "ID_AA64ZFR0_EL1", 99 },
+    { "ID_AFR0_EL1", 20 },
+    { "ID_DFR0_EL1", 19 },
+    { "ID_ISAR0_EL1", 25 },
+    { "ID_ISAR1_EL1", 26 },
+    { "ID_ISAR2_EL1", 27 },
+    { "ID_ISAR3_EL1", 28 },
+    { "ID_ISAR4_EL1", 29 },
+    { "ID_ISAR5_EL1", 30 },
+    { "ID_ISAR6_EL1", 31 },
+    { "ID_MMFR0_EL1", 21 },
+    { "ID_MMFR1_EL1", 22 },
+    { "ID_MMFR2_EL1", 23 },
+    { "ID_MMFR3_EL1", 24 },
+    { "ID_MMFR4_EL1", 53 },
+    { "ID_MMFR5_EL1", 54 },
+    { "ID_PFR0_EL1", 16 },
+    { "ID_PFR1_EL1", 17 },
+    { "ID_PFR2_EL1", 18 },
+    { "IFSR32_EL2", 249 },
+    { "ISR_EL1", 50 },
+    { "LORC_EL1", 596 },
+    { "LOREA_EL1", 594 },
+    { "LORID_EL1", 100 },
+    { "LORN_EL1", 595 },
+    { "LORSA_EL1", 593 },
+    { "MAIR_EL1", 277 },
+    { "MAIR_EL12", 610 },
+    { "MAIR_EL2", 278 },
+    { "MAIR_EL3", 279 },
+    { "MDCCINT_EL1", 124 },
+    { "MDCCSR_EL0", 0 },
+    { "MDCR_EL2", 211 },
+    { "MDCR_EL3", 217 },
+    { "MDRAR_EL1", 2 },
+    { "MDSCR_EL1", 125 },
+    { "MIDR_EL1", 7 },
+    { "MPAM0_EL1", 672 },
+    { "MPAM1_EL1", 673 },
+    { "MPAM1_EL12", 676 },
+    { "MPAM2_EL2", 674 },
+    { "MPAM3_EL3", 675 },
+    { "MPAMHCR_EL2", 677 },
+    { "MPAMIDR_EL1", 687 },
+    { "MPAMVPM0_EL2", 679 },
+    { "MPAMVPM1_EL2", 680 },
+    { "MPAMVPM2_EL2", 681 },
+    { "MPAMVPM3_EL2", 682 },
+    { "MPAMVPM4_EL2", 683 },
+    { "MPAMVPM5_EL2", 684 },
+    { "MPAMVPM6_EL2", 685 },
+    { "MPAMVPM7_EL2", 686 },
+    { "MPAMVPMV_EL2", 678 },
+    { "MPIDR_EL1", 12 },
+    { "MVFR0_EL1", 44 },
+    { "MVFR1_EL1", 45 },
+    { "MVFR2_EL1", 46 },
+    { "NZCV", 238 },
+    { "OSDLR_EL1", 194 },
+    { "OSDTRRX_EL1", 121 },
+    { "OSDTRTX_EL1", 122 },
+    { "OSECCR_EL1", 127 },
+    { "OSLAR_EL1", 111 },
+    { "OSLSR_EL1", 3 },
+    { "PAN", 592 },
+    { "PAR_EL1", 264 },
+    { "PMBIDR_EL1", 628 },
+    { "PMBLIMITR_EL1", 625 },
+    { "PMBPTR_EL1", 626 },
+    { "PMBSR_EL1", 627 },
+    { "PMCCFILTR_EL0", 342 },
+    { "PMCCNTR_EL0", 270 },
+    { "PMCEID0_EL0", 5 },
+    { "PMCEID1_EL0", 6 },
+    { "PMCNTENCLR_EL0", 267 },
+    { "PMCNTENSET_EL0", 266 },
+    { "PMCR_EL0", 265 },
+    { "PMEVCNTR0_EL0", 311 },
+    { "PMEVCNTR10_EL0", 321 },
+    { "PMEVCNTR11_EL0", 322 },
+    { "PMEVCNTR12_EL0", 323 },
+    { "PMEVCNTR13_EL0", 324 },
+    { "PMEVCNTR14_EL0", 325 },
+    { "PMEVCNTR15_EL0", 326 },
+    { "PMEVCNTR16_EL0", 327 },
+    { "PMEVCNTR17_EL0", 328 },
+    { "PMEVCNTR18_EL0", 329 },
+    { "PMEVCNTR19_EL0", 330 },
+    { "PMEVCNTR1_EL0", 312 },
+    { "PMEVCNTR20_EL0", 331 },
+    { "PMEVCNTR21_EL0", 332 },
+    { "PMEVCNTR22_EL0", 333 },
+    { "PMEVCNTR23_EL0", 334 },
+    { "PMEVCNTR24_EL0", 335 },
+    { "PMEVCNTR25_EL0", 336 },
+    { "PMEVCNTR26_EL0", 337 },
+    { "PMEVCNTR27_EL0", 338 },
+    { "PMEVCNTR28_EL0", 339 },
+    { "PMEVCNTR29_EL0", 340 },
+    { "PMEVCNTR2_EL0", 313 },
+    { "PMEVCNTR30_EL0", 341 },
+    { "PMEVCNTR3_EL0", 314 },
+    { "PMEVCNTR4_EL0", 315 },
+    { "PMEVCNTR5_EL0", 316 },
+    { "PMEVCNTR6_EL0", 317 },
+    { "PMEVCNTR7_EL0", 318 },
+    { "PMEVCNTR8_EL0", 319 },
+    { "PMEVCNTR9_EL0", 320 },
+    { "PMEVTYPER0_EL0", 343 },
+    { "PMEVTYPER10_EL0", 353 },
+    { "PMEVTYPER11_EL0", 354 },
+    { "PMEVTYPER12_EL0", 355 },
+    { "PMEVTYPER13_EL0", 356 },
+    { "PMEVTYPER14_EL0", 357 },
+    { "PMEVTYPER15_EL0", 358 },
+    { "PMEVTYPER16_EL0", 359 },
+    { "PMEVTYPER17_EL0", 360 },
+    { "PMEVTYPER18_EL0", 361 },
+    { "PMEVTYPER19_EL0", 362 },
+    { "PMEVTYPER1_EL0", 344 },
+    { "PMEVTYPER20_EL0", 363 },
+    { "PMEVTYPER21_EL0", 364 },
+    { "PMEVTYPER22_EL0", 365 },
+    { "PMEVTYPER23_EL0", 366 },
+    { "PMEVTYPER24_EL0", 367 },
+    { "PMEVTYPER25_EL0", 368 },
+    { "PMEVTYPER26_EL0", 369 },
+    { "PMEVTYPER27_EL0", 370 },
+    { "PMEVTYPER28_EL0", 371 },
+    { "PMEVTYPER29_EL0", 372 },
+    { "PMEVTYPER2_EL0", 345 },
+    { "PMEVTYPER30_EL0", 373 },
+    { "PMEVTYPER3_EL0", 346 },
+    { "PMEVTYPER4_EL0", 347 },
+    { "PMEVTYPER5_EL0", 348 },
+    { "PMEVTYPER6_EL0", 349 },
+    { "PMEVTYPER7_EL0", 350 },
+    { "PMEVTYPER8_EL0", 351 },
+    { "PMEVTYPER9_EL0", 352 },
+    { "PMINTENCLR_EL1", 275 },
+    { "PMINTENSET_EL1", 274 },
+    { "PMMIR_EL1", 666 },
+    { "PMOVSCLR_EL0", 268 },
+    { "PMOVSSET_EL0", 276 },
+    { "PMSCR_EL1", 631 },
+    { "PMSCR_EL12", 630 },
+    { "PMSCR_EL2", 629 },
+    { "PMSELR_EL0", 269 },
+    { "PMSEVFR_EL1", 635 },
+    { "PMSFCR_EL1", 634 },
+    { "PMSICR_EL1", 632 },
+    { "PMSIDR_EL1", 637 },
+    { "PMSIRR_EL1", 633 },
+    { "PMSLATFR_EL1", 636 },
+    { "PMSNEVFR_EL1", 916 },
+    { "PMSWINC_EL0", 112 },
+    { "PMUSERENR_EL0", 273 },
+    { "PMXEVCNTR_EL0", 272 },
+    { "PMXEVTYPER_EL0", 271 },
+    { "REVIDR_EL1", 13 },
+    { "RGSR_EL1", 748 },
+    { "RMR_EL1", 286 },
+    { "RMR_EL2", 287 },
+    { "RMR_EL3", 288 },
+    { "RNDR", 103 },
+    { "RNDRRS", 104 },
+    { "RVBAR_EL1", 47 },
+    { "RVBAR_EL2", 48 },
+    { "RVBAR_EL3", 49 },
+    { "SCR_EL3", 210 },
+    { "SCTLR_EL1", 202 },
+    { "SCTLR_EL12", 601 },
+    { "SCTLR_EL2", 203 },
+    { "SCTLR_EL3", 204 },
+    { "SCXTNUM_EL0", 105 },
+    { "SCXTNUM_EL1", 106 },
+    { "SCXTNUM_EL12", 109 },
+    { "SCXTNUM_EL2", 107 },
+    { "SCXTNUM_EL3", 108 },
+    { "SDER32_EL2", 665 },
+    { "SDER32_EL3", 212 },
+    { "SPSEL", 237 },
+    { "SPSR_ABT", 242 },
+    { "SPSR_EL1", 228 },
+    { "SPSR_EL12", 621 },
+    { "SPSR_EL2", 229 },
+    { "SPSR_EL3", 230 },
+    { "SPSR_FIQ", 244 },
+    { "SPSR_IRQ", 241 },
+    { "SPSR_UND", 243 },
+    { "SP_EL0", 234 },
+    { "SP_EL1", 235 },
+    { "SP_EL2", 236 },
+    { "SSBS", 745 },
+    { "TCO", 746 },
+    { "TCR_EL1", 222 },
+    { "TCR_EL12", 605 },
+    { "TCR_EL2", 223 },
+    { "TCR_EL3", 224 },
+    { "TEECR32_EL1", 123 },
+    { "TEEHBR32_EL1", 193 },
+    { "TFSRE0_EL1", 753 },
+    { "TFSR_EL1", 749 },
+    { "TFSR_EL12", 752 },
+    { "TFSR_EL2", 750 },
+    { "TFSR_EL3", 751 },
+    { "TPIDRRO_EL0", 293 },
+    { "TPIDR_EL0", 290 },
+    { "TPIDR_EL1", 294 },
+    { "TPIDR_EL2", 291 },
+    { "TPIDR_EL3", 292 },
+    { "TRBBASER_EL1", 762 },
+    { "TRBIDR_EL1", 766 },
+    { "TRBLIMITR_EL1", 760 },
+    { "TRBMAR_EL1", 764 },
+    { "TRBPTR_EL1", 761 },
+    { "TRBSR_EL1", 763 },
+    { "TRBTRG_EL1", 765 },
+    { "TRCACATR0", 491 },
+    { "TRCACATR1", 492 },
+    { "TRCACATR10", 501 },
+    { "TRCACATR11", 502 },
+    { "TRCACATR12", 503 },
+    { "TRCACATR13", 504 },
+    { "TRCACATR14", 505 },
+    { "TRCACATR15", 506 },
+    { "TRCACATR2", 493 },
+    { "TRCACATR3", 494 },
+    { "TRCACATR4", 495 },
+    { "TRCACATR5", 496 },
+    { "TRCACATR6", 497 },
+    { "TRCACATR7", 498 },
+    { "TRCACATR8", 499 },
+    { "TRCACATR9", 500 },
+    { "TRCACVR0", 475 },
+    { "TRCACVR1", 476 },
+    { "TRCACVR10", 485 },
+    { "TRCACVR11", 486 },
+    { "TRCACVR12", 487 },
+    { "TRCACVR13", 488 },
+    { "TRCACVR14", 489 },
+    { "TRCACVR15", 490 },
+    { "TRCACVR2", 477 },
+    { "TRCACVR3", 478 },
+    { "TRCACVR4", 479 },
+    { "TRCACVR5", 480 },
+    { "TRCACVR6", 481 },
+    { "TRCACVR7", 482 },
+    { "TRCACVR8", 483 },
+    { "TRCACVR9", 484 },
+    { "TRCAUTHSTATUS", 75 },
+    { "TRCAUXCTLR", 377 },
+    { "TRCBBCTLR", 384 },
+    { "TRCCCCTLR", 383 },
+    { "TRCCIDCCTLR0", 539 },
+    { "TRCCIDCCTLR1", 540 },
+    { "TRCCIDCVR0", 523 },
+    { "TRCCIDCVR1", 524 },
+    { "TRCCIDCVR2", 525 },
+    { "TRCCIDCVR3", 526 },
+    { "TRCCIDCVR4", 527 },
+    { "TRCCIDCVR5", 528 },
+    { "TRCCIDCVR6", 529 },
+    { "TRCCIDCVR7", 530 },
+    { "TRCCIDR0", 87 },
+    { "TRCCIDR1", 88 },
+    { "TRCCIDR2", 89 },
+    { "TRCCIDR3", 90 },
+    { "TRCCLAIMCLR", 545 },
+    { "TRCCLAIMSET", 544 },
+    { "TRCCNTCTLR0", 404 },
+    { "TRCCNTCTLR1", 405 },
+    { "TRCCNTCTLR2", 406 },
+    { "TRCCNTCTLR3", 407 },
+    { "TRCCNTRLDVR0", 400 },
+    { "TRCCNTRLDVR1", 401 },
+    { "TRCCNTRLDVR2", 402 },
+    { "TRCCNTRLDVR3", 403 },
+    { "TRCCNTVR0", 408 },
+    { "TRCCNTVR1", 409 },
+    { "TRCCNTVR2", 410 },
+    { "TRCCNTVR3", 411 },
+    { "TRCCONFIGR", 376 },
+    { "TRCDEVAFF0", 72 },
+    { "TRCDEVAFF1", 73 },
+    { "TRCDEVARCH", 76 },
+    { "TRCDEVID", 77 },
+    { "TRCDEVTYPE", 78 },
+    { "TRCDVCMR0", 515 },
+    { "TRCDVCMR1", 516 },
+    { "TRCDVCMR2", 517 },
+    { "TRCDVCMR3", 518 },
+    { "TRCDVCMR4", 519 },
+    { "TRCDVCMR5", 520 },
+    { "TRCDVCMR6", 521 },
+    { "TRCDVCMR7", 522 },
+    { "TRCDVCVR0", 507 },
+    { "TRCDVCVR1", 508 },
+    { "TRCDVCVR2", 509 },
+    { "TRCDVCVR3", 510 },
+    { "TRCDVCVR4", 511 },
+    { "TRCDVCVR5", 512 },
+    { "TRCDVCVR6", 513 },
+    { "TRCDVCVR7", 514 },
+    { "TRCEVENTCTL0R", 378 },
+    { "TRCEVENTCTL1R", 379 },
+    { "TRCEXTINSELR", 399 },
+    { "TRCEXTINSELR0", 756 },
+    { "TRCEXTINSELR1", 757 },
+    { "TRCEXTINSELR2", 758 },
+    { "TRCEXTINSELR3", 759 },
+    { "TRCIDR0", 62 },
+    { "TRCIDR1", 63 },
+    { "TRCIDR10", 58 },
+    { "TRCIDR11", 59 },
+    { "TRCIDR12", 60 },
+    { "TRCIDR13", 61 },
+    { "TRCIDR2", 64 },
+    { "TRCIDR3", 65 },
+    { "TRCIDR4", 66 },
+    { "TRCIDR5", 67 },
+    { "TRCIDR6", 68 },
+    { "TRCIDR7", 69 },
+    { "TRCIDR8", 56 },
+    { "TRCIDR9", 57 },
+    { "TRCIMSPEC0", 412 },
+    { "TRCIMSPEC1", 413 },
+    { "TRCIMSPEC2", 414 },
+    { "TRCIMSPEC3", 415 },
+    { "TRCIMSPEC4", 416 },
+    { "TRCIMSPEC5", 417 },
+    { "TRCIMSPEC6", 418 },
+    { "TRCIMSPEC7", 419 },
+    { "TRCITCTRL", 543 },
+    { "TRCLAR", 114 },
+    { "TRCLSR", 74 },
+    { "TRCOSLAR", 113 },
+    { "TRCOSLSR", 70 },
+    { "TRCPDCR", 474 },
+    { "TRCPDSR", 71 },
+    { "TRCPIDR0", 83 },
+    { "TRCPIDR1", 84 },
+    { "TRCPIDR2", 85 },
+    { "TRCPIDR3", 86 },
+    { "TRCPIDR4", 79 },
+    { "TRCPIDR5", 80 },
+    { "TRCPIDR6", 81 },
+    { "TRCPIDR7", 82 },
+    { "TRCPRGCTLR", 374 },
+    { "TRCPROCSELR", 375 },
+    { "TRCQCTLR", 386 },
+    { "TRCRSCTLR10", 428 },
+    { "TRCRSCTLR11", 429 },
+    { "TRCRSCTLR12", 430 },
+    { "TRCRSCTLR13", 431 },
+    { "TRCRSCTLR14", 432 },
+    { "TRCRSCTLR15", 433 },
+    { "TRCRSCTLR16", 434 },
+    { "TRCRSCTLR17", 435 },
+    { "TRCRSCTLR18", 436 },
+    { "TRCRSCTLR19", 437 },
+    { "TRCRSCTLR2", 420 },
+    { "TRCRSCTLR20", 438 },
+    { "TRCRSCTLR21", 439 },
+    { "TRCRSCTLR22", 440 },
+    { "TRCRSCTLR23", 441 },
+    { "TRCRSCTLR24", 442 },
+    { "TRCRSCTLR25", 443 },
+    { "TRCRSCTLR26", 444 },
+    { "TRCRSCTLR27", 445 },
+    { "TRCRSCTLR28", 446 },
+    { "TRCRSCTLR29", 447 },
+    { "TRCRSCTLR3", 421 },
+    { "TRCRSCTLR30", 448 },
+    { "TRCRSCTLR31", 449 },
+    { "TRCRSCTLR4", 422 },
+    { "TRCRSCTLR5", 423 },
+    { "TRCRSCTLR6", 424 },
+    { "TRCRSCTLR7", 425 },
+    { "TRCRSCTLR8", 426 },
+    { "TRCRSCTLR9", 427 },
+    { "TRCRSR", 755 },
+    { "TRCSEQEVR0", 394 },
+    { "TRCSEQEVR1", 395 },
+    { "TRCSEQEVR2", 396 },
+    { "TRCSEQRSTEVR", 397 },
+    { "TRCSEQSTR", 398 },
+    { "TRCSSCCR0", 450 },
+    { "TRCSSCCR1", 451 },
+    { "TRCSSCCR2", 452 },
+    { "TRCSSCCR3", 453 },
+    { "TRCSSCCR4", 454 },
+    { "TRCSSCCR5", 455 },
+    { "TRCSSCCR6", 456 },
+    { "TRCSSCCR7", 457 },
+    { "TRCSSCSR0", 458 },
+    { "TRCSSCSR1", 459 },
+    { "TRCSSCSR2", 460 },
+    { "TRCSSCSR3", 461 },
+    { "TRCSSCSR4", 462 },
+    { "TRCSSCSR5", 463 },
+    { "TRCSSCSR6", 464 },
+    { "TRCSSCSR7", 465 },
+    { "TRCSSPCICR0", 466 },
+    { "TRCSSPCICR1", 467 },
+    { "TRCSSPCICR2", 468 },
+    { "TRCSSPCICR3", 469 },
+    { "TRCSSPCICR4", 470 },
+    { "TRCSSPCICR5", 471 },
+    { "TRCSSPCICR6", 472 },
+    { "TRCSSPCICR7", 473 },
+    { "TRCSTALLCTLR", 380 },
+    { "TRCSTATR", 55 },
+    { "TRCSYNCPR", 382 },
+    { "TRCTRACEIDR", 385 },
+    { "TRCTSCTLR", 381 },
+    { "TRCVDARCCTLR", 393 },
+    { "TRCVDCTLR", 391 },
+    { "TRCVDSACCTLR", 392 },
+    { "TRCVICTLR", 387 },
+    { "TRCVIIECTLR", 388 },
+    { "TRCVIPCSSCTLR", 390 },
+    { "TRCVISSCTLR", 389 },
+    { "TRCVMIDCCTLR0", 541 },
+    { "TRCVMIDCCTLR1", 542 },
+    { "TRCVMIDCVR0", 531 },
+    { "TRCVMIDCVR1", 532 },
+    { "TRCVMIDCVR2", 533 },
+    { "TRCVMIDCVR3", 534 },
+    { "TRCVMIDCVR4", 535 },
+    { "TRCVMIDCVR5", 536 },
+    { "TRCVMIDCVR6", 537 },
+    { "TRCVMIDCVR7", 538 },
+    { "TRFCR_EL1", 736 },
+    { "TRFCR_EL12", 738 },
+    { "TRFCR_EL2", 737 },
+    { "TTBR0_EL1", 218 },
+    { "TTBR0_EL12", 603 },
+    { "TTBR0_EL2", 219 },
+    { "TTBR0_EL3", 220 },
+    { "TTBR1_EL1", 221 },
+    { "TTBR1_EL12", 604 },
+    { "TTBR1_EL2", 597 },
+    { "UAO", 624 },
+    { "VBAR_EL1", 283 },
+    { "VBAR_EL12", 612 },
+    { "VBAR_EL2", 284 },
+    { "VBAR_EL3", 285 },
+    { "VDISR_EL2", 645 },
+    { "VMPIDR_EL2", 200 },
+    { "VNCR_EL2", 740 },
+    { "VPIDR_EL2", 199 },
+    { "VSESR_EL2", 646 },
+    { "VSTCR_EL2", 657 },
+    { "VSTTBR_EL2", 658 },
+    { "VTCR_EL2", 226 },
+    { "VTTBR_EL2", 225 },
+    { "ZCR_EL1", 741 },
+    { "ZCR_EL12", 744 },
+    { "ZCR_EL2", 742 },
+    { "ZCR_EL3", 743 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &SysRegsList[Idx->_index];
+}
+
+const SysReg *lookupSysRegByEncoding(uint16_t Encoding) {
+  struct IndexType {
+    uint16_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x8002, 121 },
+    { 0x8004, 129 },
+    { 0x8005, 145 },
+    { 0x8006, 161 },
+    { 0x8007, 177 },
+    { 0x800C, 130 },
+    { 0x800D, 146 },
+    { 0x800E, 162 },
+    { 0x800F, 178 },
+    { 0x8010, 124 },
+    { 0x8012, 125 },
+    { 0x8014, 131 },
+    { 0x8015, 147 },
+    { 0x8016, 163 },
+    { 0x8017, 179 },
+    { 0x801A, 122 },
+    { 0x801C, 132 },
+    { 0x801D, 148 },
+    { 0x801E, 164 },
+    { 0x801F, 180 },
+    { 0x8024, 133 },
+    { 0x8025, 149 },
+    { 0x8026, 165 },
+    { 0x8027, 181 },
+    { 0x802C, 134 },
+    { 0x802D, 150 },
+    { 0x802E, 166 },
+    { 0x802F, 182 },
+    { 0x8032, 127 },
+    { 0x8034, 135 },
+    { 0x8035, 151 },
+    { 0x8036, 167 },
+    { 0x8037, 183 },
+    { 0x803C, 136 },
+    { 0x803D, 152 },
+    { 0x803E, 168 },
+    { 0x803F, 184 },
+    { 0x8044, 137 },
+    { 0x8045, 153 },
+    { 0x8046, 169 },
+    { 0x8047, 185 },
+    { 0x804C, 138 },
+    { 0x804D, 154 },
+    { 0x804E, 170 },
+    { 0x804F, 186 },
+    { 0x8054, 139 },
+    { 0x8055, 155 },
+    { 0x8056, 171 },
+    { 0x8057, 187 },
+    { 0x805C, 140 },
+    { 0x805D, 156 },
+    { 0x805E, 172 },
+    { 0x805F, 188 },
+    { 0x8064, 141 },
+    { 0x8065, 157 },
+    { 0x8066, 173 },
+    { 0x8067, 189 },
+    { 0x806C, 142 },
+    { 0x806D, 158 },
+    { 0x806E, 174 },
+    { 0x806F, 190 },
+    { 0x8074, 143 },
+    { 0x8075, 159 },
+    { 0x8076, 175 },
+    { 0x8077, 191 },
+    { 0x807C, 144 },
+    { 0x807D, 160 },
+    { 0x807E, 176 },
+    { 0x807F, 192 },
+    { 0x8080, 2 },
+    { 0x8084, 111 },
+    { 0x808C, 3 },
+    { 0x809C, 194 },
+    { 0x80A4, 195 },
+    { 0x83C6, 196 },
+    { 0x83CE, 197 },
+    { 0x83F6, 4 },
+    { 0x8801, 385 },
+    { 0x8802, 387 },
+    { 0x8804, 394 },
+    { 0x8805, 400 },
+    { 0x8806, 56 },
+    { 0x8807, 412 },
+    { 0x8808, 374 },
+    { 0x8809, 386 },
+    { 0x880A, 388 },
+    { 0x880C, 395 },
+    { 0x880D, 401 },
+    { 0x880E, 57 },
+    { 0x880F, 413 },
+    { 0x8810, 375 },
+    { 0x8812, 389 },
+    { 0x8814, 396 },
+    { 0x8815, 402 },
+    { 0x8816, 58 },
+    { 0x8817, 414 },
+    { 0x8818, 55 },
+    { 0x881A, 390 },
+    { 0x881D, 403 },
+    { 0x881E, 59 },
+    { 0x881F, 415 },
+    { 0x8820, 376 },
+    { 0x8825, 404 },
+    { 0x8826, 60 },
+    { 0x8827, 416 },
+    { 0x882D, 405 },
+    { 0x882E, 61 },
+    { 0x882F, 417 },
+    { 0x8830, 377 },
+    { 0x8834, 397 },
+    { 0x8835, 406 },
+    { 0x8837, 418 },
+    { 0x883C, 398 },
+    { 0x883D, 407 },
+    { 0x883F, 419 },
+    { 0x8840, 378 },
+    { 0x8842, 391 },
+    { 0x8844, 399 },
+    { 0x8844, 756 },
+    { 0x8845, 408 },
+    { 0x8847, 62 },
+    { 0x8848, 379 },
+    { 0x884A, 392 },
+    { 0x884C, 757 },
+    { 0x884D, 409 },
+    { 0x884F, 63 },
+    { 0x8850, 755 },
+    { 0x8852, 393 },
+    { 0x8854, 758 },
+    { 0x8855, 410 },
+    { 0x8857, 64 },
+    { 0x8858, 380 },
+    { 0x885C, 759 },
+    { 0x885D, 411 },
+    { 0x885F, 65 },
+    { 0x8860, 381 },
+    { 0x8867, 66 },
+    { 0x8868, 382 },
+    { 0x886F, 67 },
+    { 0x8870, 383 },
+    { 0x8877, 68 },
+    { 0x8878, 384 },
+    { 0x887F, 69 },
+    { 0x8881, 434 },
+    { 0x8882, 450 },
+    { 0x8883, 466 },
+    { 0x8884, 113 },
+    { 0x8889, 435 },
+    { 0x888A, 451 },
+    { 0x888B, 467 },
+    { 0x888C, 70 },
+    { 0x8890, 420 },
+    { 0x8891, 436 },
+    { 0x8892, 452 },
+    { 0x8893, 468 },
+    { 0x8898, 421 },
+    { 0x8899, 437 },
+    { 0x889A, 453 },
+    { 0x889B, 469 },
+    { 0x88A0, 422 },
+    { 0x88A1, 438 },
+    { 0x88A2, 454 },
+    { 0x88A3, 470 },
+    { 0x88A4, 474 },
+    { 0x88A8, 423 },
+    { 0x88A9, 439 },
+    { 0x88AA, 455 },
+    { 0x88AB, 471 },
+    { 0x88AC, 71 },
+    { 0x88B0, 424 },
+    { 0x88B1, 440 },
+    { 0x88B2, 456 },
+    { 0x88B3, 472 },
+    { 0x88B8, 425 },
+    { 0x88B9, 441 },
+    { 0x88BA, 457 },
+    { 0x88BB, 473 },
+    { 0x88C0, 426 },
+    { 0x88C1, 442 },
+    { 0x88C2, 458 },
+    { 0x88C8, 427 },
+    { 0x88C9, 443 },
+    { 0x88CA, 459 },
+    { 0x88D0, 428 },
+    { 0x88D1, 444 },
+    { 0x88D2, 460 },
+    { 0x88D8, 429 },
+    { 0x88D9, 445 },
+    { 0x88DA, 461 },
+    { 0x88E0, 430 },
+    { 0x88E1, 446 },
+    { 0x88E2, 462 },
+    { 0x88E8, 431 },
+    { 0x88E9, 447 },
+    { 0x88EA, 463 },
+    { 0x88F0, 432 },
+    { 0x88F1, 448 },
+    { 0x88F2, 464 },
+    { 0x88F8, 433 },
+    { 0x88F9, 449 },
+    { 0x88FA, 465 },
+    { 0x8900, 475 },
+    { 0x8901, 483 },
+    { 0x8902, 491 },
+    { 0x8903, 499 },
+    { 0x8904, 507 },
+    { 0x8905, 511 },
+    { 0x8906, 515 },
+    { 0x8907, 519 },
+    { 0x8910, 476 },
+    { 0x8911, 484 },
+    { 0x8912, 492 },
+    { 0x8913, 500 },
+    { 0x8920, 477 },
+    { 0x8921, 485 },
+    { 0x8922, 493 },
+    { 0x8923, 501 },
+    { 0x8924, 508 },
+    { 0x8925, 512 },
+    { 0x8926, 516 },
+    { 0x8927, 520 },
+    { 0x8930, 478 },
+    { 0x8931, 486 },
+    { 0x8932, 494 },
+    { 0x8933, 502 },
+    { 0x8940, 479 },
+    { 0x8941, 487 },
+    { 0x8942, 495 },
+    { 0x8943, 503 },
+    { 0x8944, 509 },
+    { 0x8945, 513 },
+    { 0x8946, 517 },
+    { 0x8947, 521 },
+    { 0x8950, 480 },
+    { 0x8951, 488 },
+    { 0x8952, 496 },
+    { 0x8953, 504 },
+    { 0x8960, 481 },
+    { 0x8961, 489 },
+    { 0x8962, 497 },
+    { 0x8963, 505 },
+    { 0x8964, 510 },
+    { 0x8965, 514 },
+    { 0x8966, 518 },
+    { 0x8967, 522 },
+    { 0x8970, 482 },
+    { 0x8971, 490 },
+    { 0x8972, 498 },
+    { 0x8973, 506 },
+    { 0x8980, 523 },
+    { 0x8981, 531 },
+    { 0x8982, 539 },
+    { 0x898A, 540 },
+    { 0x8990, 524 },
+    { 0x8991, 532 },
+    { 0x8992, 541 },
+    { 0x899A, 542 },
+    { 0x89A0, 525 },
+    { 0x89A1, 533 },
+    { 0x89B0, 526 },
+    { 0x89B1, 534 },
+    { 0x89C0, 527 },
+    { 0x89C1, 535 },
+    { 0x89D0, 528 },
+    { 0x89D1, 536 },
+    { 0x89E0, 529 },
+    { 0x89E1, 537 },
+    { 0x89F0, 530 },
+    { 0x89F1, 538 },
+    { 0x8B84, 543 },
+    { 0x8B97, 77 },
+    { 0x8B9F, 78 },
+    { 0x8BA7, 79 },
+    { 0x8BAF, 80 },
+    { 0x8BB7, 81 },
+    { 0x8BBF, 82 },
+    { 0x8BC6, 544 },
+    { 0x8BC7, 83 },
+    { 0x8BCE, 545 },
+    { 0x8BCF, 84 },
+    { 0x8BD6, 72 },
+    { 0x8BD7, 85 },
+    { 0x8BDE, 73 },
+    { 0x8BDF, 86 },
+    { 0x8BE6, 114 },
+    { 0x8BE7, 87 },
+    { 0x8BEE, 74 },
+    { 0x8BEF, 88 },
+    { 0x8BF6, 75 },
+    { 0x8BF7, 89 },
+    { 0x8BFE, 76 },
+    { 0x8BFF, 90 },
+    { 0x8C00, 820 },
+    { 0x8C01, 821 },
+    { 0x8C02, 822 },
+    { 0x8C04, 868 },
+    { 0x8C05, 869 },
+    { 0x8C06, 870 },
+    { 0x8C08, 823 },
+    { 0x8C09, 824 },
+    { 0x8C0A, 825 },
+    { 0x8C0C, 871 },
+    { 0x8C0D, 872 },
+    { 0x8C0E, 873 },
+    { 0x8C10, 826 },
+    { 0x8C11, 827 },
+    { 0x8C12, 828 },
+    { 0x8C14, 874 },
+    { 0x8C15, 875 },
+    { 0x8C16, 876 },
+    { 0x8C18, 829 },
+    { 0x8C19, 830 },
+    { 0x8C1A, 831 },
+    { 0x8C1C, 877 },
+    { 0x8C1D, 878 },
+    { 0x8C1E, 879 },
+    { 0x8C20, 832 },
+    { 0x8C21, 833 },
+    { 0x8C22, 834 },
+    { 0x8C24, 880 },
+    { 0x8C25, 881 },
+    { 0x8C26, 882 },
+    { 0x8C28, 835 },
+    { 0x8C29, 836 },
+    { 0x8C2A, 837 },
+    { 0x8C2C, 883 },
+    { 0x8C2D, 884 },
+    { 0x8C2E, 885 },
+    { 0x8C30, 838 },
+    { 0x8C31, 839 },
+    { 0x8C32, 840 },
+    { 0x8C34, 886 },
+    { 0x8C35, 887 },
+    { 0x8C36, 888 },
+    { 0x8C38, 841 },
+    { 0x8C39, 842 },
+    { 0x8C3A, 843 },
+    { 0x8C3C, 889 },
+    { 0x8C3D, 890 },
+    { 0x8C3E, 891 },
+    { 0x8C40, 844 },
+    { 0x8C41, 845 },
+    { 0x8C42, 846 },
+    { 0x8C44, 892 },
+    { 0x8C45, 893 },
+    { 0x8C46, 894 },
+    { 0x8C48, 847 },
+    { 0x8C49, 848 },
+    { 0x8C4A, 849 },
+    { 0x8C4C, 895 },
+    { 0x8C4D, 896 },
+    { 0x8C4E, 897 },
+    { 0x8C50, 850 },
+    { 0x8C51, 851 },
+    { 0x8C52, 852 },
+    { 0x8C54, 898 },
+    { 0x8C55, 899 },
+    { 0x8C56, 900 },
+    { 0x8C58, 853 },
+    { 0x8C59, 854 },
+    { 0x8C5A, 855 },
+    { 0x8C5C, 901 },
+    { 0x8C5D, 902 },
+    { 0x8C5E, 903 },
+    { 0x8C60, 856 },
+    { 0x8C61, 857 },
+    { 0x8C62, 858 },
+    { 0x8C64, 904 },
+    { 0x8C65, 905 },
+    { 0x8C66, 906 },
+    { 0x8C68, 859 },
+    { 0x8C69, 860 },
+    { 0x8C6A, 861 },
+    { 0x8C6C, 907 },
+    { 0x8C6D, 908 },
+    { 0x8C6E, 909 },
+    { 0x8C70, 862 },
+    { 0x8C71, 863 },
+    { 0x8C72, 864 },
+    { 0x8C74, 910 },
+    { 0x8C75, 911 },
+    { 0x8C76, 912 },
+    { 0x8C78, 865 },
+    { 0x8C79, 866 },
+    { 0x8C7A, 867 },
+    { 0x8C7C, 913 },
+    { 0x8C7D, 914 },
+    { 0x8C7E, 915 },
+    { 0x8C80, 811 },
+    { 0x8C81, 814 },
+    { 0x8C82, 819 },
+    { 0x8C88, 816 },
+    { 0x8C89, 817 },
+    { 0x8C8A, 818 },
+    { 0x8C90, 815 },
+    { 0x9000, 123 },
+    { 0x9080, 193 },
+    { 0x9808, 0 },
+    { 0x9820, 126 },
+    { 0x9828, 1 },
+    { 0x9828, 110 },
+    { 0xA038, 128 },
+    { 0xA480, 813 },
+    { 0xAC80, 812 },
+    { 0xC000, 7 },
+    { 0xC005, 12 },
+    { 0xC006, 13 },
+    { 0xC008, 16 },
+    { 0xC009, 17 },
+    { 0xC00A, 19 },
+    { 0xC00B, 20 },
+    { 0xC00C, 21 },
+    { 0xC00D, 22 },
+    { 0xC00E, 23 },
+    { 0xC00F, 24 },
+    { 0xC010, 25 },
+    { 0xC011, 26 },
+    { 0xC012, 27 },
+    { 0xC013, 28 },
+    { 0xC014, 29 },
+    { 0xC015, 30 },
+    { 0xC016, 53 },
+    { 0xC017, 31 },
+    { 0xC018, 44 },
+    { 0xC019, 45 },
+    { 0xC01A, 46 },
+    { 0xC01C, 18 },
+    { 0xC01E, 54 },
+    { 0xC020, 32 },
+    { 0xC021, 33 },
+    { 0xC024, 99 },
+    { 0xC028, 34 },
+    { 0xC029, 35 },
+    { 0xC02C, 36 },
+    { 0xC02D, 37 },
+    { 0xC030, 38 },
+    { 0xC031, 39 },
+    { 0xC032, 40 },
+    { 0xC038, 41 },
+    { 0xC039, 42 },
+    { 0xC03A, 43 },
+    { 0xC080, 202 },
+    { 0xC081, 205 },
+    { 0xC082, 201 },
+    { 0xC085, 748 },
+    { 0xC086, 747 },
+    { 0xC090, 741 },
+    { 0xC091, 736 },
+    { 0xC100, 218 },
+    { 0xC101, 221 },
+    { 0xC102, 222 },
+    { 0xC108, 647 },
+    { 0xC109, 648 },
+    { 0xC10A, 649 },
+    { 0xC10B, 650 },
+    { 0xC110, 651 },
+    { 0xC111, 652 },
+    { 0xC112, 653 },
+    { 0xC113, 654 },
+    { 0xC118, 655 },
+    { 0xC119, 656 },
+    { 0xC200, 228 },
+    { 0xC201, 231 },
+    { 0xC208, 234 },
+    { 0xC210, 237 },
+    { 0xC212, 240 },
+    { 0xC213, 592 },
+    { 0xC214, 624 },
+    { 0xC230, 548 },
+    { 0xC288, 250 },
+    { 0xC289, 253 },
+    { 0xC290, 256 },
+    { 0xC298, 101 },
+    { 0xC299, 638 },
+    { 0xC2A0, 102 },
+    { 0xC2A1, 639 },
+    { 0xC2A2, 640 },
+    { 0xC2A3, 641 },
+    { 0xC2A4, 671 },
+    { 0xC2A5, 667 },
+    { 0xC2A6, 668 },
+    { 0xC2A8, 642 },
+    { 0xC2A9, 643 },
+    { 0xC2AA, 669 },
+    { 0xC2AB, 670 },
+    { 0xC2B0, 749 },
+    { 0xC2B1, 753 },
+    { 0xC300, 260 },
+    { 0xC3A0, 264 },
+    { 0xC4C8, 631 },
+    { 0xC4C9, 916 },
+    { 0xC4CA, 632 },
+    { 0xC4CB, 633 },
+    { 0xC4CC, 634 },
+    { 0xC4CD, 635 },
+    { 0xC4CE, 636 },
+    { 0xC4CF, 637 },
+    { 0xC4D0, 625 },
+    { 0xC4D1, 626 },
+    { 0xC4D3, 627 },
+    { 0xC4D7, 628 },
+    { 0xC4D8, 760 },
+    { 0xC4D9, 761 },
+    { 0xC4DA, 762 },
+    { 0xC4DB, 763 },
+    { 0xC4DC, 764 },
+    { 0xC4DE, 765 },
+    { 0xC4DF, 766 },
+    { 0xC4F1, 274 },
+    { 0xC4F2, 275 },
+    { 0xC4F6, 666 },
+    { 0xC510, 277 },
+    { 0xC518, 280 },
+    { 0xC520, 593 },
+    { 0xC521, 594 },
+    { 0xC522, 595 },
+    { 0xC523, 596 },
+    { 0xC524, 687 },
+    { 0xC527, 100 },
+    { 0xC528, 673 },
+    { 0xC529, 672 },
+    { 0xC600, 283 },
+    { 0xC601, 47 },
+    { 0xC602, 286 },
+    { 0xC608, 50 },
+    { 0xC609, 644 },
+    { 0xC640, 92 },
+    { 0xC641, 116 },
+    { 0xC642, 94 },
+    { 0xC643, 547 },
+    { 0xC644, 557 },
+    { 0xC645, 558 },
+    { 0xC646, 559 },
+    { 0xC647, 560 },
+    { 0xC648, 561 },
+    { 0xC649, 562 },
+    { 0xC64A, 563 },
+    { 0xC64B, 564 },
+    { 0xC659, 117 },
+    { 0xC65B, 95 },
+    { 0xC65D, 118 },
+    { 0xC65E, 119 },
+    { 0xC65F, 120 },
+    { 0xC660, 91 },
+    { 0xC661, 115 },
+    { 0xC662, 93 },
+    { 0xC663, 546 },
+    { 0xC664, 549 },
+    { 0xC665, 551 },
+    { 0xC666, 554 },
+    { 0xC667, 555 },
+    { 0xC681, 289 },
+    { 0xC684, 294 },
+    { 0xC685, 810 },
+    { 0xC687, 106 },
+    { 0xC708, 297 },
+    { 0xC800, 8 },
+    { 0xC801, 10 },
+    { 0xC802, 9 },
+    { 0xC804, 754 },
+    { 0xC807, 14 },
+    { 0xD000, 198 },
+    { 0xD801, 11 },
+    { 0xD807, 15 },
+    { 0xD920, 103 },
+    { 0xD921, 104 },
+    { 0xDA10, 238 },
+    { 0xDA11, 239 },
+    { 0xDA15, 739 },
+    { 0xDA16, 745 },
+    { 0xDA17, 746 },
+    { 0xDA20, 245 },
+    { 0xDA21, 246 },
+    { 0xDA28, 247 },
+    { 0xDA29, 248 },
+    { 0xDCE0, 265 },
+    { 0xDCE1, 266 },
+    { 0xDCE2, 267 },
+    { 0xDCE3, 268 },
+    { 0xDCE4, 112 },
+    { 0xDCE5, 269 },
+    { 0xDCE6, 5 },
+    { 0xDCE7, 6 },
+    { 0xDCE8, 270 },
+    { 0xDCE9, 271 },
+    { 0xDCEA, 272 },
+    { 0xDCF0, 273 },
+    { 0xDCF3, 276 },
+    { 0xDE82, 290 },
+    { 0xDE83, 293 },
+    { 0xDE87, 105 },
+    { 0xDE90, 688 },
+    { 0xDE91, 689 },
+    { 0xDE92, 690 },
+    { 0xDE93, 691 },
+    { 0xDE94, 692 },
+    { 0xDE95, 693 },
+    { 0xDE98, 702 },
+    { 0xDE99, 703 },
+    { 0xDEA0, 694 },
+    { 0xDEA1, 695 },
+    { 0xDEA2, 696 },
+    { 0xDEA3, 697 },
+    { 0xDEB0, 698 },
+    { 0xDEB1, 699 },
+    { 0xDEB2, 700 },
+    { 0xDEB3, 701 },
+    { 0xDEE0, 704 },
+    { 0xDEE1, 705 },
+    { 0xDEE2, 706 },
+    { 0xDEE3, 707 },
+    { 0xDEE4, 708 },
+    { 0xDEE5, 709 },
+    { 0xDEE6, 710 },
+    { 0xDEE7, 711 },
+    { 0xDEE8, 712 },
+    { 0xDEE9, 713 },
+    { 0xDEEA, 714 },
+    { 0xDEEB, 715 },
+    { 0xDEEC, 716 },
+    { 0xDEED, 717 },
+    { 0xDEEE, 718 },
+    { 0xDEEF, 719 },
+    { 0xDEF0, 720 },
+    { 0xDEF1, 721 },
+    { 0xDEF2, 722 },
+    { 0xDEF3, 723 },
+    { 0xDEF4, 724 },
+    { 0xDEF5, 725 },
+    { 0xDEF6, 726 },
+    { 0xDEF7, 727 },
+    { 0xDEF8, 728 },
+    { 0xDEF9, 729 },
+    { 0xDEFA, 730 },
+    { 0xDEFB, 731 },
+    { 0xDEFC, 732 },
+    { 0xDEFD, 733 },
+    { 0xDEFE, 734 },
+    { 0xDEFF, 735 },
+    { 0xDF00, 295 },
+    { 0xDF01, 51 },
+    { 0xDF02, 52 },
+    { 0xDF05, 808 },
+    { 0xDF06, 809 },
+    { 0xDF10, 299 },
+    { 0xDF11, 302 },
+    { 0xDF12, 305 },
+    { 0xDF18, 308 },
+    { 0xDF19, 309 },
+    { 0xDF1A, 310 },
+    { 0xDF40, 311 },
+    { 0xDF41, 312 },
+    { 0xDF42, 313 },
+    { 0xDF43, 314 },
+    { 0xDF44, 315 },
+    { 0xDF45, 316 },
+    { 0xDF46, 317 },
+    { 0xDF47, 318 },
+    { 0xDF48, 319 },
+    { 0xDF49, 320 },
+    { 0xDF4A, 321 },
+    { 0xDF4B, 322 },
+    { 0xDF4C, 323 },
+    { 0xDF4D, 324 },
+    { 0xDF4E, 325 },
+    { 0xDF4F, 326 },
+    { 0xDF50, 327 },
+    { 0xDF51, 328 },
+    { 0xDF52, 329 },
+    { 0xDF53, 330 },
+    { 0xDF54, 331 },
+    { 0xDF55, 332 },
+    { 0xDF56, 333 },
+    { 0xDF57, 334 },
+    { 0xDF58, 335 },
+    { 0xDF59, 336 },
+    { 0xDF5A, 337 },
+    { 0xDF5B, 338 },
+    { 0xDF5C, 339 },
+    { 0xDF5D, 340 },
+    { 0xDF5E, 341 },
+    { 0xDF60, 343 },
+    { 0xDF61, 344 },
+    { 0xDF62, 345 },
+    { 0xDF63, 346 },
+    { 0xDF64, 347 },
+    { 0xDF65, 348 },
+    { 0xDF66, 349 },
+    { 0xDF67, 350 },
+    { 0xDF68, 351 },
+    { 0xDF69, 352 },
+    { 0xDF6A, 353 },
+    { 0xDF6B, 354 },
+    { 0xDF6C, 355 },
+    { 0xDF6D, 356 },
+    { 0xDF6E, 357 },
+    { 0xDF6F, 358 },
+    { 0xDF70, 359 },
+    { 0xDF71, 360 },
+    { 0xDF72, 361 },
+    { 0xDF73, 362 },
+    { 0xDF74, 363 },
+    { 0xDF75, 364 },
+    { 0xDF76, 365 },
+    { 0xDF77, 366 },
+    { 0xDF78, 367 },
+    { 0xDF79, 368 },
+    { 0xDF7A, 369 },
+    { 0xDF7B, 370 },
+    { 0xDF7C, 371 },
+    { 0xDF7D, 372 },
+    { 0xDF7E, 373 },
+    { 0xDF7F, 342 },
+    { 0xE000, 199 },
+    { 0xE005, 200 },
+    { 0xE080, 203 },
+    { 0xE081, 206 },
+    { 0xE088, 208 },
+    { 0xE089, 211 },
+    { 0xE08A, 213 },
+    { 0xE08B, 215 },
+    { 0xE08C, 799 },
+    { 0xE08D, 800 },
+    { 0xE08E, 801 },
+    { 0xE08F, 216 },
+    { 0xE090, 742 },
+    { 0xE091, 737 },
+    { 0xE092, 209 },
+    { 0xE099, 665 },
+    { 0xE100, 219 },
+    { 0xE101, 597 },
+    { 0xE102, 223 },
+    { 0xE108, 225 },
+    { 0xE10A, 226 },
+    { 0xE110, 740 },
+    { 0xE130, 658 },
+    { 0xE132, 657 },
+    { 0xE180, 227 },
+    { 0xE18C, 802 },
+    { 0xE18D, 803 },
+    { 0xE200, 229 },
+    { 0xE201, 232 },
+    { 0xE208, 235 },
+    { 0xE218, 241 },
+    { 0xE219, 242 },
+    { 0xE21A, 243 },
+    { 0xE21B, 244 },
+    { 0xE281, 249 },
+    { 0xE288, 251 },
+    { 0xE289, 254 },
+    { 0xE290, 257 },
+    { 0xE293, 646 },
+    { 0xE298, 259 },
+    { 0xE2B0, 750 },
+    { 0xE300, 261 },
+    { 0xE304, 263 },
+    { 0xE4C8, 629 },
+    { 0xE510, 278 },
+    { 0xE518, 281 },
+    { 0xE520, 677 },
+    { 0xE521, 678 },
+    { 0xE528, 674 },
+    { 0xE530, 679 },
+    { 0xE531, 680 },
+    { 0xE532, 681 },
+    { 0xE533, 682 },
+    { 0xE534, 683 },
+    { 0xE535, 684 },
+    { 0xE536, 685 },
+    { 0xE537, 686 },
+    { 0xE600, 284 },
+    { 0xE601, 48 },
+    { 0xE602, 287 },
+    { 0xE609, 645 },
+    { 0xE640, 565 },
+    { 0xE641, 566 },
+    { 0xE642, 567 },
+    { 0xE643, 568 },
+    { 0xE648, 569 },
+    { 0xE649, 570 },
+    { 0xE64A, 571 },
+    { 0xE64B, 572 },
+    { 0xE64D, 552 },
+    { 0xE658, 573 },
+    { 0xE659, 96 },
+    { 0xE65A, 574 },
+    { 0xE65B, 97 },
+    { 0xE65D, 98 },
+    { 0xE65F, 575 },
+    { 0xE660, 576 },
+    { 0xE661, 577 },
+    { 0xE662, 578 },
+    { 0xE663, 579 },
+    { 0xE664, 580 },
+    { 0xE665, 581 },
+    { 0xE666, 582 },
+    { 0xE667, 583 },
+    { 0xE668, 584 },
+    { 0xE669, 585 },
+    { 0xE66A, 586 },
+    { 0xE66B, 587 },
+    { 0xE66C, 588 },
+    { 0xE66D, 589 },
+    { 0xE66E, 590 },
+    { 0xE66F, 591 },
+    { 0xE681, 623 },
+    { 0xE682, 291 },
+    { 0xE687, 107 },
+    { 0xE6C0, 767 },
+    { 0xE6C1, 769 },
+    { 0xE6C2, 771 },
+    { 0xE6C3, 773 },
+    { 0xE6C4, 775 },
+    { 0xE6C5, 777 },
+    { 0xE6C6, 779 },
+    { 0xE6C7, 781 },
+    { 0xE6C8, 783 },
+    { 0xE6C9, 785 },
+    { 0xE6CA, 787 },
+    { 0xE6CB, 789 },
+    { 0xE6CC, 791 },
+    { 0xE6CD, 793 },
+    { 0xE6CE, 795 },
+    { 0xE6CF, 797 },
+    { 0xE6D0, 768 },
+    { 0xE6D1, 770 },
+    { 0xE6D2, 772 },
+    { 0xE6D3, 774 },
+    { 0xE6D4, 776 },
+    { 0xE6D5, 778 },
+    { 0xE6D6, 780 },
+    { 0xE6D7, 782 },
+    { 0xE6D8, 784 },
+    { 0xE6D9, 786 },
+    { 0xE6DA, 788 },
+    { 0xE6DB, 790 },
+    { 0xE6DC, 792 },
+    { 0xE6DD, 794 },
+    { 0xE6DE, 796 },
+    { 0xE6DF, 798 },
+    { 0xE703, 296 },
+    { 0xE704, 804 },
+    { 0xE705, 805 },
+    { 0xE706, 806 },
+    { 0xE707, 807 },
+    { 0xE708, 298 },
+    { 0xE710, 300 },
+    { 0xE711, 303 },
+    { 0xE712, 306 },
+    { 0xE718, 598 },
+    { 0xE719, 600 },
+    { 0xE71A, 599 },
+    { 0xE720, 659 },
+    { 0xE721, 661 },
+    { 0xE722, 660 },
+    { 0xE728, 662 },
+    { 0xE729, 664 },
+    { 0xE72A, 663 },
+    { 0xE880, 601 },
+    { 0xE882, 602 },
+    { 0xE890, 744 },
+    { 0xE891, 738 },
+    { 0xE900, 603 },
+    { 0xE901, 604 },
+    { 0xE902, 605 },
+    { 0xEA00, 621 },
+    { 0xEA01, 622 },
+    { 0xEA88, 606 },
+    { 0xEA89, 607 },
+    { 0xEA90, 608 },
+    { 0xEAB0, 752 },
+    { 0xEB00, 609 },
+    { 0xECC8, 630 },
+    { 0xED10, 610 },
+    { 0xED18, 611 },
+    { 0xED28, 676 },
+    { 0xEE00, 612 },
+    { 0xEE81, 613 },
+    { 0xEE87, 109 },
+    { 0xEF08, 614 },
+    { 0xEF10, 615 },
+    { 0xEF11, 616 },
+    { 0xEF12, 617 },
+    { 0xEF18, 618 },
+    { 0xEF19, 619 },
+    { 0xEF1A, 620 },
+    { 0xF080, 204 },
+    { 0xF081, 207 },
+    { 0xF088, 210 },
+    { 0xF089, 212 },
+    { 0xF08A, 214 },
+    { 0xF090, 743 },
+    { 0xF099, 217 },
+    { 0xF100, 220 },
+    { 0xF102, 224 },
+    { 0xF200, 230 },
+    { 0xF201, 233 },
+    { 0xF208, 236 },
+    { 0xF288, 252 },
+    { 0xF289, 255 },
+    { 0xF290, 258 },
+    { 0xF2B0, 751 },
+    { 0xF300, 262 },
+    { 0xF510, 279 },
+    { 0xF518, 282 },
+    { 0xF528, 675 },
+    { 0xF600, 285 },
+    { 0xF601, 49 },
+    { 0xF602, 288 },
+    { 0xF664, 550 },
+    { 0xF665, 553 },
+    { 0xF667, 556 },
+    { 0xF682, 292 },
+    { 0xF687, 108 },
+    { 0xFF10, 301 },
+    { 0xFF11, 304 },
+    { 0xFF12, 307 },
+    { 0xFF90, 917 },
+  };
+
+  struct KeyType {
+    uint16_t Encoding;
+  };
+  KeyType Key = {Encoding};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      if (LHS.Encoding < RHS.Encoding)
+        return true;
+      if (LHS.Encoding > RHS.Encoding)
+        return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Encoding != Idx->Encoding)
+    return nullptr;
+  return &SysRegsList[Idx->_index];
+}
+#endif
+
+#ifdef GET_TSB_DECL
+const TSB *lookupTSBByName(StringRef Name);
+const TSB *lookupTSBByEncoding(uint8_t Encoding);
+#endif
+
+#ifdef GET_TSB_IMPL
+constexpr TSB TSBsList[] = {
+  { "csync", 0x0,  {AArch64::FeatureTRACEV8_4}  }, // 0
+ };
+
+const TSB *lookupTSBByName(StringRef Name) {
+  struct IndexType {
+    const char * Name;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { "CSYNC", 0 },
+  };
+
+  struct KeyType {
+    std::string Name;
+  };
+  KeyType Key = {Name.upper()};
+  auto Table = makeArrayRef(Index);
+  auto Idx = std::lower_bound(Table.begin(), Table.end(), Key,
+    [](const IndexType &LHS, const KeyType &RHS) {
+      int CmpName = StringRef(LHS.Name).compare(RHS.Name);
+      if (CmpName < 0) return true;
+      if (CmpName > 0) return false;
+      return false;
+    });
+
+  if (Idx == Table.end() ||
+      Key.Name != Idx->Name)
+    return nullptr;
+  return &TSBsList[Idx->_index];
+}
+
+const TSB *lookupTSBByEncoding(uint8_t Encoding) {
+  struct IndexType {
+    uint8_t Encoding;
+    unsigned _index;
+  };
+  static const struct IndexType Index[] = {
+    { 0x0, 0 },
+  };
+
+  auto Table = makeArrayRef(Index);
+  size_t Idx = Encoding;
+  return Idx >= Table.size() ? nullptr : &TSBsList[Table[Idx]._index];
+}
+#endif
+
+#undef GET_AT_DECL
+#undef GET_AT_IMPL
+#undef GET_BTI_DECL
+#undef GET_BTI_IMPL
+#undef GET_DBNXS_DECL
+#undef GET_DBNXS_IMPL
+#undef GET_DB_DECL
+#undef GET_DB_IMPL
+#undef GET_DC_DECL
+#undef GET_DC_IMPL
+#undef GET_EXACTFPIMM_DECL
+#undef GET_EXACTFPIMM_IMPL
+#undef GET_IC_DECL
+#undef GET_IC_IMPL
+#undef GET_ISB_DECL
+#undef GET_ISB_IMPL
+#undef GET_PRCTX_DECL
+#undef GET_PRCTX_IMPL
+#undef GET_PRFM_DECL
+#undef GET_PRFM_IMPL
+#undef GET_PSB_DECL
+#undef GET_PSB_IMPL
+#undef GET_PSTATE_DECL
+#undef GET_PSTATE_IMPL
+#undef GET_SVEPREDPAT_DECL
+#undef GET_SVEPREDPAT_IMPL
+#undef GET_SVEPRFM_DECL
+#undef GET_SVEPRFM_IMPL
+#undef GET_SYSREG_DECL
+#undef GET_SYSREG_IMPL
+#undef GET_TLBITable_DECL
+#undef GET_TLBITable_IMPL
+#undef GET_TSB_DECL
+#undef GET_TSB_IMPL
