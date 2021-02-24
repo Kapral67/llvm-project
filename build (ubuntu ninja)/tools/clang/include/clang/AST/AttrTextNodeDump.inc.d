@@ -1,0 +1,1 @@
+tools/clang/include/clang/AST/AttrTextNodeDump.inc: /home/max/GitHub/llvm-project/clang/include/clang/Basic/ASTNode.td /home/max/GitHub/llvm-project/clang/include/clang/Basic/AttrDocs.td /home/max/GitHub/llvm-project/clang/include/clang/Basic/DeclNodes.td /home/max/GitHub/llvm-project/clang/include/clang/Basic/StmtNodes.td
