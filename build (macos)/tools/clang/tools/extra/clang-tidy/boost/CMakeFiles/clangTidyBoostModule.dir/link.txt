@@ -1,0 +1,1 @@
+"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool" -static -no_warning_for_no_symbols -o ../../../../../../lib/libclangTidyBoostModule.a CMakeFiles/obj.clangTidyBoostModule.dir/BoostTidyModule.cpp.o CMakeFiles/obj.clangTidyBoostModule.dir/UseToStringCheck.cpp.o

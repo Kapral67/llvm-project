@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/AvoidBindCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/AvoidCArraysCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ConcatNestedNamespacesCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/DeprecatedHeadersCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/DeprecatedIosBaseAliasesCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/LoopConvertCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/LoopConvertUtils.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/MakeSharedCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/MakeSmartPtrCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/MakeUniqueCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ModernizeTidyModule.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/PassByValueCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/RawStringLiteralCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/RedundantVoidArgCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ReplaceAutoPtrCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ReplaceDisallowCopyAndAssignMacroCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ReplaceRandomShuffleCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ReturnBracedInitListCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/ShrinkToFitCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UnaryStaticAssertCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseAutoCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseBoolLiteralsCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseDefaultMemberInitCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseEmplaceCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseEqualsDefaultCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseEqualsDeleteCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseNodiscardCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseNoexceptCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseNullptrCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseOverrideCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseTrailingReturnTypeCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseTransparentFunctorsCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseUncaughtExceptionsCheck.cpp.o"
+  "CMakeFiles/obj.clangTidyModernizeModule.dir/UseUsingCheck.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/obj.clangTidyModernizeModule.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
