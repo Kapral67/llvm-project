@@ -1643,7 +1643,7 @@ import shutil
 c.LanguageServerManager.language_servers = {
     "clangd": {
         # if installed as a binary
-        "argv": [shutil.which("clangd", path="/Users/maxwellkapral/Documents/GitHub/llvm-project/build/bin"), "-pretty"],
+        "argv": [shutil.which("clangd", path="/Users/jovyan/llvm-project/build/bin"), "-pretty"],
         "languages": ["c++src", "C++src()", "c++src()", "C++src", "xc++", "C++11", "C++14", "C++17"],
         "version": 2
     }
