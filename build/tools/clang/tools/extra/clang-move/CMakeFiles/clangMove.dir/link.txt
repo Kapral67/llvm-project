@@ -1,1 +1,0 @@
-"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool" -static -no_warning_for_no_symbols -o ../../../../../lib/libclangMove.a CMakeFiles/obj.clangMove.dir/Move.cpp.o CMakeFiles/obj.clangMove.dir/HelperDeclRefGraph.cpp.o

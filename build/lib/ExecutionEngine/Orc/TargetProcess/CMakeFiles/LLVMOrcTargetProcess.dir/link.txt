@@ -1,1 +1,0 @@
-"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool" -static -no_warning_for_no_symbols -o ../../../libLLVMOrcTargetProcess.a CMakeFiles/LLVMOrcTargetProcess.dir/RegisterEHFrames.cpp.o CMakeFiles/LLVMOrcTargetProcess.dir/TargetExecutionUtils.cpp.o
